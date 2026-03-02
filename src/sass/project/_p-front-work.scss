@@ -3,6 +3,17 @@
 .p-front-work {
   padding-top: rem(80);
   padding-bottom: rem(80);
+  position: relative;
+  z-index: 2;
+  overflow-x: clip;
+}
+
+.p-front-work__bg {
+  position: absolute;
+  top: rem(-120);
+  left: rem(-40);
+  width: 100%;
+  z-index: -1;
 }
 
 .p-front-work__title {
@@ -189,4 +200,3 @@
 .p-front-work__card:hover {
   opacity: 0.95;
 }
-

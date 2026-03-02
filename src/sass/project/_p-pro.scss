@@ -57,10 +57,6 @@
   max-width: rem(854);
 }
 
-.p-pro__slider {
-  margin-top: rem(64);
-}
-
 .p-pro__swiper {
   overflow: visible;
 }
@@ -84,7 +80,7 @@
 .p-pro__card {
   background: #fff;
   border-radius: rem(10);
-  padding: rem(80) rem(48);
+  padding: rem(80) rem(31);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -122,6 +118,7 @@
 
 .p-pro__slider {
   margin-right: calc(50% - 50vw);
+  margin-top: rem(96);
 }
 
 .p-pro__text {
