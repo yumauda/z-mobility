@@ -2198,6 +2198,7 @@ input::placeholder {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   position: relative;
+  overflow-x: clip;
 }
 
 .p-mv__row {
@@ -2289,7 +2290,6 @@ input::placeholder {
 .p-mv__ribbon {
   position: absolute;
   bottom: -5rem;
-  left: -5rem;
   z-index: 1;
   width: 100%;
 }

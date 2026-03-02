@@ -5,6 +5,7 @@
   padding-left: rem(20);
   padding-right: rem(20);
   position: relative;
+  overflow-x: clip;
 }
 
 .p-mv__row {
@@ -98,7 +99,6 @@
 .p-mv__ribbon {
   position: absolute;
   bottom: rem(-80);
-  left: rem(-80);
   z-index: 1;
   width: 100%;
 }
