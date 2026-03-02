@@ -195,3 +195,40 @@ const slider5 = new Swiper(".slider5", {
     clickable: true,
   },
 });
+
+let proSlider;
+const proSliderBreakpoint = window.matchMedia("(min-width: 768px)");
+
+function initProSlider() {
+  if (proSlider) return;
+  if (!document.querySelector(".js-pro-swiper")) return;
+
+  proSlider = new Swiper(".js-pro-swiper", {
+    slidesPerView: "auto",
+    centeredSlides: false,
+    width: "auto",
+    spaceBetween: 10,
+    loop: true,
+  });
+}
+
+function destroyProSlider() {
+  if (!proSlider) return;
+  proSlider.destroy(true, true);
+  proSlider = undefined;
+}
+
+function handleProSliderBreakpoint(e) {
+  if (e.matches) {
+    initProSlider();
+  } else {
+    destroyProSlider();
+  }
+}
+
+handleProSliderBreakpoint(proSliderBreakpoint);
+if (proSliderBreakpoint.addEventListener) {
+  proSliderBreakpoint.addEventListener("change", handleProSliderBreakpoint);
+} else {
+  proSliderBreakpoint.addListener(handleProSliderBreakpoint);
+}
