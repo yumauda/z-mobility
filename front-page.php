@@ -514,6 +514,240 @@
       </div>
     </div>
   </section>
+  <section class="p-top-column">
+    <div class="l-inner">
+      <div class="p-top-column__content">
+        <div class="p-top-column__head">
+          <div class="p-top-column__title">
+            <p class="p-top-column__title-ja">コラム</p>
+            <p class="p-top-column__title-en">Column</p>
+          </div>
+
+          <div class="p-top-column__actions">
+
+            <div class="p-top-column__nav" aria-label="コラムスライダーナビゲーション">
+              <button class="swiper-button-prev p-top-column__prev" type="button" aria-label="前へ">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
+              </button>
+              <button class="swiper-button-next p-top-column__next" type="button" aria-label="次へ">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
+              </button>
+            </div>
+            <a class="p-top-column__more" href="#">
+              <span class="p-top-column__more-text">一覧を見る</span>
+              <span class="p-top-column__more-divider" aria-hidden="true"></span>
+              <span class="p-top-column__more-icon" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="p-top-column__right">
+          <div class="swiper p-top-column__swiper js-top-column-swiper">
+            <div class="swiper-wrapper p-top-column__cards">
+              <div class="swiper-slide p-top-column__slide">
+                <a class="p-top-column__card" href="#">
+                  <figure class="p-top-column__card-img">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-1.png" alt="" width="395" height="222">
+                  </figure>
+                  <p class="p-top-column__card-text">
+                    親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                  </p>
+                  <div class="p-top-column__meta">
+                    <time class="p-top-column__date" datetime="2026-01-30">2026.01.30</time>
+                    <span class="p-top-column__category">カテゴリ</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide p-top-column__slide">
+                <a class="p-top-column__card" href="#">
+                  <figure class="p-top-column__card-img">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-2.png" alt="" width="395" height="222">
+                  </figure>
+                  <p class="p-top-column__card-text">
+                    親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                  </p>
+                  <div class="p-top-column__meta">
+                    <time class="p-top-column__date" datetime="2026-01-30">2026.01.30</time>
+                    <span class="p-top-column__category">カテゴリ</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide p-top-column__slide">
+                <a class="p-top-column__card" href="#">
+                  <figure class="p-top-column__card-img">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-3.png" alt="" width="395" height="222">
+                  </figure>
+                  <p class="p-top-column__card-text">
+                    親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                  </p>
+                  <div class="p-top-column__meta">
+                    <time class="p-top-column__date" datetime="2026-01-30">2026.01.30</time>
+                    <span class="p-top-column__category">カテゴリ</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide p-top-column__slide">
+                <a class="p-top-column__card" href="#">
+                  <figure class="p-top-column__card-img">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-4.png" alt="" width="395" height="222">
+                  </figure>
+                  <p class="p-top-column__card-text">
+                    親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                  </p>
+                  <div class="p-top-column__meta">
+                    <time class="p-top-column__date" datetime="2026-01-30">2026.01.30</time>
+                    <span class="p-top-column__category">カテゴリ</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <section class="p-top-interview">
+    <div class="l-inner">
+      <div class="p-top-interview__content">
+        <div class="p-top-interview__head">
+          <div class="p-top-interview__title">
+            <p class="p-top-interview__title-ja">インタビュー動画</p>
+            <p class="p-top-interview__title-en">Interview<br>Movie</p>
+          </div>
+
+          <div class="p-top-interview__actions">
+            
+
+            <div class="p-top-interview__nav" aria-label="インタビュースライダーナビゲーション">
+              <button class="p-top-interview__prev" type="button" aria-label="前へ">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-arrow.svg" alt="" width="20" height="20">
+              </button>
+              <button class="p-top-interview__next" type="button" aria-label="次へ">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-arrow.svg" alt="" width="20" height="20">
+              </button>
+            </div>
+
+            <a class="p-top-interview__more" href="#">
+              <span class="p-top-interview__more-text">一覧を見る</span>
+              <span class="p-top-interview__more-divider" aria-hidden="true"></span>
+              <span class="p-top-interview__more-icon" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-arrow.svg" alt="" width="20" height="20">
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="p-top-interview__right">
+          <div class="swiper p-top-interview__swiper js-top-interview-swiper">
+            <div class="swiper-wrapper p-top-interview__tracks">
+              <div class="swiper-slide p-top-interview__slide">
+                <a class="p-top-interview__card" href="#">
+                  <figure class="p-top-interview__thumb">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
+                  </figure>
+                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
+                  <p class="p-top-interview__name">田中 太郎</p>
+                </a>
+              </div>
+
+              <div class="swiper-slide p-top-interview__slide">
+                <a class="p-top-interview__card" href="#">
+                  <figure class="p-top-interview__thumb">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
+                  </figure>
+                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
+                  <p class="p-top-interview__name">田中 太郎</p>
+                </a>
+              </div>
+
+              <div class="swiper-slide p-top-interview__slide">
+                <a class="p-top-interview__card" href="#">
+                  <figure class="p-top-interview__thumb">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
+                  </figure>
+                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
+                  <p class="p-top-interview__name">田中 太郎</p>
+                </a>
+              </div>
+
+              <div class="swiper-slide p-top-interview__slide">
+                <a class="p-top-interview__card" href="#">
+                  <figure class="p-top-interview__thumb">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
+                  </figure>
+                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
+                  <p class="p-top-interview__name">田中 太郎</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="p-company">
+    <div class="l-inner">
+      <div class="p-company__head">
+        <p class="p-company__title-ja">会社情報</p>
+        <p class="p-company__title-en">Company</p>
+      </div>
+
+      <div class="p-company__cards">
+        <a class="p-company__card" href="#">
+          <div class="p-company__card-inner">
+            <div class="p-company__card-body">
+              <div class="p-company__card-texts">
+                <p class="p-company__card-title">代表メッセージ</p>
+                <p class="p-company__card-text">
+                  親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                </p>
+              </div>
+              <span class="p-company__card-btn" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company/company-btn.svg" alt="" width="28" height="28">
+              </span>
+            </div>
+
+            <div class="p-company__card-media">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company/company-message-2367a4.png" alt="" width="230" height="320">
+              <span class="p-company__card-label" aria-hidden="true">Message</span>
+            </div>
+          </div>
+        </a>
+
+        <span class="p-company__divider" aria-hidden="true"></span>
+
+        <a class="p-company__card" href="#">
+          <div class="p-company__card-inner">
+            <div class="p-company__card-body">
+              <div class="p-company__card-texts">
+                <p class="p-company__card-title">会社概要</p>
+                <p class="p-company__card-text">
+                  親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                </p>
+              </div>
+              <span class="p-company__card-btn" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company/company-btn.svg" alt="" width="28" height="28">
+              </span>
+            </div>
+
+            <div class="p-company__card-media">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company/company-information.png" alt="" width="230" height="320">
+              <span class="p-company__card-label p-company__card-label--left" aria-hidden="true">Information</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="p-submit">
     <div class="l-inner">
       <div class="p-submit__content">
@@ -540,7 +774,7 @@
                 <p class="p-submit__ctaEn p-submit__ctaEn--dark">Guidelines</p>
               </div>
             </a>
-  
+
             <a class="p-submit__ctaCard p-submit__ctaCard--entry mt0" href="#">
               <div class="p-submit__ctaCardInner">
                 <p class="p-submit__ctaJa">
@@ -555,7 +789,7 @@
 
         </div>
 
-        
+
       </div>
     </div>
   </section>

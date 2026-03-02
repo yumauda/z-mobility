@@ -1,0 +1,245 @@
+@use "../global" as *;
+
+.p-top-column {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  background: #044396;
+  overflow-x: clip;
+}
+
+.p-top-column__head {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: rem(40);
+  }
+}
+
+.p-top-column__title {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12);
+}
+
+.p-top-column__title-ja {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+  color: #fff;
+  font-size: rem(18);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.p-top-column__title-ja::before {
+  content: "";
+  width: rem(6);
+  height: rem(6);
+  border-radius: 50%;
+  background: #aab9cb;
+  display: inline-block;
+}
+
+.p-top-column__title-en {
+  color: #fff;
+  font-family: $special-gothic;
+  font-weight: 400;
+  line-height: 1;
+  font-size: rem(56);
+
+  @include mq(md) {
+    font-size: rem(96);
+  }
+}
+
+.p-top-column__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(16);
+
+  @include mq(md) {
+    justify-content: flex-end;
+    gap: rem(32);
+  }
+}
+
+.p-top-column__nav {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(12);
+}
+
+.p-top-column__prev,
+.p-top-column__next {
+  position: static;
+  width: rem(40);
+  height: rem(40);
+  border-radius: 9999px;
+  border: 1px solid #c2c9d0;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.p-top-column__prev::after,
+.p-top-column__next::after {
+  display: none;
+}
+
+.p-top-column__prev img,
+.p-top-column__next img {
+  width: rem(20);
+  height: rem(20);
+  display: block;
+}
+
+.p-top-column__prev img {
+  transform: rotate(180deg);
+}
+
+.p-top-column__prev.swiper-button-disabled,
+.p-top-column__next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.p-top-column__icon {
+  width: rem(129);
+}
+
+.p-top-column__icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-top-column__more {
+  background: #fff;
+  border-radius: rem(4);
+  display: inline-flex;
+  align-items: center;
+  gap: rem(12);
+  padding: rem(12) rem(16);
+  width: fit-content;
+  text-decoration: none;
+}
+
+.p-top-column__more-text {
+  font-size: rem(16);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #044396;
+}
+
+.p-top-column__more-divider {
+  width: rem(1);
+  height: rem(32);
+  background: #c2c9d0;
+}
+
+.p-top-column__more-icon {
+  width: rem(20);
+  height: rem(20);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-top-column__more-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-top-column__swiper {
+  margin-top: rem(40);
+  overflow: visible;
+
+  @include mq(md) {
+    margin-top: rem(64);
+  }
+}
+
+.p-top-column__cards {
+  display: flex;
+}
+
+.p-top-column__slide {
+  width: rem(320);
+
+  @include mq(md) {
+    width: rem(395);
+  }
+}
+
+.p-top-column__card {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  text-decoration: none;
+  color: inherit;
+}
+
+.p-top-column__card-img {
+  border-radius: rem(5);
+  overflow: hidden;
+}
+
+.p-top-column__card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  aspect-ratio: 395 / 222;
+}
+
+.p-top-column__card-text {
+  color: #fff;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.6;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.p-top-column__meta {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+}
+
+.p-top-column__date {
+  color: #fff;
+  font-family: $special-gothic;
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: 1.6;
+}
+
+.p-top-column__category {
+  color: #fff;
+  border: 1px solid #c2c9d0;
+  border-radius: 9999px;
+  padding: rem(8) rem(20);
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.p-top-column__right {
+  margin-right: calc(50% - 50vw);
+}

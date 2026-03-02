@@ -232,3 +232,42 @@ if (proSliderBreakpoint.addEventListener) {
 } else {
   proSliderBreakpoint.addListener(handleProSliderBreakpoint);
 }
+
+const topColumnSlider = new Swiper(".js-top-column-swiper", {
+  slidesPerView: 1.1,
+  centeredSlides: true,
+  loop: false,
+  spaceBetween: 24,
+  breakpoints: {
+    768: {
+      slidesPerView: 3.2,
+      centeredSlides: false,
+      spaceBetween: 48,
+    },
+  },
+  navigation: {
+    nextEl: ".p-top-column__next",
+    prevEl: ".p-top-column__prev",
+  },
+});
+
+if (document.querySelector(".js-top-interview-swiper")) {
+  new Swiper(".js-top-interview-swiper", {
+    slidesPerView: 1.1,
+    centeredSlides: true,
+    loop: false,
+    spaceBetween: 24,
+    breakpoints: {
+      768: {
+        slidesPerView: "auto",
+        centeredSlides: false,
+        spaceBetween: 48,
+        slidesPerView: 3.2,
+      },
+    },
+    navigation: {
+      nextEl: ".p-top-interview__next",
+      prevEl: ".p-top-interview__prev",
+    },
+  });
+}
