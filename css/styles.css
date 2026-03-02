@@ -2757,6 +2757,24 @@ input::placeholder {
   padding-top: 5rem;
   padding-bottom: 3rem;
   background: #1a1a1a;
+  position: relative;
+}
+
+.p-submit__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1440/443;
+  object-fit: cover;
+  height: auto;
+  background: #1a1a1a;
+  z-index: 1;
+}
+
+.p-submit__cta {
+  position: relative;
+  z-index: 2;
 }
 
 .p-submit__ctaCard {
