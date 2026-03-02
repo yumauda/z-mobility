@@ -1,6 +1,7 @@
 @use "../global" as *;
 
 .p-mv {
+  padding-top: rem(20);
   padding-left: rem(20);
   padding-right: rem(20);
   position: relative;
@@ -99,4 +100,5 @@
   bottom: rem(-80);
   left: rem(-80);
   z-index: 1;
+  width: 100%;
 }
