@@ -3219,9 +3219,11 @@ input::placeholder {
   background: rgba(26, 26, 26, 0.7);
   border: 1px solid #c2c9d0;
   color: #fff;
+  margin-top: 0.4375rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__ctaCard--reservation {
+    margin-top: 1.25rem;
     width: 80rem;
   }
 }
@@ -3302,12 +3304,10 @@ input::placeholder {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.4375rem;
-  margin-top: 0.4375rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__row {
     gap: 1.25rem;
-    margin-top: 1.25rem;
   }
 }
 

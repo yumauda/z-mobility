@@ -47,8 +47,10 @@
   background: rgba(26, 26, 26, 0.7);
   border: 1px solid #c2c9d0;
   color: #fff;
+  margin-top: rem(7);
 
   @include mq(md) {
+    margin-top: rem(20);
     width: rem(1280);
   }
 }
@@ -126,10 +128,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: rem(7);
-  margin-top: rem(7);
   @include mq(md){
     gap: rem(20);
-    margin-top: rem(20);
     
   }
 }
