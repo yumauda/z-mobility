@@ -3,27 +3,36 @@
   <section class="p-mv">
     <div class="p-mv__row">
       <figure class="p-mv__img js-mv-img">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/mv_1.webp" alt="" width="900" height="900">
+        <picture>
+          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/mv_1.webp" media="(min-width: 768px)" width="900" height="900" />
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/mv_1_sp.webp" alt="" width="355" height="227">
+        </picture>
       </figure>
       <div class="p-mv__column">
         <figure class="p-mv__column-img js-mv-img">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/mv_2.webp" alt="" width="480" height="480">
+          <picture>
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/mv_2.webp" media="(min-width: 768px)" width="480" height="480" />
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/mv_2_sp.webp" alt="" width="480" height="480">
+          </picture>
         </figure>
         <figure class="p-mv__column-img js-mv-img">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/mv_3.webp" alt="" width="480" height="404">
+          <picture>
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/mv_3.webp" media="(min-width: 768px)" width="480" height="404" />
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/mv_3_sp.webp" alt="" width="480" height="404">
+          </picture>
         </figure>
       </div>
     </div>
     <div class="l-inner">
       <div class="p-mv__titles">
         <h1 class="p-mv__title">
-          <span class="p-mv__title-en js-en-title">The era of hire</span>
+          <span class="p-mv__title-en js-en-title">The era <br class="u-mobile">of hire</span>
           <span class="p-mv__title-ja js-ja-title">ハイヤー時代、到来。</span>
-          <span class="p-mv__title-en p-mv__title-en--last js-en-title">cars has arrived.</span>
+          <span class="p-mv__title-en p-mv__title-en--last js-en-title">cars has <br class="u-mobile">arrived.</span>
         </h1>
       </div>
     </div>
-    <div class="p-mv__ribbon">
+    <div class="p-mv__ribbon u-desktop">
 
       <svg class="js-mv-ribbon" viewBox="0 0 1440 443" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_113_1530)">
@@ -100,6 +109,84 @@
         </defs>
       </svg>
     </div>
+    <div class="p-mv__ribbon u-mobile">
+
+      <svg class="js-mv-ribbon" viewBox="0 0 375 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_310_1471" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="128">
+          <rect width="375" height="128" fill="#D9D9D9" />
+        </mask>
+        <g mask="url(#mask0_310_1471)">
+          <g filter="url(#filter0_n_310_1471)">
+            <path d="M509.907 111.821C506.663 111.755 503.422 111.622 500.184 111.423C496.955 111.221 493.731 110.952 490.509 110.612C487.278 110.272 484.054 109.859 480.835 109.372C477.611 108.885 474.392 108.323 471.185 107.684C467.98 107.045 464.785 106.328 461.605 105.528C458.429 104.731 455.266 103.854 452.117 102.891C448.978 101.93 445.853 100.884 442.748 99.7525C439.652 98.6234 436.571 97.4057 433.517 96.0967C430.47 94.7904 427.445 93.3929 424.449 91.904C421.479 90.4289 418.539 88.8626 415.632 87.2021C412.704 85.5278 409.81 83.7622 406.954 81.8969C404.099 80.0316 401.282 78.0667 398.511 76.005C395.733 73.9377 393.001 71.7736 390.323 69.5098C387.613 67.2211 384.958 64.83 382.348 62.3642C379.715 59.8846 377.126 57.333 374.557 54.7455C371.985 52.1579 369.432 49.5371 366.88 46.9163C364.33 44.2983 361.779 41.6831 359.205 39.1011C356.643 36.5329 354.059 34.0007 351.431 31.5404C348.806 29.0829 346.139 26.6974 343.41 24.4281C340.683 22.1615 337.898 20.0029 335.042 18.0048C332.279 16.0731 329.447 14.2909 326.548 12.6941C323.707 11.1277 320.81 9.73567 317.865 8.51523C314.927 7.29755 311.948 6.25146 308.935 5.37418C305.922 4.49689 302.877 3.79396 299.816 3.25708C296.744 2.72019 293.656 2.35766 290.563 2.1667C288.233 2.02003 285.904 1.97021 283.574 2.01726L231.336 3.05782C233.665 3.01077 235.997 3.06059 238.324 3.20726C241.418 3.40098 244.506 3.76075 247.577 4.29764C250.639 4.83452 253.683 5.53745 256.696 6.41474C259.707 7.29202 262.689 8.33811 265.627 9.55579C268.569 10.7762 271.469 12.1683 274.31 13.7346C277.206 15.3315 280.038 17.1137 282.804 19.0454C285.659 21.0435 288.447 23.1993 291.171 25.4686C293.899 27.7379 296.567 30.1235 299.193 32.581C301.82 35.0385 304.404 37.5734 306.967 40.1416C309.539 42.7237 312.091 45.3417 314.641 47.9569C317.194 50.5777 319.744 53.1985 322.318 55.786C324.888 58.3736 327.477 60.9252 330.109 63.4048C332.722 65.8678 335.374 68.2617 338.084 70.5504C340.763 72.8141 343.495 74.9783 346.273 77.0456C349.043 79.1073 351.86 81.0722 354.716 82.9375C357.571 84.7999 360.466 86.5684 363.394 88.2427C366.3 89.9031 369.241 91.4695 372.21 92.9445C375.206 94.4334 378.232 95.831 381.279 97.1372C384.333 98.4435 387.411 99.6639 390.509 100.793C393.615 101.928 396.739 102.971 399.878 103.931C403.025 104.894 406.188 105.774 409.366 106.569C412.549 107.368 415.744 108.085 418.946 108.725C422.153 109.364 425.372 109.926 428.596 110.413C431.813 110.9 435.039 111.309 438.271 111.653C441.492 111.993 444.716 112.261 447.945 112.463C451.184 112.663 454.427 112.795 457.668 112.862C461.006 112.931 464.344 112.926 467.679 112.862L519.918 111.821C516.582 111.888 513.244 111.893 509.907 111.821Z" fill="url(#paint0_linear_310_1471)" />
+          </g>
+          <g filter="url(#filter1_n_310_1471)">
+            <path d="M93.7457 125.682C90.5944 125.597 87.4431 125.353 84.3064 124.963C81.1551 124.576 78.0184 124.041 74.8986 123.372C71.757 122.699 68.6324 121.888 65.5345 120.947C62.4268 120.006 59.3434 118.933 56.2891 117.74C53.2324 116.544 50.2071 115.227 47.2183 113.796C44.2415 112.371 41.2987 110.832 38.3947 109.183C35.4979 107.536 32.64 105.782 29.8256 103.922C26.924 102.001 24.0685 99.9812 21.2493 97.8724C18.4156 95.7525 15.6231 93.5441 12.8693 91.2554C10.118 88.9695 7.41035 86.6034 4.73904 84.1708C2.07257 81.7437 -0.550262 79.2475 -3.14158 76.6931C-5.7426 74.1277 -8.30483 71.4986 -10.8356 68.8253C-13.3711 66.1436 -15.8752 63.4094 -18.3477 60.6364C-20.8251 57.8579 -23.2734 55.0351 -25.695 52.1818C-28.1118 49.3341 -30.502 46.4532 -32.8703 43.5474C-35.2531 40.6222 -37.6142 37.6721 -39.9631 34.6971C-42.3096 31.7276 -44.6391 28.7332 -46.9613 25.7278C-49.2787 22.7251 -51.5889 19.7086 -53.8893 16.6865C-56.1849 13.6672 -58.4756 10.6452 -60.7663 7.62036L-113 8.66646C-110.709 11.6885 -108.421 14.7133 -106.123 17.7326C-103.823 20.7547 -101.515 23.7712 -99.195 26.7739C-96.8752 29.7793 -94.5456 32.7709 -92.1967 35.7432C-89.8502 38.7154 -87.4868 41.6683 -85.1039 44.5935C-82.7332 47.4993 -80.3455 50.383 -77.9287 53.2279C-75.5071 56.0812 -73.0588 58.904 -70.5814 61.6825C-68.1088 64.4555 -65.6072 67.1869 -63.0692 69.8714C-60.5385 72.5475 -57.9763 75.1738 -55.3752 77.7392C-52.7863 80.2936 -50.1611 82.7898 -47.4946 85.2169C-44.8257 87.6494 -42.1156 90.0156 -39.3643 92.3015C-36.613 94.5874 -33.8205 96.7959 -30.9843 98.9185C-28.1652 101.027 -25.3096 103.048 -22.408 104.968C-19.5961 106.828 -16.7357 108.582 -13.839 110.229C-10.9374 111.878 -7.99213 113.414 -5.01538 114.842C-2.02409 116.276 1.00114 117.593 4.05546 118.786C7.10977 119.982 10.1932 121.053 13.3008 121.993C16.4012 122.934 19.5234 123.745 22.665 124.418C25.7847 125.087 28.9215 125.622 32.0727 126.009C35.2119 126.396 38.3607 126.64 41.512 126.729C42.2659 126.751 43.0174 126.762 43.7713 126.765C44.5251 126.767 45.2766 126.765 46.0305 126.748L98.269 125.707C96.7636 125.738 95.2583 125.73 93.753 125.688L93.7457 125.682Z" fill="url(#paint1_linear_310_1471)" />
+          </g>
+          <g filter="url(#filter2_n_310_1471)">
+            <path d="M230.049 3.07991C229.118 3.09928 228.189 3.13249 227.261 3.1823C224.17 3.34558 221.087 3.67768 218.02 4.17858C214.964 4.67673 211.922 5.34091 208.911 6.17391C205.91 7.00138 202.938 7.99766 200.007 9.15999C197.062 10.3279 194.163 11.6618 191.317 13.1645C188.478 14.6644 185.693 16.3221 182.978 18.1514C182.309 18.6025 181.645 19.0619 180.983 19.5324C180.76 19.6929 180.54 19.8589 180.314 20.0195C179.88 20.3349 179.444 20.6477 179.013 20.9715C178.996 20.9853 178.979 20.9964 178.959 21.0102C178.552 21.3146 178.152 21.6301 177.75 21.9428C177.541 22.1033 177.333 22.2611 177.127 22.4244C176.501 22.917 175.881 23.4179 175.262 23.9271C172.853 25.9141 170.506 28.0174 168.216 30.2147C165.915 32.4204 163.673 34.7174 161.477 37.0835C159.269 39.4608 157.109 41.9127 154.985 44.4117C152.864 46.9108 150.779 49.454 148.717 52.0333C146.639 54.6292 144.586 57.2555 142.542 59.8929C140.494 62.533 138.458 65.1842 136.419 67.8354C134.39 70.4673 132.359 73.0964 130.308 75.7005C128.255 78.3102 126.185 80.895 124.083 83.4411C121.991 85.9733 119.868 88.464 117.698 90.8966C115.553 93.3015 113.364 95.6483 111.122 97.9093C108.872 100.179 106.569 102.362 104.204 104.438C103.646 104.925 103.086 105.406 102.521 105.882C102.339 106.037 102.155 106.187 101.971 106.339C101.588 106.66 101.203 106.978 100.817 107.291C100.597 107.468 100.376 107.642 100.155 107.82C99.799 108.102 99.4451 108.384 99.0864 108.664C98.8537 108.846 98.6185 109.023 98.3834 109.203C97.901 109.571 97.4162 109.939 96.929 110.296C94.3546 112.187 91.7148 113.93 89.0096 115.505C86.1686 117.157 83.2548 118.621 80.2902 119.899C77.3522 121.17 74.361 122.252 71.3357 123.157C68.3202 124.059 65.2707 124.784 62.2019 125.335C59.116 125.888 56.0084 126.267 52.8959 126.486C51.3809 126.591 49.8634 126.66 48.3435 126.691L100.582 125.65C102.099 125.62 103.617 125.553 105.134 125.445C108.247 125.227 111.355 124.848 114.44 124.294C117.509 123.743 120.556 123.018 123.574 122.116C126.597 121.211 129.588 120.129 132.529 118.859C135.493 117.58 138.405 116.119 141.248 114.464C143.953 112.889 146.593 111.146 149.167 109.256C149.473 109.032 149.776 108.805 150.081 108.578C150.263 108.442 150.443 108.301 150.622 108.163C150.857 107.983 151.092 107.803 151.325 107.623C151.684 107.346 152.04 107.064 152.394 106.779C152.614 106.602 152.835 106.427 153.056 106.25C153.443 105.938 153.826 105.619 154.21 105.298C154.394 105.146 154.578 104.994 154.76 104.842C155.325 104.366 155.885 103.884 156.442 103.397C158.808 101.322 161.111 99.138 163.36 96.8687C165.605 94.6077 167.794 92.2582 169.937 89.856C172.104 87.4234 174.227 84.9327 176.322 82.4005C178.423 79.8545 180.496 77.2697 182.547 74.66C184.598 72.0558 186.629 69.4267 188.658 66.7949C190.699 64.1464 192.733 61.4952 194.781 58.8523C196.824 56.2122 198.88 53.5858 200.955 50.9927C203.018 48.4162 205.103 45.8702 207.224 43.3712C209.347 40.8722 211.507 38.4202 213.715 36.043C215.912 33.674 218.154 31.3771 220.454 29.1742C222.745 26.9768 225.091 24.8708 227.501 22.8865C228.117 22.3773 228.74 21.8764 229.365 21.3838C229.571 21.2233 229.777 21.0656 229.983 20.9078C230.405 20.5813 230.824 20.2519 231.251 19.9337C231.682 19.6099 232.116 19.2972 232.553 18.9817C232.776 18.8212 232.996 18.6523 233.222 18.4946C233.881 18.0241 234.548 17.5647 235.217 17.1136C237.932 15.2871 240.717 13.6267 243.556 12.1267C246.399 10.624 249.301 9.29006 252.246 8.1222C255.174 6.95987 258.148 5.96359 261.149 5.13612C264.16 4.30312 267.202 3.6417 270.259 3.14079C273.325 2.63988 276.409 2.30779 279.499 2.14451C280.428 2.0947 281.359 2.06149 282.287 2.04211L230.049 3.08267V3.07991Z" fill="#044396" />
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_n_310_1471" x="231.336" y="2.00012" width="288.582" height="110.912" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feTurbulence type="fractalNoise" baseFrequency="1 1" stitchTiles="stitch" numOctaves="3" result="noise" seed="5530" />
+            <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+            </feComponentTransfer>
+            <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+            <feFlood flood-color="rgba(0, 0, 0, 0.15)" result="color1Flood" />
+            <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+            <feMerge result="effect1_noise_310_1471">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+          <filter id="filter1_n_310_1471" x="-113" y="7.62036" width="211.269" height="119.145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feTurbulence type="fractalNoise" baseFrequency="1 1" stitchTiles="stitch" numOctaves="3" result="noise" seed="5530" />
+            <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+            </feComponentTransfer>
+            <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+            <feFlood flood-color="rgba(0, 0, 0, 0.15)" result="color1Flood" />
+            <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+            <feMerge result="effect1_noise_310_1471">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+          <filter id="filter2_n_310_1471" x="48.3435" y="2.04211" width="233.944" height="124.649" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feTurbulence type="fractalNoise" baseFrequency="1 1" stitchTiles="stitch" numOctaves="3" result="noise" seed="5530" />
+            <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+            </feComponentTransfer>
+            <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+            <feFlood flood-color="rgba(0, 0, 0, 0.1)" result="color1Flood" />
+            <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+            <feMerge result="effect1_noise_310_1471">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+          <linearGradient id="paint0_linear_310_1471" x1="414.641" y1="62.8049" x2="302.666" y2="22.2075" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-color="#D2D7DD" />
+          </linearGradient>
+          <linearGradient id="paint1_linear_310_1471" x1="-60.25" y1="59.9304" x2="36.9448" y2="125.474" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-color="#D2D7DD" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+    </div>
   </section>
 
   <section class="p-front-news">
@@ -109,16 +196,19 @@
           <p class="p-front-news__title-ja">お知らせ</p>
           <p class="p-front-news__title-en">News</p>
         </div>
+        <div class="p-front-news__more-pc">
 
-        <a class="p-front-news__more" href="<?php echo esc_url(home_url('/blog-all')); ?>">
-          <span class="p-front-news__more-text">一覧を見る</span>
-          <span class="p-front-news__more-divider" aria-hidden="true"></span>
-          <span class="p-front-news__more-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.5 5L12.1 6.4L16.7 11H5V13H16.7L12.1 17.6L13.5 19L20.5 12L13.5 5Z" fill="currentColor" />
-            </svg>
-          </span>
-        </a>
+          <a class="p-front-news__more" href="<?php echo esc_url(home_url('/blog-all')); ?>">
+            <span class="p-front-news__more-text">一覧を見る</span>
+            <span class="p-front-news__more-divider" aria-hidden="true"></span>
+            <span class="p-front-news__more-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 5L12.1 6.4L16.7 11H5V13H16.7L12.1 17.6L13.5 19L20.5 12L13.5 5Z" fill="currentColor" />
+              </svg>
+            </span>
+          </a>
+        </div>
+
       </div>
 
       <div class="p-front-news__list">
@@ -130,9 +220,11 @@
           <div class="p-front-news__body">
             <p class="p-front-news__text">3月会社説明会のお知らせ</p>
             <span class="p-front-news__item-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.5 5L12.1 6.4L16.7 11H5V13H16.7L12.1 17.6L13.5 19L20.5 12L13.5 5Z" fill="currentColor" />
+              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="28" height="28" rx="3" fill="#044396" />
+                <path d="M17.0847 14.5H9V13.5H17.0847L13.2872 9.7025L14 9L19 14L14 19L13.2872 18.2975L17.0847 14.5Z" fill="white" />
               </svg>
+
             </span>
           </div>
         </a>
@@ -147,8 +239,9 @@
               親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
             </p>
             <span class="p-front-news__item-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.5 5L12.1 6.4L16.7 11H5V13H16.7L12.1 17.6L13.5 19L20.5 12L13.5 5Z" fill="currentColor" />
+              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="28" height="28" rx="3" fill="#044396" />
+                <path d="M17.0847 14.5H9V13.5H17.0847L13.2872 9.7025L14 9L19 14L14 19L13.2872 18.2975L17.0847 14.5Z" fill="white" />
               </svg>
             </span>
           </div>
@@ -162,11 +255,24 @@
           <div class="p-front-news__body">
             <p class="p-front-news__text">親譲りの無鉄砲で小供の時から損ばかりしている。</p>
             <span class="p-front-news__item-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.5 5L12.1 6.4L16.7 11H5V13H16.7L12.1 17.6L13.5 19L20.5 12L13.5 5Z" fill="currentColor" />
+              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="28" height="28" rx="3" fill="#044396" />
+                <path d="M17.0847 14.5H9V13.5H17.0847L13.2872 9.7025L14 9L19 14L14 19L13.2872 18.2975L17.0847 14.5Z" fill="white" />
               </svg>
             </span>
           </div>
+        </a>
+      </div>
+      <div class="p-front-news__more-sp">
+
+        <a class="p-front-news__more" href="<?php echo esc_url(home_url('/blog-all')); ?>">
+          <span class="p-front-news__more-text">一覧を見る</span>
+          <span class="p-front-news__more-divider" aria-hidden="true"></span>
+          <span class="p-front-news__more-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.5 5L12.1 6.4L16.7 11H5V13H16.7L12.1 17.6L13.5 19L20.5 12L13.5 5Z" fill="currentColor" />
+            </svg>
+          </span>
         </a>
       </div>
     </div>
@@ -187,23 +293,23 @@
           </div>
           <div class="p-pro__texts">
             <p class="p-pro__text">
-              今、「タクシー」ではなく「ハイヤー」が選ばれています。<br>
+              今、「タクシー」ではなく「ハイヤー」が選ばれています。<br class="u-desktop">
               それは、単に移動するのではなく、接客力と判断力を備えたプロフェッショナルドライバーが、<br>
               移動そのものの価値を提供する仕事だからです。
             </p>
             <p class="p-pro__text">
-              株式会社Zは、2021年に銀座でハイヤー事業をスタート。<br>
-              以降、圧倒的なスピードで成長を続け、アルファードの保有台数は都内最大級クラス、<br>
-              拠点は都内9か所まで拡大してきました。<br>
+              株式会社Zは、2021年に銀座でハイヤー事業をスタート。<br class="u-desktop">
+              以降、圧倒的なスピードで成長を続け、アルファードの保有台数は都内最大級クラス、<br class="u-desktop">
+              拠点は都内9か所まで拡大してきました。<br class="u-desktop">
               インバウンド需要が高まる中、ハイヤー業界でも高水準の収入実績を重ねています。
             </p>
             <p class="p-pro__text">
-              Zの強みは、質の高い需要に集中できる環境です。<br>
-              世界中で利用されている配車アプリ Uber と連携し、<br>
-              観光・ビジネス利用を中心とした完全予約制のUber Premium専属運行。<br>
-              流し営業はなく、行き先案内・決済・翻訳までアプリがサポートするため、<br>
-              ドライバーは「運転と接客」に集中できます。<br>
-              その結果、平均売上・歩合率ともに高水準を実現。<br>
+              Zの強みは、質の高い需要に集中できる環境です。<br class="u-desktop">
+              世界中で利用されている配車アプリ Uber と連携し、<br class="u-desktop">
+              観光・ビジネス利用を中心とした完全予約制のUber Premium専属運行。<br class="u-desktop">
+              流し営業はなく、行き先案内・決済・翻訳までアプリがサポートするため、<br class="u-desktop">
+              ドライバーは「運転と接客」に集中できます。<br class="u-desktop">
+              その結果、平均売上・歩合率ともに高水準を実現。<br class="u-desktop">
               努力がそのまま収入に反映されやすく、高年収を目指す方に適した環境です。
             </p>
           </div>
@@ -241,7 +347,7 @@
                 <figure class="p-pro__card-icon">
                   <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/pro/tokutyo-03.svg" alt="" width="64" height="64">
                 </figure>
-                <p class="p-pro__card-text">平均年収<br>約700万円<br><span>※乗務実績・勤務形態により変動</span></p>
+                <p class="p-pro__card-text">平均年収<br>約700万円<br><span>※乗務実績・勤務形態に<br class="u-mobile">より変動</span></p>
               </div>
             </div>
 

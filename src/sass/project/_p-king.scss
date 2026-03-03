@@ -1,26 +1,33 @@
 @use "../global" as *;
 
 .p-king {
-  background-image: image-set(
-    url(../images/top/king_bg.webp) type("image/webp"),
-    url(../images/top/king_bg.png) type("image/png")
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding-top: rem(180);
-  padding-bottom: rem(220);
-  // aspect-ratio: 1440 / 776;
   position: relative;
   z-index: 1;
+  background: url(../images/top/king_bg_sp.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: rem(114);
+  padding-bottom: rem(152);
+
+  @include mq(md) {
+    padding-top: rem(180);
+    padding-bottom: rem(220);
+    background-image: image-set(url(../images/top/king_bg.webp) type("image/webp"),
+        url(../images/top/king_bg.png) type("image/png"));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+  }
 }
 
-.p-king__content {
-}
+
+.p-king__content {}
 
 .p-king__title {
   color: #fff;
-  font-size: rem(40);
+  font-size: rem(48);
   font-weight: 500;
   line-height: 1.2;
 
@@ -30,55 +37,74 @@
 }
 
 .p-king__cards {
-  margin-top: rem(40);
+  margin-top: rem(20);
   display: flex;
-  gap: rem(12);
-  flex-wrap: wrap;
+  gap: rem(4);
+  flex-direction: column;
+
+  @include mq(md) {
+    gap: rem(12);
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: rem(40);
+
+  }
 }
 
 .p-king__card {
-  width: calc((100% - rem(12)) / 2);
   background: #fff;
   border: 1px solid #fff;
   border-radius: rem(4);
-  padding: rem(28) rem(16);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: rem(8) rem(16);
+  width: rem(198);
 
   @include mq(md) {
+    width: calc((100% - rem(12)) / 2);
+    padding: rem(28) rem(16);
     width: rem(154);
     padding: rem(40) rem(24);
   }
 }
 
 .p-king__card-inner {
-  width: rem(99);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: rem(12);
+  justify-content: space-between;
+  gap: rem(8);
+
+  @include mq(md) {
+    justify-content: initial;
+    gap: rem(12);
+    width: rem(99);
+    flex-direction: column;
+
+  }
 }
 
 .p-king__card-label {
   color: #044396;
   font-size: rem(14);
   font-weight: 500;
-  line-height: 1.4;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  line-height: 1.2;
+  width: rem(84);
   @include mq(md) {
+    width: initial;
     font-size: rem(16);
+    line-height: 1.4;
     min-height: rem(44);
   }
 }
 
 .p-king__card-value {
   color: #044396;
-  font-size: rem(38);
+  font-size: rem(36);
   font-weight: 400;
   line-height: 1;
   text-align: center;
@@ -87,4 +113,3 @@
     font-size: rem(46);
   }
 }
-

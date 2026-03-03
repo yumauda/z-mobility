@@ -1,16 +1,29 @@
 @use "../global" as *;
 
 .p-mv {
-  padding-top: rem(20);
-  padding-left: rem(20);
-  padding-right: rem(20);
   position: relative;
   overflow-x: clip;
+  padding-top: rem(8);
+  padding-left: rem(8);
+  padding-right: rem(8);
+
+  @include mq(md) {
+    padding-top: rem(20);
+    padding-left: rem(20);
+    padding-right: rem(20);
+
+  }
 }
 
 .p-mv__row {
   display: flex;
-  gap: rem(20);
+  flex-direction: column;
+  gap: rem(8);
+
+  @include mq(md) {
+    gap: rem(20);
+    flex-direction: row;
+  }
 }
 
 .p-mv__img {
@@ -28,10 +41,16 @@
 }
 
 .p-mv__column {
-  display: grid;
-  flex: 1;
-  gap: rem(16);
-  width: calc(480 / 1400 * 100%);
+  display: flex;
+  gap: rem(8);
+
+  @include mq(md) {
+    display: grid;
+    flex: 1;
+    gap: rem(16);
+    width: calc(480 / 1400 * 100%);
+
+  }
 }
 
 
@@ -44,10 +63,15 @@
 
 .p-mv__titles {
   position: absolute;
-  bottom: rem(56);
-  left: 0;
-  margin-left: rem(40);
+  left: rem(16);
   z-index: 2;
+  bottom: rem(160);
+  
+  @include mq(md) {
+    bottom: rem(56);
+    margin-left: rem(40);
+
+  }
 }
 
 .p-mv__title {}
@@ -61,6 +85,7 @@
   overflow: hidden;
   position: relative;
   z-index: 2;
+  font-size: rem(48);
 
   @include mq(md) {
 
@@ -69,7 +94,10 @@
 }
 
 .p-mv__title-en--last {
-  margin-left: rem(128);
+  @include mq(md) {
+
+    margin-left: rem(128);
+  }
 }
 
 .p-mv__title-ja {
@@ -81,6 +109,8 @@
   z-index: 2;
   padding-bottom: rem(8);
   --width: 0%;
+  font-size: rem(24);
+
   @include mq(md) {
     font-size: rem(64);
     margin-left: rem(64);
@@ -96,9 +126,14 @@
   height: 100%;
   width: var(--width);
 }
+
 .p-mv__ribbon {
   position: absolute;
-  bottom: rem(-80);
   z-index: 1;
   width: 100%;
+  bottom: rem(-40);
+  @include mq(md){
+    bottom: rem(-80);
+    
+  }
 }

@@ -65,7 +65,7 @@
   height: 2px;
   background: #fff;
   transition: 0.5s;
-  width: rem(20);
+  width: rem(24);
   display: flex;
 
   @include mq(md) {
@@ -78,7 +78,7 @@
   background: #fff;
   transition: 0.5s;
   display: flex;
-  width: rem(20);
+  width: rem(24);
 
   @include mq(md) {
     width: rem(57);
