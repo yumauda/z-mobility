@@ -253,10 +253,10 @@ const topColumnSlider = new Swiper(".js-top-column-swiper", {
 
 if (document.querySelector(".js-top-interview-swiper")) {
   new Swiper(".js-top-interview-swiper", {
-    slidesPerView: 1.1,
+    slidesPerView: 1.3,
     centeredSlides: false,
     loop: true,
-    spaceBetween: 24,
+    spaceBetween: 20,
     breakpoints: {
       768: {
         slidesPerView: "auto",

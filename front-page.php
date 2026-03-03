@@ -973,6 +973,15 @@
             </div>
           </div>
         </div>
+        <div class="p-top-interview__bottom-sp">
+          <a class="p-top-interview__more" href="#">
+            <span class="p-top-interview__more-text">一覧を見る</span>
+            <span class="p-top-interview__more-divider" aria-hidden="true"></span>
+            <span class="p-top-interview__more-icon" aria-hidden="true">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-arrow.svg" alt="" width="20" height="20">
+            </span>
+          </a>
+        </div>
 
 
       </div>

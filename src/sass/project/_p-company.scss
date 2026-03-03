@@ -1,44 +1,64 @@
 @use "../global" as *;
 
 .p-company {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
   background: #1a1a1a;
+  padding-top: rem(56);
+  padding-bottom: rem(56);
+
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+
+  }
 }
 
 .p-company__head {
   display: flex;
   flex-direction: column;
-  gap: rem(12);
+  gap: rem(8);
+
+  @include mq(md) {
+    gap: rem(12);
+
+  }
 }
 
 .p-company__title-ja {
   display: flex;
   align-items: center;
-  gap: rem(12);
+  gap: rem(8);
   color: #c2c9d0;
-  font-size: rem(18);
+  font-size: rem(14);
   font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1;
+
+  @include mq(md) {
+    gap: rem(12);
+    font-size: rem(18);
+  }
 }
 
 .p-company__title-ja::before {
   content: "";
-  width: rem(6);
-  height: rem(6);
-  border-radius: 50%;
+  width: rem(4);
+  height: rem(4);
+  border-radius: 9999px;
   background: #aab9cb;
   display: inline-block;
+
+  @include mq(md) {
+    width: rem(6);
+    height: rem(6);
+  }
 }
 
 .p-company__title-en {
   color: #fff;
   font-family: $special-gothic;
   font-weight: 400;
-  letter-spacing: 0.02em;
   line-height: 1;
-  font-size: rem(56);
+  font-size: rem(48);
 
   @include mq(md) {
     font-size: rem(96);
@@ -46,7 +66,7 @@
 }
 
 .p-company__cards {
-  margin-top: rem(40);
+  margin-top: rem(20);
   display: flex;
   flex-direction: column;
   gap: rem(24);
@@ -75,12 +95,22 @@
   color: inherit;
   text-decoration: none;
   display: block;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  border-bottom: 1px solid #565656;
+  @include mq(md) {
+    padding-top: initial;
+    padding-bottom: initial;
+    border-bottom: initial;
+  }
+}
+.p-company__card:last-child {
+  border-bottom: initial;
 }
 
 .p-company__card-inner {
   display: flex;
-  gap: rem(24);
-  align-items: stretch;
+  gap: rem(16);
 
   @include mq(md) {
     gap: rem(32);
@@ -89,13 +119,12 @@
 }
 
 .p-company__card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: rem(20);
   color: #fff;
 
   @include mq(md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: rem(320);
     align-items: flex-end;
     gap: rem(32);
@@ -104,7 +133,7 @@
 
 .p-company__card-title {
   color: #fff;
-  font-size: rem(24);
+  font-size: rem(18);
   font-weight: 500;
   line-height: 1.4;
 
@@ -118,32 +147,45 @@
   color: #fff;
   font-size: rem(14);
   font-weight: 400;
-  line-height: 1.8;
+  margin-top: rem(16);
+  line-height: 1.6;
 
   @include mq(md) {
+    line-height: 1.8;
+    margin-top: initial;
     font-size: rem(16);
     width: rem(320);
   }
 }
 
 .p-company__card-btn {
-  width: rem(28);
-  height: rem(28);
-  display: inline-flex;
+  width: rem(22);
+  height: rem(22);
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-left: auto;
+
+  @include mq(md) {
+    margin-left: initial;
+    justify-content: center;
+    width: rem(28);
+    height: rem(28);
+  }
 }
+
 
 .p-company__card-btn img {
   width: 100%;
   height: auto;
-  display: block;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .p-company__card-media {
   position: relative;
-  width: rem(160);
-  aspect-ratio: 230 / 320;
+  width: rem(139);
+  aspect-ratio: 139 / 192;
   border-radius: rem(10);
   overflow: hidden;
   flex: 0 0 auto;
@@ -157,10 +199,15 @@
 
 .p-company__card-media img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center center;
   display: block;
+  border-radius: rem(5);
+
+  @include mq(md) {
+    border-radius: rem(10);
+  }
 }
 
 .p-company__card-label {
@@ -180,4 +227,3 @@
   right: initial;
   left: rem(6);
 }
-

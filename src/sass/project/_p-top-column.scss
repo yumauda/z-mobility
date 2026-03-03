@@ -138,20 +138,31 @@
 .p-top-column__more {
   background: #fff;
   border-radius: rem(4);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: rem(12);
-  padding: rem(12) rem(16);
-  width: fit-content;
   text-decoration: none;
+  width: rem(190);
+  height: rem(48);
+  padding: rem(8) rem(12);
+  @include mq(md){
+    padding: rem(12) rem(16);
+    width: fit-content;
+    height: initial;
+    
+  }
 }
 
 .p-top-column__more-text {
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #044396;
+  @include mq(md){
+    font-size: rem(16);
+  }
 }
+
 
 .p-top-column__more-divider {
   width: rem(1);
