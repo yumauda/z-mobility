@@ -234,10 +234,10 @@ if (proSliderBreakpoint.addEventListener) {
 }
 
 const topColumnSlider = new Swiper(".js-top-column-swiper", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: false,
-  spaceBetween: 24,
+  slidesPerView: 1.3,
+  centeredSlides: false,
+  loop: true,
+  spaceBetween: 20,
   breakpoints: {
     768: {
       slidesPerView: 3.2,
@@ -254,8 +254,8 @@ const topColumnSlider = new Swiper(".js-top-column-swiper", {
 if (document.querySelector(".js-top-interview-swiper")) {
   new Swiper(".js-top-interview-swiper", {
     slidesPerView: 1.1,
-    centeredSlides: true,
-    loop: false,
+    centeredSlides: false,
+    loop: true,
     spaceBetween: 24,
     breakpoints: {
       768: {

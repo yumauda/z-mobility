@@ -180,6 +180,9 @@
   z-index: -3;
 
   @include mq(md) {
+    top: initial;
+    left: initial;
+    transform: initial;
     position: static;
     width: rem(695);
     margin-left: rem(-88);

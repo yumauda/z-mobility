@@ -431,7 +431,7 @@
   </section>
 
   <section class="p-front-work">
-    <div class="p-front-work__bg">
+    <div class="p-front-work__bg u-desktop">
       <svg class="js-ribbon" viewBox="0 0 1440 443" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_113_1530)">
           <g filter="url(#filter0_n_113_1530)">
@@ -507,6 +507,83 @@
         </defs>
       </svg>
     </div>
+    <div class="p-front-work__bg u-mobile">
+      <svg class="js-ribbon" viewBox="0 0 375 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_314_3142" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="128">
+          <rect width="375" height="128" fill="#D9D9D9" />
+        </mask>
+        <g mask="url(#mask0_314_3142)">
+          <g filter="url(#filter0_n_314_3142)">
+            <path d="M579.907 111.821C576.663 111.755 573.422 111.622 570.184 111.423C566.955 111.221 563.731 110.952 560.509 110.612C557.278 110.271 554.054 109.859 550.835 109.372C547.611 108.885 544.392 108.323 541.185 107.684C537.98 107.045 534.785 106.328 531.605 105.528C528.429 104.731 525.266 103.854 522.117 102.891C518.978 101.93 515.853 100.884 512.748 99.7524C509.652 98.6233 506.571 97.4056 503.517 96.0966C500.47 94.7904 497.445 93.3928 494.449 91.9039C491.479 90.4289 488.539 88.8625 485.632 87.202C482.704 85.5277 479.81 83.7621 476.954 81.8968C474.099 80.0316 471.282 78.0667 468.511 76.0049C465.733 73.9377 463.001 71.7735 460.323 69.5097C457.613 67.2211 454.958 64.83 452.348 62.3642C449.715 59.8845 447.126 57.333 444.557 54.7454C441.985 52.1578 439.432 49.5371 436.88 46.9163C434.33 44.2983 431.779 41.683 429.205 39.101C426.643 36.5328 424.059 34.0006 421.431 31.5403C418.806 29.0828 416.139 26.6973 413.41 24.428C410.683 22.1615 407.898 20.0028 405.042 18.0047C402.279 16.0731 399.447 14.2908 396.548 12.694C393.707 11.1276 390.81 9.73561 387.865 8.51517C384.927 7.29749 381.948 6.2514 378.935 5.37411C375.922 4.49683 372.877 3.7939 369.816 3.25702C366.744 2.72013 363.656 2.3576 360.563 2.16664C358.233 2.01997 355.904 1.97015 353.574 2.0172L301.336 3.05776C303.665 3.01071 305.997 3.06053 308.324 3.2072C311.418 3.40092 314.506 3.76069 317.577 4.29758C320.639 4.83446 323.683 5.53739 326.696 6.41467C329.707 7.29196 332.689 8.33805 335.627 9.55573C338.569 10.7762 341.469 12.1682 344.31 13.7346C347.206 15.3314 350.038 17.1136 352.804 19.0453C355.659 21.0434 358.447 23.1992 361.171 25.4686C363.899 27.7379 366.567 30.1234 369.193 32.5809C371.82 35.0384 374.404 37.5734 376.967 40.1416C379.539 42.7236 382.091 45.3416 384.641 47.9568C387.194 50.5776 389.744 53.1984 392.318 55.786C394.888 58.3735 397.477 60.9251 400.109 63.4047C402.722 65.8678 405.374 68.2616 408.084 70.5503C410.763 72.8141 413.495 74.9782 416.273 77.0455C419.043 79.1072 421.86 81.0721 424.716 82.9374C427.571 84.7999 430.466 86.5683 433.394 88.2426C436.3 89.9031 439.241 91.4694 442.21 92.9445C445.206 94.4334 448.232 95.8309 451.279 97.1372C454.333 98.4434 457.411 99.6638 460.509 100.793C463.615 101.928 466.739 102.971 469.878 103.931C473.025 104.894 476.188 105.774 479.366 106.569C482.549 107.368 485.744 108.085 488.946 108.724C492.153 109.364 495.372 109.926 498.596 110.413C501.813 110.9 505.039 111.309 508.271 111.652C511.492 111.993 514.716 112.261 517.945 112.463C521.184 112.663 524.427 112.795 527.668 112.862C531.006 112.931 534.344 112.925 537.679 112.862L589.918 111.821C586.582 111.888 583.244 111.893 579.907 111.821Z" fill="url(#paint0_linear_314_3142)" />
+          </g>
+          <g filter="url(#filter1_n_314_3142)">
+            <path d="M163.746 125.682C160.594 125.597 157.443 125.353 154.306 124.963C151.155 124.576 148.018 124.041 144.899 123.372C141.757 122.699 138.632 121.888 135.534 120.947C132.427 120.006 129.343 118.933 126.289 117.74C123.232 116.544 120.207 115.227 117.218 113.796C114.242 112.371 111.299 110.832 108.395 109.183C105.498 107.536 102.64 105.782 99.8256 103.922C96.924 102.001 94.0685 99.9812 91.2493 97.8724C88.4156 95.7525 85.6231 93.5441 82.8693 91.2554C80.118 88.9695 77.4103 86.6034 74.739 84.1708C72.0726 81.7437 69.4497 79.2475 66.8584 76.6931C64.2574 74.1277 61.6952 71.4986 59.1644 68.8253C56.6289 66.1436 54.1248 63.4094 51.6523 60.6364C49.1749 57.8579 46.7266 55.0351 44.305 52.1818C41.8882 49.3341 39.498 46.4532 37.1297 43.5474C34.7469 40.6222 32.3858 37.6721 30.0369 34.6971C27.6904 31.7276 25.3609 28.7332 23.0387 25.7278C20.7213 22.7251 18.4111 19.7086 16.1107 16.6865C13.8151 13.6672 11.5244 10.6452 9.23365 7.62036L-43 8.66646C-40.7093 11.6885 -38.4209 14.7133 -36.1229 17.7326C-33.8225 20.7547 -31.5148 23.7712 -29.195 26.7739C-26.8752 29.7793 -24.5456 32.7709 -22.1967 35.7432C-19.8502 38.7154 -17.4868 41.6683 -15.1039 44.5935C-12.7332 47.4993 -10.3455 50.383 -7.9287 53.2279C-5.50706 56.0812 -3.05875 58.904 -0.581367 61.6825C1.89117 64.4555 4.3928 67.1869 6.93079 69.8714C9.46151 72.5475 12.0237 75.1738 14.6248 77.7392C17.2137 80.2936 19.8389 82.7898 22.5054 85.2169C25.1743 87.6494 27.8844 90.0156 30.6357 92.3015C33.387 94.5874 36.1795 96.7959 39.0157 98.9185C41.8348 101.027 44.6904 103.048 47.592 104.968C50.4039 106.828 53.2643 108.582 56.161 110.229C59.0626 111.878 62.0079 113.414 64.9846 114.842C67.9759 116.276 71.0011 117.593 74.0555 118.786C77.1098 119.982 80.1932 121.053 83.3008 121.993C86.4012 122.934 89.5234 123.745 92.665 124.418C95.7847 125.087 98.9215 125.622 102.073 126.009C105.212 126.396 108.361 126.64 111.512 126.729C112.266 126.751 113.017 126.762 113.771 126.765C114.525 126.767 115.277 126.765 116.03 126.748L168.269 125.707C166.764 125.738 165.258 125.73 163.753 125.688L163.746 125.682Z" fill="url(#paint1_linear_314_3142)" />
+          </g>
+          <g filter="url(#filter2_n_314_3142)">
+            <path d="M300.049 3.07985C299.118 3.09922 298.189 3.13243 297.261 3.18224C294.17 3.34552 291.087 3.67762 288.02 4.17852C284.964 4.67666 281.922 5.34085 278.911 6.17385C275.91 7.00132 272.938 7.9976 270.007 9.15993C267.062 10.3278 264.163 11.6617 261.317 13.1644C258.478 14.6644 255.693 16.3221 252.978 18.1514C252.309 18.6025 251.645 19.0619 250.983 19.5323C250.76 19.6928 250.54 19.8589 250.314 20.0194C249.88 20.3349 249.444 20.6476 249.013 20.9714C248.996 20.9852 248.979 20.9963 248.959 21.0101C248.552 21.3146 248.152 21.6301 247.75 21.9428C247.541 22.1033 247.333 22.261 247.127 22.4243C246.501 22.9169 245.881 23.4178 245.262 23.927C242.853 25.9141 240.506 28.0173 238.216 30.2147C235.915 32.4203 233.673 34.7173 231.477 37.0835C229.269 39.4607 227.109 41.9127 224.985 44.4117C222.864 46.9107 220.779 49.454 218.717 52.0332C216.639 54.6291 214.586 57.2554 212.542 59.8928C210.494 62.5329 208.458 65.1842 206.419 67.8354C204.39 70.4672 202.359 73.0963 200.308 75.7005C198.255 78.3102 196.185 80.895 194.083 83.441C191.991 85.9732 189.868 88.4639 187.698 90.8965C185.553 93.3014 183.364 95.6482 181.122 97.9092C178.872 100.179 176.569 102.362 174.204 104.438C173.646 104.925 173.086 105.406 172.521 105.882C172.339 106.037 172.155 106.187 171.971 106.339C171.588 106.66 171.203 106.978 170.817 107.291C170.597 107.468 170.376 107.642 170.155 107.819C169.799 108.102 169.445 108.384 169.086 108.664C168.854 108.846 168.619 109.023 168.383 109.203C167.901 109.571 167.416 109.939 166.929 110.296C164.355 112.186 161.715 113.93 159.01 115.505C156.169 117.157 153.255 118.621 150.29 119.899C147.352 121.17 144.361 122.252 141.336 123.157C138.32 124.059 135.271 124.784 132.202 125.335C129.116 125.888 126.008 126.267 122.896 126.486C121.381 126.591 119.863 126.66 118.344 126.691L170.582 125.65C172.099 125.62 173.617 125.553 175.134 125.445C178.247 125.227 181.355 124.848 184.44 124.294C187.509 123.743 190.556 123.018 193.574 122.116C196.597 121.211 199.588 120.129 202.529 118.859C205.493 117.58 208.405 116.119 211.248 114.464C213.953 112.889 216.593 111.146 219.167 109.256C219.473 109.032 219.776 108.805 220.081 108.578C220.263 108.442 220.443 108.301 220.622 108.163C220.857 107.983 221.092 107.803 221.325 107.623C221.684 107.346 222.04 107.064 222.394 106.779C222.614 106.602 222.835 106.427 223.056 106.25C223.443 105.938 223.826 105.619 224.21 105.298C224.394 105.146 224.578 104.994 224.76 104.842C225.325 104.366 225.885 103.884 226.442 103.397C228.808 101.321 231.111 99.138 233.36 96.8687C235.605 94.6077 237.794 92.2581 239.937 89.856C242.104 87.4234 244.227 84.9327 246.322 82.4005C248.423 79.8544 250.496 77.2696 252.547 74.6599C254.598 72.0557 256.629 69.4267 258.658 66.7948C260.699 64.1464 262.733 61.4951 264.781 58.8522C266.824 56.2121 268.88 53.5858 270.955 50.9927C273.018 48.4162 275.103 45.8701 277.224 43.3711C279.347 40.8721 281.507 38.4202 283.715 36.0429C285.912 33.674 288.154 31.377 290.454 29.1741C292.745 26.9768 295.091 24.8707 297.501 22.8865C298.117 22.3773 298.74 21.8764 299.365 21.3838C299.571 21.2232 299.777 21.0655 299.983 20.9077C300.405 20.5812 300.824 20.2519 301.251 19.9336C301.682 19.6098 302.116 19.2971 302.553 18.9816C302.776 18.8211 302.996 18.6523 303.222 18.4945C303.881 18.0241 304.548 17.5647 305.217 17.1136C307.932 15.2871 310.717 13.6266 313.556 12.1266C316.399 10.6239 319.301 9.29 322.246 8.12214C325.174 6.95981 328.148 5.96353 331.149 5.13606C334.16 4.30306 337.202 3.64164 340.259 3.14073C343.325 2.63982 346.409 2.30773 349.499 2.14445C350.428 2.09463 351.359 2.06143 352.287 2.04205L300.049 3.08261V3.07985Z" fill="#044396" />
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_n_314_3142" x="301.336" y="2.00006" width="288.582" height="110.912" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feTurbulence type="fractalNoise" baseFrequency="1 1" stitchTiles="stitch" numOctaves="3" result="noise" seed="5530" />
+            <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+            </feComponentTransfer>
+            <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+            <feFlood flood-color="rgba(0, 0, 0, 0.15)" result="color1Flood" />
+            <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+            <feMerge result="effect1_noise_314_3142">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+          <filter id="filter1_n_314_3142" x="-43" y="7.62036" width="211.269" height="119.145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feTurbulence type="fractalNoise" baseFrequency="1 1" stitchTiles="stitch" numOctaves="3" result="noise" seed="5530" />
+            <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+            </feComponentTransfer>
+            <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+            <feFlood flood-color="rgba(0, 0, 0, 0.15)" result="color1Flood" />
+            <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+            <feMerge result="effect1_noise_314_3142">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+          <filter id="filter2_n_314_3142" x="118.344" y="2.04205" width="233.944" height="124.649" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feTurbulence type="fractalNoise" baseFrequency="1 1" stitchTiles="stitch" numOctaves="3" result="noise" seed="5530" />
+            <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+              <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+            </feComponentTransfer>
+            <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+            <feFlood flood-color="rgba(0, 0, 0, 0.1)" result="color1Flood" />
+            <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+            <feMerge result="effect1_noise_314_3142">
+              <feMergeNode in="shape" />
+              <feMergeNode in="color1" />
+            </feMerge>
+          </filter>
+          <linearGradient id="paint0_linear_314_3142" x1="484.641" y1="62.8048" x2="372.666" y2="22.2075" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-color="#D2D7DD" />
+          </linearGradient>
+          <linearGradient id="paint1_linear_314_3142" x1="9.75" y1="59.9304" x2="106.945" y2="125.474" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-color="#D2D7DD" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+    </div>
 
 
     <div class="l-inner">
@@ -520,11 +597,11 @@
           <div class="p-front-work__card-inner">
             <div class="p-front-work__card-content p-front-work__card-content--large">
               <figure class="p-front-work__card-img p-front-work__card-img--large">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-card-large.png" alt="" width="600" height="380">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work-card-large.png" alt="" width="600" height="380">
               </figure>
               <div class="p-front-work__card-body p-front-work__card-body--large">
                 <div class="p-front-work__card-head">
-                  <p class="p-front-work__card-subtitle">Job Description</p>
+                  <p class="p-front-work__card-subtitle p-front-work__card-subtitle--large">Job Description</p>
                   <p class="p-front-work__card-title p-front-work__card-title--large">Z MOBILITYの仕事について</p>
                 </div>
                 <p class="p-front-work__card-text p-front-work__card-text--large">
@@ -537,86 +614,101 @@
             </span>
           </div>
         </a>
+        <div class="p-front-work__grid">
 
-        <a class="p-front-work__card" href="#">
-          <div class="p-front-work__card-inner">
-            <div class="p-front-work__card-content">
-              <figure class="p-front-work__card-img">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-card-1.png" alt="" width="188" height="233">
-              </figure>
-              <div class="p-front-work__card-body">
-                <div class="p-front-work__card-head">
-                  <p class="p-front-work__card-subtitle">Job Description</p>
-                  <p class="p-front-work__card-title">車両紹介</p>
+          <a class="p-front-work__card" href="#">
+            <div class="p-front-work__card-inner">
+              <div class="p-front-work__card-content">
+                <figure class="p-front-work__card-img">
+                  <picture>
+                    <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2.webp" media="(min-width: 768px)" width="188" height="233" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2_sp.png" alt="車両紹介" width="188" height="233">
+                  </picture>
+                </figure>
+                <div class="p-front-work__card-body">
+                  <div class="p-front-work__card-head">
+                    <p class="p-front-work__card-subtitle">Job Description</p>
+                    <p class="p-front-work__card-title">車両紹介</p>
+                  </div>
+                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
                 </div>
-                <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
               </div>
+              <span class="p-front-work__card-btn" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-btn-s.svg" alt="" width="28" height="28">
+              </span>
             </div>
-            <span class="p-front-work__card-btn" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-btn-s.svg" alt="" width="28" height="28">
-            </span>
-          </div>
-        </a>
+          </a>
 
-        <a class="p-front-work__card" href="#">
-          <div class="p-front-work__card-inner">
-            <div class="p-front-work__card-content">
-              <figure class="p-front-work__card-img">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-card-2.png" alt="" width="188" height="233">
-              </figure>
-              <div class="p-front-work__card-body">
-                <div class="p-front-work__card-head">
-                  <p class="p-front-work__card-subtitle">Job Description</p>
-                  <p class="p-front-work__card-title">二種免許支援教育体制</p>
+          <a class="p-front-work__card" href="#">
+            <div class="p-front-work__card-inner">
+              <div class="p-front-work__card-content">
+                <figure class="p-front-work__card-img">
+                  <picture>
+                    <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_3.webp" media="(min-width: 768px)" width="188" height="233" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_3_sp.png" alt="二種免許支援教育体制" width="188" height="233">
+                  </picture>
+                </figure>
+                <div class="p-front-work__card-body">
+                  <div class="p-front-work__card-head">
+                    <p class="p-front-work__card-subtitle">Job Description</p>
+                    <p class="p-front-work__card-title">二種免許支援<br class="u-mobile">教育体制</p>
+                  </div>
+                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
                 </div>
-                <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
               </div>
+              <span class="p-front-work__card-btn" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-btn-s2.svg" alt="" width="28" height="28">
+              </span>
             </div>
-            <span class="p-front-work__card-btn" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-btn-s2.svg" alt="" width="28" height="28">
-            </span>
-          </div>
-        </a>
+          </a>
 
-        <a class="p-front-work__card" href="#">
-          <div class="p-front-work__card-inner">
-            <div class="p-front-work__card-content">
-              <figure class="p-front-work__card-img">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-card-3.png" alt="" width="188" height="233">
-              </figure>
-              <div class="p-front-work__card-body">
-                <div class="p-front-work__card-head">
-                  <p class="p-front-work__card-subtitle">Job Description</p>
-                  <p class="p-front-work__card-title">数字で見るZ</p>
+          <a class="p-front-work__card" href="#">
+            <div class="p-front-work__card-inner">
+              <div class="p-front-work__card-content">
+                <figure class="p-front-work__card-img">
+                  <picture>
+                    <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_4.webp" media="(min-width: 768px)" width="188" height="233" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_4_sp.png" alt="数字で見るZ" width="188" height="233">
+                  </picture>
+                </figure>
+                <div class="p-front-work__card-body">
+                  <div class="p-front-work__card-head">
+                    <p class="p-front-work__card-subtitle">Job Description</p>
+                    <p class="p-front-work__card-title">数字で見るZ</p>
+                  </div>
+                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
                 </div>
-                <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
               </div>
+              <span class="p-front-work__card-btn" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-btn-s3.svg" alt="" width="28" height="28">
+              </span>
             </div>
-            <span class="p-front-work__card-btn" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-btn-s3.svg" alt="" width="28" height="28">
-            </span>
-          </div>
-        </a>
+          </a>
 
-        <a class="p-front-work__card" href="#">
-          <div class="p-front-work__card-inner">
-            <div class="p-front-work__card-content">
-              <figure class="p-front-work__card-img">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-card-4.png" alt="" width="188" height="233">
-              </figure>
-              <div class="p-front-work__card-body">
-                <div class="p-front-work__card-head">
-                  <p class="p-front-work__card-subtitle">Job Description</p>
-                  <p class="p-front-work__card-title">よくある質問</p>
+          <a class="p-front-work__card" href="#">
+            <div class="p-front-work__card-inner">
+              <div class="p-front-work__card-content">
+                <figure class="p-front-work__card-img">
+                  <picture>
+                    <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_5.webp" media="(min-width: 768px)" width="188" height="233" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_5_sp.png" alt="よくある質問" width="188" height="233">
+                  </picture>
+                </figure>
+                <div class="p-front-work__card-body">
+                  <div class="p-front-work__card-head">
+                    <p class="p-front-work__card-subtitle">Job Description</p>
+                    <p class="p-front-work__card-title">よくある質問</p>
+                  </div>
+                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
                 </div>
-                <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
               </div>
+              <span class="p-front-work__card-btn" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-btn-s4.svg" alt="" width="28" height="28">
+              </span>
             </div>
-            <span class="p-front-work__card-btn" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work/work-btn-s4.svg" alt="" width="28" height="28">
-            </span>
-          </div>
-        </a>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -712,6 +804,16 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="p-top-column__more-sp">
+
+          <a class="p-top-column__more" href="#">
+            <span class="p-top-column__more-text">一覧を見る</span>
+            <span class="p-top-column__more-divider" aria-hidden="true"></span>
+            <span class="p-top-column__more-icon" aria-hidden="true">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
+            </span>
+          </a>
         </div>
 
 

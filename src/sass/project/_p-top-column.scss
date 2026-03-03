@@ -23,27 +23,40 @@
 .p-top-column__title {
   display: flex;
   flex-direction: column;
-  gap: rem(12);
+  gap: rem(8);
+
+  @include mq(md) {
+    gap: rem(12);
+  }
 }
 
 .p-top-column__title-ja {
   display: flex;
   align-items: center;
-  gap: rem(12);
+  gap: rem(8);
   color: #fff;
-  font-size: rem(18);
+  font-size: rem(14);
   font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-top-column__title-ja::before {
   content: "";
-  width: rem(6);
-  height: rem(6);
-  border-radius: 50%;
+  width: rem(4);
+  height: rem(4);
+  border-radius: 9999px;
   background: #aab9cb;
   display: inline-block;
+
+  @include mq(md) {
+    width: rem(6);
+    height: rem(6);
+  }
 }
 
 .p-top-column__title-en {
@@ -51,7 +64,7 @@
   font-family: $special-gothic;
   font-weight: 400;
   line-height: 1;
-  font-size: rem(56);
+  font-size: rem(48);
 
   @include mq(md) {
     font-size: rem(96);
@@ -59,19 +72,18 @@
 }
 
 .p-top-column__actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: rem(16);
+  display: none;
 
   @include mq(md) {
     justify-content: flex-end;
+    display: flex;
+    align-items: center;
     gap: rem(32);
   }
 }
 
 .p-top-column__nav {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: rem(12);
 }
@@ -175,7 +187,6 @@
 }
 
 .p-top-column__slide {
-  width: rem(320);
 
   @include mq(md) {
     width: rem(395);
@@ -185,9 +196,13 @@
 .p-top-column__card {
   display: flex;
   flex-direction: column;
-  gap: rem(20);
   text-decoration: none;
   color: inherit;
+
+  @include mq(md) {
+    gap: rem(20);
+
+  }
 }
 
 .p-top-column__card-img {
@@ -209,24 +224,37 @@
   font-size: rem(16);
   font-weight: 500;
   line-height: 1.6;
+  margin-top: rem(16);
 
   @include mq(md) {
     font-size: rem(18);
+    margin-top: initial;
   }
 }
 
 .p-top-column__meta {
   display: flex;
   align-items: center;
-  gap: rem(12);
+  margin-top: rem(12);
+  gap: rem(16);
+
+  @include mq(md) {
+    gap: rem(12);
+    margin-top: initial;
+  }
 }
 
 .p-top-column__date {
   color: #fff;
   font-family: $special-gothic;
   font-weight: 400;
-  font-size: rem(14);
   line-height: 1.6;
+  font-size: rem(12);
+
+  @include mq(md) {
+    font-size: rem(14);
+
+  }
 }
 
 .p-top-column__category {
@@ -234,12 +262,29 @@
   border: 1px solid #c2c9d0;
   border-radius: 9999px;
   padding: rem(8) rem(20);
-  font-size: rem(14);
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.02em;
+  font-size: rem(13);
+
+  @include mq(md) {
+    font-size: rem(14);
+
+  }
 }
 
 .p-top-column__right {
   margin-right: calc(50% - 50vw);
+}
+
+.p-top-column__more-sp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: rem(40);
+
+  @include mq(md) {
+    display: none;
+  }
+
 }
