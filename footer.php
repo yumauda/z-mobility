@@ -7,7 +7,7 @@
                         <p class="p-footer__companyName">株式会社Ｚ</p>
                         <p class="p-footer__companyText">
                             本社<br>
-                            〒104-0061　東京都中央区銀座8-3-10 トミタビル4F<br>
+                            〒104-0061　<br class="u-mobile">東京都中央区銀座8-3-10 <br class="u-mobile">トミタビル4F<br>
                             TEL：050-3733-7504<br>
                             FAX：050-3733-7505
                         </p>
@@ -36,10 +36,11 @@
                                     <a class="p-footer__navSublink" href="#">よくある質問</a>
                                 </div>
                             </div>
-                            <a class="p-footer__navLink" href="#">インタビュー動画</a>
+                            <a class="p-footer__navLink u-desktop" href="#">インタビュー動画</a>
                         </div>
 
                         <div class="p-footer__navCol">
+                            <a class="p-footer__navLink u-mobile" href="#">インタビュー動画</a>
                             <div class="p-footer__navGroup">
                                 <a class="p-footer__navLink" href="#">会社情報</a>
                                 <div class="p-footer__navSub">
