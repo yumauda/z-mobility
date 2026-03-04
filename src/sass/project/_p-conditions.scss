@@ -1,0 +1,68 @@
+@use "../global" as *;
+
+.p-conditions {
+  padding-top: rem(120);
+  padding-bottom: rem(120);
+}
+
+.p-conditions__content {
+  max-width: rem(1000);
+  margin-inline: auto;
+  display: grid;
+  gap: rem(64);
+}
+
+.p-conditions__section {
+  display: grid;
+  gap: rem(24);
+}
+
+.p-conditions__h3 {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+}
+
+.p-conditions__h3Bar {
+  width: rem(3);
+  height: rem(16);
+  background: #044396;
+  flex: none;
+}
+
+.p-conditions__h3Title {
+  font-size: rem(20);
+  font-weight: 500;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.p-conditions__text {
+  font-size: rem(16);
+  line-height: 2;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.p-conditions__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0;
+}
+
+.p-conditions__listItem {
+  font-size: rem(16);
+  line-height: 2;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+

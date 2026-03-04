@@ -1,0 +1,101 @@
+@use "../global" as *;
+
+.p-page-company {
+  padding-top: rem(120);
+  padding-bottom: rem(120);
+}
+
+.p-page-company__content {
+  display: grid;
+  gap: rem(80);
+}
+
+.p-page-company__card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.p-page-company__card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+
+  @include mq(md) {
+    flex-direction: row;
+    align-items: center;
+    gap: rem(48);
+  }
+}
+
+.p-page-company__card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: rem(24);
+
+  @include mq(md) {
+    height: rem(320);
+    gap: rem(32);
+  }
+}
+
+.p-page-company__card-texts {
+  display: grid;
+  gap: rem(24);
+  padding-top: rem(20);
+
+  @include mq(md) {
+    gap: rem(32);
+  }
+}
+
+.p-page-company__card-title {
+  width: fit-content;
+  max-width: 100%;
+  font-size: rem(28);
+  font-weight: 500;
+  line-height: 1.4;
+  color: #044396;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.p-page-company__card-text {
+  max-width: rem(632);
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 1.8;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.p-page-company__card-btn {
+  width: rem(48);
+  height: rem(48);
+  flex: none;
+  border-radius: rem(5);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.p-page-company__card-media {
+  width: 100%;
+  max-width: rem(600);
+  border-radius: rem(10);
+  overflow: hidden;
+  flex: none;
+}
+
+.p-page-company__card-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+

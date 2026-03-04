@@ -645,6 +645,75 @@ select::-ms-expand {
   left: 0.375rem;
 }
 
+.p-conditions {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.p-conditions__content {
+  max-width: 62.5rem;
+  margin-inline: auto;
+  display: grid;
+  gap: 4rem;
+}
+
+.p-conditions__section {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.p-conditions__h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.p-conditions__h3Bar {
+  width: 0.1875rem;
+  height: 1rem;
+  background: #044396;
+  flex: none;
+}
+
+.p-conditions__h3Title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-conditions__h3Title {
+    font-size: 1.5rem;
+  }
+}
+
+.p-conditions__text {
+  font-size: 1rem;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-conditions__text {
+    font-size: 1.125rem;
+  }
+}
+
+.p-conditions__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0;
+}
+
+.p-conditions__listItem {
+  font-size: 1rem;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-conditions__listItem {
+    font-size: 1.125rem;
+  }
+}
+
 .p-drawer-icon {
   background: #fff;
   transition: 0.3s ease-in-out;
@@ -2753,6 +2822,171 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-mv__ribbon {
     bottom: -5rem;
+  }
+}
+
+.p-page-company {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.p-page-company__content {
+  display: grid;
+  gap: 5rem;
+}
+
+.p-page-company__card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.p-page-company__card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-page-company__card-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+.p-page-company__card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-page-company__card-body {
+    height: 20rem;
+    gap: 2rem;
+  }
+}
+
+.p-page-company__card-texts {
+  display: grid;
+  gap: 1.5rem;
+  padding-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-page-company__card-texts {
+    gap: 2rem;
+  }
+}
+
+.p-page-company__card-title {
+  width: fit-content;
+  max-width: 100%;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #044396;
+}
+@media screen and (min-width: 768px) {
+  .p-page-company__card-title {
+    font-size: 2.5rem;
+  }
+}
+
+.p-page-company__card-text {
+  max-width: 39.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .p-page-company__card-text {
+    font-size: 1.125rem;
+  }
+}
+
+.p-page-company__card-btn {
+  width: 3rem;
+  height: 3rem;
+  flex: none;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.p-page-company__card-media {
+  width: 100%;
+  max-width: 37.5rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  flex: none;
+}
+
+.p-page-company__card-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-privacy {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.p-privacy__content {
+  max-width: 62.5rem;
+  margin-inline: auto;
+  display: grid;
+  gap: 4rem;
+}
+
+.p-privacy__lead {
+  font-size: 1rem;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy__lead {
+    font-size: 1.125rem;
+  }
+}
+
+.p-privacy__section {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.p-privacy__h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.p-privacy__h3Bar {
+  width: 0.1875rem;
+  height: 1rem;
+  background: #044396;
+  flex: none;
+}
+
+.p-privacy__h3Title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy__h3Title {
+    font-size: 1.5rem;
+  }
+}
+
+.p-privacy__text {
+  font-size: 1rem;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy__text {
+    font-size: 1.125rem;
   }
 }
 

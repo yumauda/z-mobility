@@ -7,12 +7,10 @@ jQuery(function ($) {
   // p-mvを過ぎたらヘッダーの見た目を切り替え
   (function () {
     var $header = $(".p-header");
-    var $mv = $(".p-mv");
-    if (!$header.length || !$mv.length) return;
+    if (!$header.length) return;
 
     var updateHeaderClass = function () {
-      var mvRect = $mv[0].getBoundingClientRect();
-      $header.toggleClass("js-scroll-header", mvRect.bottom <= 0);
+      $header.toggleClass("js-scroll-header", $(window).scrollTop() > 300);
     };
 
     $(window).on("scroll resize", updateHeaderClass);
