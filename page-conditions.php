@@ -54,17 +54,17 @@
             第4条　当社は、次の各号のいずれかに該当する場合には、運送の引受け又は継続を拒絶することがあります。
           </p>
           <ul class="p-conditions__list">
-            <li class="p-conditions__listItem">当該運送の申込みがこの運送約款によらないものであるとき。</li>
-            <li class="p-conditions__listItem">当該運送に適する設備がないとき。</li>
-            <li class="p-conditions__listItem">当該運送に関し、申込者から特別な負担を求められたとき。</li>
-            <li class="p-conditions__listItem">当該運送が法令の規定又は公の秩序若しくは善良の風俗に反するものであるとき。</li>
-            <li class="p-conditions__listItem">天災その他やむを得ない事由による運送上の支障があるとき。</li>
-            <li class="p-conditions__listItem">旅客が乗務員の旅客自動車運送事業運輸規則の規定に基づいて行う措置に従わないとき。</li>
-            <li class="p-conditions__listItem">旅客が旅客自動車運送事業運輸規則の規定により持込みを禁止された物品を携帯しているとき。</li>
-            <li class="p-conditions__listItem">旅客が行先を明瞭に告げられないほど又は人の助けなくしては歩行が困難なほど泥酔しているとき。</li>
-            <li class="p-conditions__listItem">旅客が車内を汚染するおそれがある不潔な服装をしているとき。</li>
-            <li class="p-conditions__listItem">旅客が付添人を伴わない重病者であるとき。</li>
-            <li class="p-conditions__listItem">旅客が感染症の予防及び感染症の患者に対する医療に関する法律による一類感染症、二類感染症、新型インフルエンザ等感染症若しくは指定感染症（入院を必要とするものに限る。）の患者（これらの患者とみなされる者を含む。）又は新感染症の所見のある者であるとき。</li>
+            <li class="p-conditions__listItem">1. 当該運送の申込みがこの運送約款によらないものであるとき。</li>
+            <li class="p-conditions__listItem">2. 当該運送に適する設備がないとき。</li>
+            <li class="p-conditions__listItem">3. 当該運送に関し、申込者から特別な負担を求められたとき。</li>
+            <li class="p-conditions__listItem">4. 当該運送が法令の規定又は公の秩序若しくは善良の風俗に反するものであるとき。</li>
+            <li class="p-conditions__listItem">5. 天災その他やむを得ない事由による運送上の支障があるとき。</li>
+            <li class="p-conditions__listItem">6. 旅客が乗務員の旅客自動車運送事業運輸規則の規定に基づいて行う措置に従わないとき。</li>
+            <li class="p-conditions__listItem">7. 旅客が旅客自動車運送事業運輸規則の規定により持込みを禁止された物品を携帯しているとき。</li>
+            <li class="p-conditions__listItem">8. 旅客が行先を明瞭に告げられないほど又は人の助けなくしては歩行が困難なほど泥酔しているとき。</li>
+            <li class="p-conditions__listItem">9. 旅客が車内を汚染するおそれがある不潔な服装をしているとき。</li>
+            <li class="p-conditions__listItem">10. 旅客が付添人を伴わない重病者であるとき。</li>
+            <li class="p-conditions__listItem">11. 旅客が感染症の予防及び感染症の患者に対する医療に関する法律による一類感染症、二類感染症、新型インフルエンザ等感染症若しくは指定感染症（入院を必要とするものに限る。）の患者（これらの患者とみなされる者を含む。）又は新感染症の所見のある者であるとき。</li>
           </ul>
           <p class="p-conditions__text">
             第４条の2　当社の禁煙車両（禁煙車である旨を表示した車両をいう。次項において同じ。）内では、旅客は喫煙を差し控えていただきます。

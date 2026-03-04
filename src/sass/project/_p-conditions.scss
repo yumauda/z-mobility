@@ -50,17 +50,15 @@
 }
 
 .p-conditions__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 0;
+  padding-left: rem(16);
+
 }
 
 .p-conditions__listItem {
   font-size: rem(16);
   line-height: 2;
-
+  text-indent: -1em;
+  padding-left: 1em;
   @include mq(md) {
     font-size: rem(18);
   }
