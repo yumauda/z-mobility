@@ -1,10 +1,13 @@
 <?php get_header(); ?>
 <main>
- 
 
-  
- 
-  
+  <?php
+  get_template_part('includes/page-mv', null, [
+    'title_ja' => '一般乗用旅客自動車運送事業標準運送約款',
+    'title_en_lines' => ['Conditions'],
+    'pan_current' => '運送約款',
+  ]);
+  ?>
 
   <section class="p-conditions">
     <div class="l-inner">

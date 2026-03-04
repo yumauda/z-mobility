@@ -3,6 +3,7 @@
 .p-privacy {
   padding-top: rem(120);
   padding-bottom: rem(120);
+  overflow-x: clip;
 }
 
 .p-privacy__content {
@@ -23,7 +24,6 @@
 
 .p-privacy__section {
   display: grid;
-  gap: rem(24);
 }
 
 .p-privacy__h3 {
@@ -58,3 +58,10 @@
   }
 }
 
+.text-indent {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+.mt24 {
+  margin-top: rem(24);
+}

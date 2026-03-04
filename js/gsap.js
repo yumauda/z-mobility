@@ -66,8 +66,9 @@ ribbons.forEach((ribbon) => {
     {
       opacity: 1,
       clipPath: "inset(0 0% 0 0)",
-      duration: 1.5,
-      ease: 'power2.inOut',
+      duration: 3,
+      ease: 'power3.out',
+      delay: 0.5,
       scrollTrigger: {
         trigger: ribbon,
         start: 'top 90%',
@@ -89,9 +90,32 @@ newsRibbons.forEach((newsRibbon) => {
       opacity: 1,
       clipPath: "inset(0 0% 0 0)",
       duration: 1.5,
-      ease: 'power2.inOut',
+      ease: 'power3.out',
       scrollTrigger: {
         trigger: newsRibbon,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+
+
+let pageMainTitles = document.querySelectorAll('.js-page-main-title');
+
+pageMainTitles.forEach((pageMainTitle) => {
+  gsap.fromTo(
+    pageMainTitle,
+    {
+      opacity: 0,
+      clipPath: "inset(0 100% 0 0)",
+    },
+    {
+      opacity: 1,
+      clipPath: "inset(0 0% 0 0)",
+      duration: 1.5,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: pageMainTitle,
         start: 'top 90%',
       },
     }

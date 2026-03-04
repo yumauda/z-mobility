@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 <main>
   
+  <?php
+  get_template_part('includes/page-mv', null, [
+    'title_ja' => '会社情報',
+    'title_en_lines' => ['Company'],
+    'pan_current' => '会社情報',
+  ]);
+  ?>
 
   <section class="p-page-company">
     <div class="l-inner">

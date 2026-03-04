@@ -54,8 +54,8 @@
                     </nav>
                     <div class="p-footer__footerBottom">
                         <div class="p-footer__legal">
-                            <a class="p-footer__legalLink" href="#">プライバシーポリシー</a>
-                            <a class="p-footer__legalLink" href="#">運送約款</a>
+                            <a class="p-footer__legalLink" href="<?php echo esc_url(home_url('/privacy')); ?>">プライバシーポリシー</a>
+                            <a class="p-footer__legalLink" href="<?php echo esc_url(home_url('/conditions')); ?>">運送約款</a>
                         </div>
                     </div>
                 </div>

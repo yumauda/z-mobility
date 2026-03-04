@@ -2,9 +2,14 @@
 <main>
  
 
-  
- 
-  
+  <section class="p-front-work">
+  <?php
+  get_template_part('includes/page-mv', null, [
+    'title_ja' => '仕事について',
+    'title_en_lines' => ['Work'],
+    'pan_current' => '仕事について',
+  ]);
+  ?>
 
   <section class="p-front-work">
     <div class="p-front-work__bg u-desktop">

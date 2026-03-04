@@ -1,0 +1,105 @@
+@use "../global" as *;
+
+.p-page-mv {
+  position: relative;
+  padding-top: rem(48);
+  overflow-x: clip;
+
+  @include mq(md) {
+    padding-top: rem(220);
+  }
+}
+
+.p-page-mv__bg {
+  position: absolute;
+  top: rem(64);
+  left: 0;
+  width: 100%;
+  max-width: rem(1352);
+  z-index: 0;
+}
+
+.p-page-mv__bg svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-page-mv .l-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.p-page-mv__content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  align-items: flex-start;
+
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: rem(64);
+  }
+}
+
+.p-page-mv__title {
+  display: grid;
+  gap: rem(12);
+}
+
+.p-page-mv__titleJa {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+}
+
+.p-page-mv__titleDot {
+  width: rem(6);
+  height: rem(6);
+  border-radius: 50%;
+  background: #044396;
+  flex: none;
+}
+
+.p-page-mv__titleJaText {
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.p-page-mv__titleEn {
+  font-family: $special-gothic;
+  font-size: rem(48);
+  font-weight: 400;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(114);
+  }
+}
+
+.p-page-mv__pan {
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  flex-wrap: wrap;
+}
+
+.p-page-mv__panLink {
+  text-decoration: none;
+}
+
+.p-page-mv__panDivider {
+  width: 1px;
+  height: rem(32);
+  background: #c2c9d0;
+  flex: none;
+}
+
