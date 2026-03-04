@@ -12,11 +12,12 @@
   padding-left: rem(20);
   padding-right: rem(20);
   padding-top: rem(20);
-  @include mq(md){
+
+  @include mq(md) {
     padding-left: rem(32);
     padding-right: rem(32);
     padding-top: rem(32);
-    
+
   }
 }
 
@@ -26,17 +27,37 @@
 
 .p-header__logo {
   margin-top: rem(12);
-  @include mq(md){
+  transition: 0.3s ease-in-out;
+
+  @include mq(md) {
     margin-top: rem(20);
+  }
+}
+
+.p-header.js-scroll-header .p-header__logo {
+  margin-top: rem(8);
+
+  @include mq(md) {
+    margin-top: rem(12);
   }
 }
 
 .p-header__home {
   display: inline-block;
   width: rem(52);
-  @include mq(md){
+  transition: 0.3s ease-in-out;
+
+  @include mq(md) {
     width: rem(83);
-    
+
+  }
+}
+
+.p-header.js-scroll-header .p-header__home {
+  width: rem(40);
+
+  @include mq(md) {
+    width: rem(72);
   }
 }
 
@@ -55,8 +76,17 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: rem(4);
-  @include mq(md){
+  transition: 0.3s ease-in-out;
+  @include mq(md) {
     gap: rem(12);
+  }
+}
+
+.p-header.js-scroll-header .p-header__lists {
+  gap: rem(4);
+
+  @include mq(md) {
+    gap: rem(6);
   }
 }
 
@@ -75,12 +105,37 @@
   height: rem(48);
   border-radius: rem(8);
   font-size: rem(12);
-  @include mq(md){
-    
+  transition: 0.3s ease-in-out;
+  margin-left: auto;
+
+  @include mq(md) {
+
     font-size: rem(24);
     border-radius: rem(10);
     width: rem(120);
     height: rem(120);
+  }
+}
+
+.p-header.js-scroll-header .p-header__link {
+  width: rem(60);
+  height: rem(40);
+  margin-left: auto;
+
+  @include mq(md) {
+    width: rem(80);
+    height: rem(80);
+    font-size: rem(16);
+  }
+}
+
+.p-header.js-scroll-header .p-header__drawer {
+  width: rem(56);
+  height: rem(36);
+
+  @include mq(md) {
+    width: rem(80);
+    height: rem(80);
   }
 }
 
@@ -92,7 +147,8 @@
   justify-content: center;
   background: #1A1A1A;
   border-radius: rem(8);
-  @include mq(md){
+
+  @include mq(md) {
     width: rem(120);
     border-radius: rem(10);
     height: rem(120);
@@ -103,13 +159,23 @@
 
 .p-header__recruit {
   margin-top: rem(4);
-  @include mq(md){
+
+  @include mq(md) {
     margin-top: rem(12);
+  }
+}
+
+.p-header.js-scroll-header .p-header__recruit {
+  margin-top: rem(4);
+
+  @include mq(md) {
+    margin-top: rem(6);
   }
 }
 
 .p-header__recruit-link {
   background: #fff;
+  transition: 0.3s ease-in-out;
   border: 1px solid #044396;
   border-radius: rem(5);
   width: 100%;
@@ -119,10 +185,19 @@
   color: #044396;
   height: rem(30);
   font-size: rem(14);
-  @include mq(md){
+
+  @include mq(md) {
     font-size: rem(18);
     height: rem(42);
-    
   }
+}
 
+.p-header.js-scroll-header .p-header__recruit-link {
+  height: rem(24);
+  font-size: rem(12);
+
+  @include mq(md) {
+    height: rem(36);
+    font-size: rem(16);
+  }
 }

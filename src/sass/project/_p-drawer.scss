@@ -3,7 +3,7 @@
 
 .p-drawer-icon {
   background: #fff;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   border-radius: 9999px;
   width: rem(44);
   height: rem(44);
@@ -64,7 +64,7 @@
 .p-drawer-icon__bar1 {
   height: 2px;
   background: #fff;
-  transition: 0.5s;
+  transition: 0.3s ease-in-out;
   width: rem(24);
   display: flex;
 
@@ -73,15 +73,29 @@
   }
 }
 
+.p-drawer-icon.js-scroll-header .p-drawer-icon__bar1 {
+  width: rem(16);
+  @include mq(md) {
+    width: rem(40);
+  }
+}
+
 .p-drawer-icon__bar3 {
   height: 2px;
   background: #fff;
-  transition: 0.5s;
+  transition: 0.3s ease-in-out;
   display: flex;
   width: rem(24);
 
   @include mq(md) {
     width: rem(57);
+  }
+}
+
+.p-drawer-icon.js-scroll-header .p-drawer-icon__bar3 {
+  width: rem(16);
+  @include mq(md) {
+    width: rem(40);
   }
 }
 
@@ -98,7 +112,7 @@
   z-index: 9998;
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   padding-top: rem(125);
   padding-left: rem(32);
   padding-right: rem(32);
@@ -116,7 +130,7 @@
 }
 
 .p-drawer-content__items {
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   height: 100dvh;
 
   @include mq(md) {

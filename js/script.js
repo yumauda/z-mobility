@@ -4,6 +4,21 @@ jQuery(function ($) {
   var topBtn = $(".p-totop");
   topBtn.hide();
 
+  // p-mvを過ぎたらヘッダーの見た目を切り替え
+  (function () {
+    var $header = $(".p-header");
+    var $mv = $(".p-mv");
+    if (!$header.length || !$mv.length) return;
+
+    var updateHeaderClass = function () {
+      var mvRect = $mv[0].getBoundingClientRect();
+      $header.toggleClass("js-scroll-header", mvRect.bottom <= 0);
+    };
+
+    $(window).on("scroll resize", updateHeaderClass);
+    updateHeaderClass();
+  })();
+
   // ボタンの表示設定
   $(window).scroll(function () {
     if ($(this).scrollTop() > 70) {
@@ -193,54 +208,4 @@ jQuery(document).ready(function ($) {
   });
 });
 
-jQuery(document).ready(function ($) {
-  $(".js-btn").on("click", function () {
-    $(".js-news-wrapper1").slideDown();
-    $(this).hide();
-  });
-});
-jQuery(document).ready(function ($) {
-  $(".js-btn2").on("click", function () {
-    $(".js-news-wrapper2").slideDown();
-    $(this).hide();
-  });
-});
-jQuery(document).ready(function ($) {
-  $(".js-btn3").on("click", function () {
-    $(".js-news-wrapper3").slideDown();
-    $(this).hide();
-  });
-});
 
-jQuery(document).ready(function ($) {
-  $(".p-tabNews__btn").each(function () {
-    var postCount = parseInt($(this).data("post-count"), 1);
-    // 表示する投稿の数を設定（例: 4）
-    var displayCount = 4;
-
-    // 投稿数が表示数以下の場合、ボタンを非表示にする
-    if (postCount <= displayCount) {
-      $(this).hide();
-    }
-  });
-});
-jQuery(".js-modal-btn").on("click", function (e) {
-  e.preventDefault();
-  jQuery(".p-modal").toggleClass("is-active");
-  return false;
-});
-jQuery(".p-modal__close").on("click", function (e) {
-  e.preventDefault();
-  jQuery(".p-modal").removeClass("is-active");
-  return false;
-});
-jQuery(".js-view").on("click", function (e) {
-  e.preventDefault();
-  jQuery(".p-digital-modal").toggleClass("is-active");
-  return false;
-});
-jQuery(".p-digital-modal__close").on("click", function (e) {
-  e.preventDefault();
-  jQuery(".p-digital-modal").removeClass("is-active");
-  return false;
-});
