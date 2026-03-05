@@ -596,7 +596,7 @@
         <a class="p-front-work__card p-front-work__card--large js-opacity-word" href="#">
           <div class="p-front-work__card-inner">
             <div class="p-front-work__card-content p-front-work__card-content--large">
-              <figure class="p-front-work__card-img p-front-work__card-img--large">
+              <figure class="p-front-work__card-img p-front-work__card-img--large js-parallax">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work-card-large.png" alt="" width="600" height="380">
               </figure>
               <div class="p-front-work__card-body p-front-work__card-body--large">
@@ -619,7 +619,7 @@
           <a class="p-front-work__card js-opacity-word" href="#">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
-                <figure class="p-front-work__card-img">
+                <figure class="p-front-work__card-img js-parallax">
                   <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2.webp" media="(min-width: 768px)" width="188" height="233" />
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2_sp.png" alt="車両紹介" width="188" height="233">
@@ -642,7 +642,7 @@
           <a class="p-front-work__card js-opacity-word" href="#">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
-                <figure class="p-front-work__card-img">
+                <figure class="p-front-work__card-img js-parallax">
                   <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_3.webp" media="(min-width: 768px)" width="188" height="233" />
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_3_sp.png" alt="二種免許支援教育体制" width="188" height="233">
@@ -665,7 +665,7 @@
           <a class="p-front-work__card js-opacity-word" href="#">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
-                <figure class="p-front-work__card-img">
+                <figure class="p-front-work__card-img js-parallax">
                   <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_4.webp" media="(min-width: 768px)" width="188" height="233" />
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_4_sp.png" alt="数字で見るZ" width="188" height="233">
@@ -688,7 +688,7 @@
           <a class="p-front-work__card js-opacity-word" href="#">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
-                <figure class="p-front-work__card-img">
+                <figure class="p-front-work__card-img js-parallax">
                   <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_5.webp" media="(min-width: 768px)" width="188" height="233" />
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_5_sp.png" alt="よくある質問" width="188" height="233">
@@ -749,7 +749,7 @@
             <div class="swiper-wrapper p-top-column__cards">
               <div class="swiper-slide p-top-column__slide">
                 <a class="p-top-column__card" href="#">
-                  <figure class="p-top-column__card-img">
+                  <figure class="p-top-column__card-img js-parallax">
                     <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-1.png" alt="" width="395" height="222">
                   </figure>
                   <p class="p-top-column__card-text">
@@ -764,7 +764,7 @@
 
               <div class="swiper-slide p-top-column__slide">
                 <a class="p-top-column__card" href="#">
-                  <figure class="p-top-column__card-img">
+                  <figure class="p-top-column__card-img js-parallax">
                     <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-2.png" alt="" width="395" height="222">
                   </figure>
                   <p class="p-top-column__card-text">
@@ -779,7 +779,7 @@
 
               <div class="swiper-slide p-top-column__slide">
                 <a class="p-top-column__card" href="#">
-                  <figure class="p-top-column__card-img">
+                  <figure class="p-top-column__card-img js-parallax">
                     <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-3.png" alt="" width="395" height="222">
                   </figure>
                   <p class="p-top-column__card-text">
@@ -794,7 +794,7 @@
 
               <div class="swiper-slide p-top-column__slide">
                 <a class="p-top-column__card" href="#">
-                  <figure class="p-top-column__card-img">
+                  <figure class="p-top-column__card-img js-parallax">
                     <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-4.png" alt="" width="395" height="222">
                   </figure>
                   <p class="p-top-column__card-text">
@@ -941,7 +941,7 @@
             <div class="swiper-wrapper p-top-interview__tracks">
               <div class="swiper-slide p-top-interview__slide">
                 <a class="p-top-interview__card" href="#">
-                  <figure class="p-top-interview__thumb">
+                  <figure class="p-top-interview__thumb js-parallax">
                     <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
                   </figure>
                   <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
@@ -951,7 +951,7 @@
 
               <div class="swiper-slide p-top-interview__slide">
                 <a class="p-top-interview__card" href="#">
-                  <figure class="p-top-interview__thumb">
+                  <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
                   </figure>
                   <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
@@ -961,7 +961,7 @@
 
               <div class="swiper-slide p-top-interview__slide">
                 <a class="p-top-interview__card" href="#">
-                  <figure class="p-top-interview__thumb">
+                  <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
                   </figure>
                   <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
@@ -971,7 +971,7 @@
 
               <div class="swiper-slide p-top-interview__slide">
                 <a class="p-top-interview__card" href="#">
-                  <figure class="p-top-interview__thumb">
+                  <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
                   </figure>
                   <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
@@ -1018,7 +1018,7 @@
               </span>
             </div>
 
-            <div class="p-company__card-media">
+            <div class="p-company__card-media js-parallax">
               <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company/company-message-2367a4.png" alt="" width="230" height="320">
               <span class="p-company__card-label" aria-hidden="true">Message</span>
             </div>
@@ -1041,7 +1041,7 @@
               </span>
             </div>
 
-            <div class="p-company__card-media">
+            <div class="p-company__card-media js-parallax">
               <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company/company-information.png" alt="" width="230" height="320">
               <span class="p-company__card-label p-company__card-label--left" aria-hidden="true">Information</span>
             </div>
