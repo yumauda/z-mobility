@@ -5,66 +5,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
-    <!-- meta情報 -->
-    <?php if (is_home() || is_front_page()) : ?>
-        <title>z-mobility</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="横浜市港北区大倉山の矯正専門歯科｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://familiar-kyousei.com/">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
-    <?php elseif (is_page('adult')) : ?>
-        <title>大人の矯正・成人矯正｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="大人の矯正｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/adult">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
-    <?php elseif (is_page((array('contact', 'confirm')))) : ?>
-        <title>お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/contact">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
-    <?php elseif (is_page('thanks')) : ?>
-        <title>送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/thanks">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
-    <?php elseif (is_single()) : ?>
-        <title><?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="<?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/adult">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+    <?php
+    $z_site_name = get_bloginfo('name');
+    $z_title = function_exists('wp_get_document_title') ? wp_get_document_title() : $z_site_name;
+    $z_default_desc = 'Z-MOBILITY（株式会社Z）の採用・コーポレートサイトです。仕事について、会社情報、代表メッセージなどをご案内します。';
+    $z_desc = $z_default_desc;
+    if (is_singular()) {
+        $z_desc_candidate = get_the_excerpt();
+        if (is_string($z_desc_candidate) && $z_desc_candidate !== '') {
+            $z_desc = $z_desc_candidate;
+        }
+    } else {
+        $z_tagline = get_bloginfo('description');
+        if (is_string($z_tagline) && $z_tagline !== '') {
+            $z_desc = $z_tagline;
+        }
+    }
+    $z_desc = preg_replace('/\s+/', ' ', trim(wp_strip_all_tags($z_desc)));
+    $z_ogp = esc_url(get_template_directory_uri() . '/images/common/ogp.png');
+    $z_url = is_singular() ? get_permalink() : esc_url(home_url('/'));
+    $z_og_type = (is_front_page() || is_home()) ? 'website' : 'article';
+    ?>
+    <title><?php echo esc_html($z_title); ?></title>
+    <meta name="description" content="<?php echo esc_attr($z_desc); ?>" />
 
-    <?php endif; ?>
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg">
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="<?php echo esc_attr($z_site_name); ?>" />
+    <meta property="og:title" content="<?php echo esc_attr($z_title); ?>" />
+    <meta property="og:description" content="<?php echo esc_attr($z_desc); ?>" />
+    <meta property="og:type" content="<?php echo esc_attr($z_og_type); ?>" />
+    <meta property="og:url" content="<?php echo esc_url($z_url); ?>" />
+    <meta property="og:image" content="<?php echo esc_url($z_ogp); ?>" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <!-- ogp -->
-    <!-- ファビコン -->
-    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/images/common/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/images/common/apple-touch-icon.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="<?php echo esc_url($z_ogp); ?>" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url(get_template_directory_uri() . '/images/common/favicon-32.png'); ?>" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url(get_template_directory_uri() . '/images/common/favicon-16.png'); ?>" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri() . '/images/common/apple-touch-icon.png'); ?>" />
     <!-- css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,7 +67,7 @@
                 <nav class="p-header__nav">
                     <ul class="p-header__lists">
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">entry</a>
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-header__link">entry</a>
                         </li>
                         <li class="p-header__list">
                             <button class="p-header__drawer p-drawer-icon">
@@ -103,16 +83,16 @@
                                             <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
                                         </li>
                                         <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                                            <a href="<?php echo esc_url(home_url('/work')); ?>" class="p-drawer-content__link">仕事について</a>
                                         </li>
                                         <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                                            <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-drawer-content__link">会社情報</a>
                                         </li>
                                         <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                                            <a href="<?php echo esc_url(home_url('/company/message')); ?>" class="p-drawer-content__link">代表メッセージ</a>
                                         </li>
                                         <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                                            <a href="<?php echo esc_url(home_url('/blog-all')); ?>" class="p-drawer-content__link">お知らせ</a>
                                         </li>
                                     </ul>
                                     <div class="p-drawer-content__sns">
@@ -137,7 +117,7 @@
                         </li>
                     </ul>
                     <div class="p-header__recruit">
-                        <a href="#" class="p-header__recruit-link">募集要項</a>
+                        <a href="<?php echo esc_url(home_url('/work')); ?>" class="p-header__recruit-link">募集要項</a>
                     </div>
                 </nav>
             </div>
