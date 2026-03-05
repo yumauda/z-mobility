@@ -1004,7 +1004,7 @@
       </div>
 
       <div class="p-company__cards">
-        <a class="p-company__card js-opacity-word" href="#">
+        <a class="p-company__card js-opacity-word" href="<?php echo esc_url(home_url('/company/message')); ?>">
           <div class="p-company__card-inner">
             <div class="p-company__card-body">
               <div class="p-company__card-texts">
@@ -1027,7 +1027,7 @@
 
         <span class="p-company__divider" aria-hidden="true"></span>
 
-        <a class="p-company__card js-opacity-word" href="#">
+        <a class="p-company__card js-opacity-word" href="<?php echo esc_url(home_url('/company/information')); ?>">
           <div class="p-company__card-inner">
             <div class="p-company__card-body">
               <div class="p-company__card-texts">

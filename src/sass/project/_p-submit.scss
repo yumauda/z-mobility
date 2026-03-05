@@ -9,7 +9,6 @@
 
 .p-submit__bg {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   aspect-ratio: 1440 / 443;
@@ -17,6 +16,11 @@
   height: auto;
   background: #1a1a1a;
   z-index: 1;
+  top: rem(-32);
+  @include mq(md){
+    top: rem(-160);
+    
+  }
 }
 
 .p-submit__cta {
