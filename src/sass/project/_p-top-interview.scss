@@ -113,19 +113,28 @@
 
 .p-top-interview__nav {
   display: flex;
-  gap: rem(8);
+  gap: rem(32);
+  position: relative;
 }
 
+.p-top-interview__nav::before {
+  position: absolute;
+  content: '';
+  background: #C2C9D0;
+  width: 1px;
+  height: rem(48);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .p-top-interview__prev,
 .p-top-interview__next {
-  width: rem(44);
-  height: rem(44);
-  border-radius: 50%;
-  border: 1px solid #c2c9d0;
-  background: #fff;
-  display: grid;
-  place-items: center;
-  transition: opacity 0.2s;
+  width: rem(48);
+  height: rem(48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .p-top-interview__prev:hover,
@@ -138,6 +147,7 @@
 }
 
 .p-top-interview__more {
+  position: relative;
   background: #044396;
   border-radius: rem(4);
   display: flex;
@@ -147,11 +157,54 @@
   width: rem(190);
   height: rem(48);
   padding: rem(8) rem(12);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
   @include mq(md){
     padding: rem(12) rem(16);
     width: fit-content;
     height: initial;
     
+  }
+}
+
+.p-top-interview__more::before {
+  content: "";
+  position: absolute;
+  inset: -40% -20%;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 0.22) 50%,
+    rgba(255, 255, 255, 0) 65%
+  );
+  transform: translateX(-140%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.p-top-interview__more:hover {
+  transform: translateY(rem(-2));
+  box-shadow: 0 rem(12) rem(30) rgba(0, 0, 0, 0.12);
+  background: #053b84;
+}
+
+.p-top-interview__more:hover::before {
+  transform: translateX(140%);
+}
+
+.p-top-interview__more:hover .p-top-interview__more-icon {
+  transform: translateX(rem(2));
+}
+
+.p-top-interview__more-icon {
+  transition: transform 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p-top-interview__more,
+  .p-top-interview__more::before,
+  .p-top-interview__more-icon {
+    transition: none;
   }
 }
 

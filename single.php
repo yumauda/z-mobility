@@ -36,7 +36,7 @@
             </article>
 
             <div class="p-single__backWrapper">
-              <a class="p-single__back" href="<?php echo esc_url(home_url('/blog-all')); ?>">
+              <a class="p-single__back" href="<?php echo esc_url(home_url('/news')); ?>">
                 <svg class="p-single__backIcon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7.373 11.25L19.5 11.25L19.5 12.75L7.373 12.75L13.0692 18.4462L12 19.5L4.5 12L12 4.5L13.0692 5.55375L7.373 11.25Z" fill="currentColor"/>
                 </svg>

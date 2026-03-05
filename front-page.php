@@ -193,10 +193,10 @@
     <div class="l-inner p-front-news__inner">
       <div class="p-front-news__head">
         <div class="p-front-news__title">
-          <p class="p-front-news__title-ja">お知らせ</p>
-          <p class="p-front-news__title-en">News</p>
+          <p class="p-front-news__title-ja js-opacity-word">お知らせ</p>
+          <p class="p-front-news__title-en js-clip-path-from-bottom">News</p>
         </div>
-        <div class="p-front-news__more-pc">
+        <div class="p-front-news__more-pc js-opacity-word">
 
           <a class="p-front-news__more" href="<?php echo esc_url(home_url('/blog-all')); ?>">
             <span class="p-front-news__more-text">一覧を見る</span>
@@ -212,7 +212,7 @@
       </div>
 
       <div class="p-front-news__list">
-        <a class="p-front-news__item" href="#">
+        <a class="p-front-news__item js-opacity-word" href="#">
           <div class="p-front-news__meta">
             <time class="p-front-news__date" datetime="2026-02-01">2026.02.01</time>
             <span class="p-front-news__category">TOPICS</span>
@@ -229,7 +229,7 @@
           </div>
         </a>
 
-        <a class="p-front-news__item" href="#">
+        <a class="p-front-news__item js-opacity-word" href="#">
           <div class="p-front-news__meta">
             <time class="p-front-news__date" datetime="2026-02-01">2026.02.01</time>
             <span class="p-front-news__category">TOPICS</span>
@@ -247,7 +247,7 @@
           </div>
         </a>
 
-        <a class="p-front-news__item" href="#">
+        <a class="p-front-news__item js-opacity-word" href="#">
           <div class="p-front-news__meta">
             <time class="p-front-news__date" datetime="2026-02-01">2026.02.01</time>
             <span class="p-front-news__category">TOPICS</span>
@@ -263,7 +263,7 @@
           </div>
         </a>
       </div>
-      <div class="p-front-news__more-sp">
+      <div class="p-front-news__more-sp js-opacity-word">
 
         <a class="p-front-news__more" href="<?php echo esc_url(home_url('/blog-all')); ?>">
           <span class="p-front-news__more-text">一覧を見る</span>
@@ -283,27 +283,27 @@
         <div class="p-pro__left">
           <div class="p-pro__catch">
             <div class="p-pro__catch-group">
-              <p class="p-pro__catch-line">ハイヤー時代、到来。</p>
-              <p class="p-pro__catch-line">移動は「量」から「質」へ。</p>
+              <p class="p-pro__catch-line js-pro-word">ハイヤー時代、到来。</p>
+              <p class="p-pro__catch-line js-pro-word">移動は「量」から「質」へ。</p>
             </div>
             <div class="p-pro__catch-group">
-              <p class="p-pro__catch-line">今、選ばれるのは</p>
-              <p class="p-pro__catch-line">プロフェッショナルドライバー。</p>
+              <p class="p-pro__catch-line js-pro-word">今、選ばれるのは</p>
+              <p class="p-pro__catch-line js-pro-word">プロフェッショナルドライバー。</p>
             </div>
           </div>
           <div class="p-pro__texts">
-            <p class="p-pro__text">
+            <p class="p-pro__text js-opacity-word">
               今、「タクシー」ではなく「ハイヤー」が選ばれています。<br class="u-desktop">
               それは、単に移動するのではなく、接客力と判断力を備えたプロフェッショナルドライバーが、<br>
               移動そのものの価値を提供する仕事だからです。
             </p>
-            <p class="p-pro__text">
+            <p class="p-pro__text js-opacity-word">
               株式会社Zは、2021年に銀座でハイヤー事業をスタート。<br class="u-desktop">
               以降、圧倒的なスピードで成長を続け、アルファードの保有台数は都内最大級クラス、<br class="u-desktop">
               拠点は都内9か所まで拡大してきました。<br class="u-desktop">
               インバウンド需要が高まる中、ハイヤー業界でも高水準の収入実績を重ねています。
             </p>
-            <p class="p-pro__text">
+            <p class="p-pro__text js-opacity-word">
               Zの強みは、質の高い需要に集中できる環境です。<br class="u-desktop">
               世界中で利用されている配車アプリ Uber と連携し、<br class="u-desktop">
               観光・ビジネス利用を中心とした完全予約制のUber Premium専属運行。<br class="u-desktop">
@@ -314,14 +314,14 @@
             </p>
           </div>
         </div>
-        <div class="p-pro__right">
+        <div class="p-pro__right js-pro-img">
           <figure class="p-pro__img">
             <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/pro_z.png" alt="" width="700" height="683">
           </figure>
         </div>
 
       </div>
-      <div class="p-pro__slider">
+      <div class="p-pro__slider js-opacity-word">
         <div class="swiper p-pro__swiper js-pro-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide p-pro__slide">
@@ -396,13 +396,13 @@
   <section class="p-king">
     <div class="l-inner">
       <div class="p-king__content">
-        <p class="p-king__title">
+        <p class="p-king__title js-opacity-word">
           業界No.1<br>
           3冠獲得。
         </p>
 
         <div class="p-king__cards">
-          <div class="p-king__card">
+          <div class="p-king__card js-opacity-word">
             <div class="p-king__card-inner">
               <p class="p-king__card-label">
                 アルファード<br>
@@ -412,14 +412,14 @@
             </div>
           </div>
 
-          <div class="p-king__card">
+          <div class="p-king__card js-opacity-word">
             <div class="p-king__card-inner">
               <p class="p-king__card-label">営業拠点数</p>
               <p class="p-king__card-value">No.1</p>
             </div>
           </div>
 
-          <div class="p-king__card">
+          <div class="p-king__card js-opacity-word">
             <div class="p-king__card-inner">
               <p class="p-king__card-label">未経験入社</p>
               <p class="p-king__card-value">80%</p>
@@ -588,12 +588,12 @@
 
     <div class="l-inner">
       <div class="p-front-work__title">
-        <p class="p-front-work__title-ja">仕事について</p>
-        <p class="p-front-work__title-en">Work</p>
+        <p class="p-front-work__title-ja js-opacity-word">仕事について</p>
+        <p class="p-front-work__title-en js-clip-path-from-bottom">Work</p>
       </div>
 
       <div class="p-front-work__cards">
-        <a class="p-front-work__card p-front-work__card--large" href="#">
+        <a class="p-front-work__card p-front-work__card--large js-opacity-word" href="#">
           <div class="p-front-work__card-inner">
             <div class="p-front-work__card-content p-front-work__card-content--large">
               <figure class="p-front-work__card-img p-front-work__card-img--large">
@@ -616,7 +616,7 @@
         </a>
         <div class="p-front-work__grid">
 
-          <a class="p-front-work__card" href="#">
+          <a class="p-front-work__card js-opacity-word" href="#">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img">
@@ -639,7 +639,7 @@
             </div>
           </a>
 
-          <a class="p-front-work__card" href="#">
+          <a class="p-front-work__card js-opacity-word" href="#">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img">
@@ -662,7 +662,7 @@
             </div>
           </a>
 
-          <a class="p-front-work__card" href="#">
+          <a class="p-front-work__card js-opacity-word" href="#">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img">
@@ -685,7 +685,7 @@
             </div>
           </a>
 
-          <a class="p-front-work__card" href="#">
+          <a class="p-front-work__card js-opacity-word" href="#">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img">
@@ -717,18 +717,22 @@
       <div class="p-top-column__content">
         <div class="p-top-column__head">
           <div class="p-top-column__title">
-            <p class="p-top-column__title-ja">コラム</p>
-            <p class="p-top-column__title-en">Column</p>
+            <p class="p-top-column__title-ja js-opacity-word">コラム</p>
+            <p class="p-top-column__title-en js-clip-path-from-bottom">Column</p>
           </div>
 
           <div class="p-top-column__actions">
 
             <div class="p-top-column__nav" aria-label="コラムスライダーナビゲーション">
               <button class="swiper-button-prev p-top-column__prev" type="button" aria-label="前へ">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.8426 23.0002L38.0001 23.0002L38.0001 25.0002L13.8426 25.0002L25.4271 36.5847L24.0001 38.0002L10.0001 24.0002L24.0001 10.0002L25.4271 11.4157L13.8426 23.0002Z" fill="white" />
+                </svg>
               </button>
               <button class="swiper-button-next p-top-column__next" type="button" aria-label="次へ">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M34.1575 25H10V23H34.1575L22.573 11.4155L24 10L38 24L24 38L22.573 36.5845L34.1575 25Z" fill="white" />
+                </svg>
               </button>
             </div>
             <a class="p-top-column__more" href="#">
@@ -740,7 +744,7 @@
             </a>
           </div>
         </div>
-        <div class="p-top-column__right">
+        <div class="p-top-column__right js-opacity-word">
           <div class="swiper p-top-column__swiper js-top-column-swiper">
             <div class="swiper-wrapper p-top-column__cards">
               <div class="swiper-slide p-top-column__slide">
@@ -903,8 +907,8 @@
 
         <div class="p-top-interview__head">
           <div class="p-top-interview__title">
-            <p class="p-top-interview__title-ja">インタビュー動画</p>
-            <p class="p-top-interview__title-en">Interview<br>Movie</p>
+            <p class="p-top-interview__title-ja js-opacity-word">インタビュー動画</p>
+            <p class="p-top-interview__title-en js-clip-path-from-bottom">Interview<br>Movie</p>
           </div>
 
           <div class="p-top-interview__actions">
@@ -912,10 +916,14 @@
 
             <div class="p-top-interview__nav" aria-label="インタビュースライダーナビゲーション">
               <button class="p-top-interview__prev" type="button" aria-label="前へ">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-arrow.svg" alt="" width="20" height="20">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.8426 23.0002L38.0001 23.0002L38.0001 25.0002L13.8426 25.0002L25.4271 36.5847L24.0001 38.0002L10.0001 24.0002L24.0001 10.0002L25.4271 11.4157L13.8426 23.0002Z" fill="#044396" />
+                </svg>
               </button>
               <button class="p-top-interview__next" type="button" aria-label="次へ">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-arrow.svg" alt="" width="20" height="20">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M34.1575 25H10V23H34.1575L22.573 11.4155L24 10L38 24L24 38L22.573 36.5845L34.1575 25Z" fill="#044396" />
+                </svg>
               </button>
             </div>
 
@@ -928,7 +936,7 @@
             </a>
           </div>
         </div>
-        <div class="p-top-interview__right">
+        <div class="p-top-interview__right js-opacity-word">
           <div class="swiper p-top-interview__swiper js-top-interview-swiper">
             <div class="swiper-wrapper p-top-interview__tracks">
               <div class="swiper-slide p-top-interview__slide">
@@ -991,12 +999,12 @@
   <section class="p-company">
     <div class="l-inner">
       <div class="p-company__head">
-        <p class="p-company__title-ja">会社情報</p>
-        <p class="p-company__title-en">Company</p>
+        <p class="p-company__title-ja js-opacity-word">会社情報</p>
+        <p class="p-company__title-en js-clip-path-from-bottom">Company</p>
       </div>
 
       <div class="p-company__cards">
-        <a class="p-company__card" href="#">
+        <a class="p-company__card js-opacity-word" href="#">
           <div class="p-company__card-inner">
             <div class="p-company__card-body">
               <div class="p-company__card-texts">
@@ -1019,7 +1027,7 @@
 
         <span class="p-company__divider" aria-hidden="true"></span>
 
-        <a class="p-company__card" href="#">
+        <a class="p-company__card js-opacity-word" href="#">
           <div class="p-company__card-inner">
             <div class="p-company__card-body">
               <div class="p-company__card-texts">

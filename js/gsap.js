@@ -122,4 +122,99 @@ pageMainTitles.forEach((pageMainTitle) => {
   );
 });
 
+let clipPathFromBottom = document.querySelectorAll('.js-clip-path-from-bottom');
 
+clipPathFromBottom.forEach((clipPathFromBottom) => {
+  gsap.fromTo(
+    clipPathFromBottom,
+    {
+      opacity: 0,
+      clipPath: "inset(100% 0 0 0)",
+    },
+    {
+      opacity: 1,
+      clipPath: "inset(0% 0 0 0)",
+      duration: 1.5,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: clipPathFromBottom,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+let opacityWords = document.querySelectorAll('.js-opacity-word');
+
+opacityWords.forEach((opacityWord) => {
+  gsap.fromTo(
+    opacityWord,
+    {
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+      duration: 1,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: opacityWord,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+let proWords = document.querySelectorAll('.js-pro-word');
+
+proWords.forEach((proWord) => {
+  gsap.fromTo(
+    proWord,
+    {
+      "--width": "0%",
+      opacity: 0,
+    },
+    {
+      "--width": "100%",
+      opacity: 1,
+      duration: 1.5,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: proWord,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+gsap.fromTo(".js-pro-img", {
+  opacity: 0,
+  scale: 0.3,
+}, {
+  opacity: 1,
+  scale: 1,
+  duration: 1.5,
+  ease: 'power3.out',
+  scrollTrigger: {
+    trigger: ".js-pro-img",
+    start: 'top 90%',
+  },
+});
+
+let parallaxImgs = document.querySelectorAll('.js-parallax');
+
+parallaxImgs.forEach((parallaxImg) => {
+  gsap.fromTo(
+    parallaxImg.querySelector('img'),
+    {
+      y: -60,
+    },
+    {
+      y: 0,
+      duration: 1,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: parallaxImg,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true,
+      },
+    }
+  );
+});

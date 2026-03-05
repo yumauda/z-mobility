@@ -85,21 +85,31 @@
 .p-top-column__nav {
   display: flex;
   align-items: center;
-  gap: rem(12);
+  gap: rem(32);
+  position: relative;
+
+}
+
+.p-top-column__nav::before {
+  position: absolute;
+  content: '';
+  background: #C2C9D0;
+  width: 1px;
+  height: rem(48);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .p-top-column__prev,
 .p-top-column__next {
   position: static;
-  width: rem(40);
-  height: rem(40);
-  border-radius: 9999px;
-  border: 1px solid #c2c9d0;
+  width: rem(48);
+  height: rem(48);
   background: transparent;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
   cursor: pointer;
 }
 
@@ -129,13 +139,8 @@
   width: rem(129);
 }
 
-.p-top-column__icon img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .p-top-column__more {
+  position: relative;
   background: #fff;
   border-radius: rem(4);
   display: flex;
@@ -145,11 +150,55 @@
   width: rem(190);
   height: rem(48);
   padding: rem(8) rem(12);
-  @include mq(md){
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+
+  @include mq(md) {
     padding: rem(12) rem(16);
     width: fit-content;
     height: initial;
-    
+
+  }
+}
+
+.p-top-column__more::before {
+  content: "";
+  position: absolute;
+  inset: -40% -20%;
+  background: linear-gradient(
+    115deg,
+    rgba(4, 67, 150, 0) 35%,
+    rgba(4, 67, 150, 0.12) 50%,
+    rgba(4, 67, 150, 0) 65%
+  );
+  transform: translateX(-140%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.p-top-column__more:hover {
+  transform: translateY(rem(-2));
+  box-shadow: 0 rem(12) rem(30) rgba(0, 0, 0, 0.12);
+  background: #f6f8fb;
+}
+
+.p-top-column__more:hover::before {
+  transform: translateX(140%);
+}
+
+.p-top-column__more:hover .p-top-column__more-icon {
+  transform: translateX(rem(2));
+}
+
+.p-top-column__more-icon {
+  transition: transform 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p-top-column__more,
+  .p-top-column__more::before,
+  .p-top-column__more-icon {
+    transition: none;
   }
 }
 
@@ -158,7 +207,8 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #044396;
-  @include mq(md){
+
+  @include mq(md) {
     font-size: rem(16);
   }
 }

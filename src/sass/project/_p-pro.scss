@@ -37,18 +37,27 @@
   line-height: 1;
   position: relative;
   font-feature-settings: 'palt' on;
+  --width: 0%;
 
   @include mq(md) {
     font-size: rem(64);
   }
 }
 
+.p-pro__catch-line:nth-child(2) {
+  @include mq(md) {
+    margin-top: rem(-8);
+
+  }
+}
+
 .p-pro__catch-line::before {
   content: "";
   position: absolute;
-  inset: 0;
+  height: 100%;
   background: #044396;
   z-index: -1;
+  width: var(--width);
 }
 
 .p-pro__texts {
