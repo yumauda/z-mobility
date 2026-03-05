@@ -103,3 +103,8 @@
   flex: none;
 }
 
+.p-page-mv__titleEnSmall {
+  @include mq(md){
+    font-size: rem(64);
+  }
+}

@@ -12,7 +12,7 @@
   <section class="p-page-company">
     <div class="l-inner">
       <div class="p-page-company__content">
-        <a class="p-page-company__card" href="#">
+        <a class="p-page-company__card" href="<?php echo esc_url(home_url('/company/message')); ?>">
           <div class="p-page-company__card-inner">
             <div class="p-page-company__card-body">
               <div class="p-page-company__card-texts">
@@ -32,7 +32,7 @@
           </div>
         </a>
 
-        <a class="p-page-company__card" href="#">
+        <a class="p-page-company__card" href="<?php echo esc_url(home_url('/company/information')); ?>">
           <div class="p-page-company__card-inner">
             <div class="p-page-company__card-body">
               <div class="p-page-company__card-texts">
