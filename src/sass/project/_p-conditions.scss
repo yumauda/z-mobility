@@ -1,20 +1,31 @@
 @use "../global" as *;
 
 .p-conditions {
-  padding-top: rem(120);
-  padding-bottom: rem(120);
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md){
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
 }
 
 .p-conditions__content {
   max-width: rem(1000);
   margin-inline: auto;
   display: grid;
-  gap: rem(64);
+  gap: rem(32);
+  @include mq(md){
+    gap: rem(64);
+  }
 }
 
 .p-conditions__section {
   display: grid;
-  gap: rem(24);
+  gap: rem(16);
+  @include mq(md){
+    gap: rem(24);
+    
+  }
 }
 
 .p-conditions__h3 {

@@ -2,7 +2,7 @@
 
 .p-page-mv {
   position: relative;
-  padding-top: rem(48);
+  padding-top: rem(120);
   overflow-x: clip;
 
   @include mq(md) {
@@ -12,11 +12,16 @@
 
 .p-page-mv__bg {
   position: absolute;
-  top: rem(64);
   left: 0;
   width: 100%;
   max-width: rem(1352);
   z-index: 0;
+  top: rem(100);
+
+  @include mq(md) {
+    top: rem(64);
+
+  }
 }
 
 .p-page-mv__bg svg {
@@ -64,10 +69,15 @@
 }
 
 .p-page-mv__titleJaText {
-  font-size: rem(18);
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.1em;
+  font-size: rem(14);
+
+  @include mq(md) {
+    font-size: rem(18);
+
+  }
 }
 
 .p-page-mv__titleEn {
@@ -94,6 +104,11 @@
 
 .p-page-mv__panLink {
   text-decoration: none;
+  font-size: rem(14);
+  color: #1A1A1A;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-weight: 500;
 }
 
 .p-page-mv__panDivider {
@@ -104,7 +119,7 @@
 }
 
 .p-page-mv__titleEnSmall {
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(64);
   }
 }

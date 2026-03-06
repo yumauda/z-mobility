@@ -2,6 +2,15 @@
 <main>
   <section class="p-single">
     <div class="l-inner">
+      <div class="p-single__breadcrumbs">
+        <nav class="p-single__pan" aria-label="パンくずリスト">
+          <a class="p-single__panLink" href="<?php echo esc_url(home_url('/')); ?>">トップ</a>
+          <span class="p-single__panDivider" aria-hidden="true"></span>
+          <a class="p-single__panLink" href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a>
+          <span class="p-single__panDivider" aria-hidden="true"></span>
+          <span class="p-single__panCurrent"><?php echo esc_html(get_the_title()); ?></span>
+        </nav>
+      </div>
       <div class="p-single__content">
         <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>

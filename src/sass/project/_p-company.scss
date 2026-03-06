@@ -193,7 +193,7 @@
   @include mq(md) {
     aspect-ratio: 230 / 320;
     max-width: rem(230);
-    min-width: rem(230);
+    min-width: initial;
   }
 }
 

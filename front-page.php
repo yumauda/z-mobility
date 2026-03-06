@@ -198,7 +198,7 @@
         </div>
         <div class="p-front-news__more-pc js-opacity-word">
 
-          <a class="p-front-news__more" href="<?php echo esc_url(home_url('/blog-all')); ?>">
+          <a class="p-front-news__more" href="<?php echo esc_url(home_url('/news')); ?>">
             <span class="p-front-news__more-text">一覧を見る</span>
             <span class="p-front-news__more-divider" aria-hidden="true"></span>
             <span class="p-front-news__more-icon" aria-hidden="true">

@@ -186,9 +186,11 @@ proWords.forEach((proWord) => {
 gsap.fromTo(".js-pro-img", {
   opacity: 0,
   scale: 0.3,
+  filter: "blur(200px)",
 }, {
   opacity: 1,
   scale: 1,
+  filter: "blur(0px)",
   duration: 1.5,
   ease: 'power3.out',
   scrollTrigger: {

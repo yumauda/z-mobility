@@ -1,13 +1,22 @@
 @use "../global" as *;
 
 .p-page-company {
-  padding-top: rem(120);
-  padding-bottom: rem(120);
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md){
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+    
+  }
 }
 
 .p-page-company__content {
   display: grid;
-  gap: rem(80);
+  gap: rem(40);
+  @include mq(md){
+    gap: rem(80);
+    
+  }
 }
 
 .p-page-company__card {

@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-message {
-  padding-top: rem(80);
-  padding-bottom: rem(120);
+  padding-top: rem(64);
+  padding-bottom: rem(64);
 
   @include mq(md) {
     padding-top: rem(120);
@@ -22,7 +22,7 @@
 }
 
 .p-message__title {
-  font-size: rem(24);
+  font-size: rem(20);
   font-weight: 500;
   line-height: 1.6;
   color: #1a1a1a;

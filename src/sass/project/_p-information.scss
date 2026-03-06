@@ -1,13 +1,21 @@
 @use "../global" as *;
 
 .p-information {
-  padding-top: rem(120);
-  padding-bottom: rem(120);
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md){
+    padding-top: rem(120);
+    padding-bottom: rem(120); 
+  }
 }
 
 .p-information__content {
   display: grid;
-  gap: rem(120);
+  gap: rem(32);
+  @include mq(md){
+    gap: rem(120);
+    
+  }
 }
 
 .p-information__section {
@@ -40,9 +48,13 @@
 
 .p-information__head-en {
   font-family: $special-gothic;
-  font-size: rem(48);
   font-weight: 400;
   line-height: 1.1;
+  font-size: rem(32);
+  @include mq(md){
+    font-size: rem(48);
+    
+  }
 }
 
 .p-information__body {
