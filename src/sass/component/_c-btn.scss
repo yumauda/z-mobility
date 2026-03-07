@@ -1,0 +1,110 @@
+@use "../global" as *;
+
+.c-btn {
+  --c-btn-bg: #044396;
+  --c-btn-bg-hover: #053b84;
+  --c-btn-fg: #fff;
+  --c-btn-divider: #00285c;
+  --c-btn-sweep: rgba(255, 255, 255, 0.22);
+
+  position: relative;
+  display: grid;
+  grid-template-columns: 120px 1px 20px;
+  align-items: center;
+  gap: rem(12);
+  padding: rem(8) rem(12);
+  width: rem(190);
+  height: rem(48);
+  border-radius: rem(4);
+  background: var(--c-btn-bg);
+  color: var(--c-btn-fg);
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+
+  @include mq(md) {
+    padding: rem(12) rem(16);
+    width: fit-content;
+    height: auto;
+  }
+}
+
+.c-btn::before {
+  content: "";
+  position: absolute;
+  inset: -40% -20%;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0) 35%,
+    var(--c-btn-sweep) 50%,
+    rgba(255, 255, 255, 0) 65%
+  );
+  transform: translateX(-140%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.c-btn:hover {
+  transform: translateY(rem(-2));
+  box-shadow: 0 rem(12) rem(30) rgba(0, 0, 0, 0.12);
+  background: var(--c-btn-bg-hover);
+}
+
+.c-btn:hover::before {
+  transform: translateX(140%);
+}
+
+.c-btn__text {
+  font-size: rem(14);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.c-btn__divider {
+  width: 1px;
+  height: rem(32);
+  background: var(--c-btn-divider);
+  justify-self: stretch;
+}
+
+.c-btn__icon {
+  width: rem(20);
+  height: rem(20);
+  display: grid;
+  place-items: center;
+  transition: transform 0.25s ease;
+}
+
+.c-btn__icon img,
+.c-btn__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.c-btn:hover .c-btn__icon {
+  transform: translateX(rem(2));
+}
+
+.c-btn--light {
+  --c-btn-bg: #fff;
+  --c-btn-bg-hover: #f6f8fb;
+  --c-btn-fg: #044396;
+  --c-btn-divider: #c2c9d0;
+  --c-btn-sweep: rgba(4, 67, 150, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-btn,
+  .c-btn::before,
+  .c-btn__icon {
+    transition: none;
+  }
+}
+

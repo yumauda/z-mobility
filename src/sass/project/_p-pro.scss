@@ -18,8 +18,14 @@
 .p-pro__catch {
   display: flex;
   flex-direction: column;
-  gap: rem(32);
+  gap: rem(12);
+
+  @include mq(md) {
+    gap: rem(32);
+
+  }
 }
+
 
 .p-pro__catch-group {
   display: flex;
@@ -45,10 +51,9 @@
 }
 
 .p-pro__catch-line:nth-child(2) {
-  @include mq(md) {
-    margin-top: rem(-8);
+  margin-top: rem(-8);
 
-  }
+  @include mq(md) {}
 }
 
 .p-pro__catch-line::before {
@@ -180,7 +185,17 @@
   }
 }
 
-.p-pro__img {
+.p-pro__img {}
+
+
+.p-pro__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-pro__right {
   position: absolute;
   top: rem(-32);
   left: 50%;
@@ -196,14 +211,6 @@
     width: rem(695);
     margin-left: rem(-88);
     margin-top: rem(88);
-
+    margin-right: rem(-96);
   }
-}
-
-
-.p-pro__img img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center center;
 }

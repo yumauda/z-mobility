@@ -197,11 +197,10 @@
           <p class="p-front-news__title-en js-clip-path-from-bottom">News</p>
         </div>
         <div class="p-front-news__more-pc js-opacity-word">
-
-          <a class="p-front-news__more" href="<?php echo esc_url(home_url('/news')); ?>">
-            <span class="p-front-news__more-text">一覧を見る</span>
-            <span class="p-front-news__more-divider" aria-hidden="true"></span>
-            <span class="p-front-news__more-icon" aria-hidden="true">
+          <a class="c-btn c-btn--primary" href="<?php echo esc_url(home_url('/news')); ?>">
+            <span class="c-btn__text">一覧を見る</span>
+            <span class="c-btn__divider" aria-hidden="true"></span>
+            <span class="c-btn__icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.5 5L12.1 6.4L16.7 11H5V13H16.7L12.1 17.6L13.5 19L20.5 12L13.5 5Z" fill="currentColor" />
               </svg>
@@ -265,10 +264,10 @@
       </div>
       <div class="p-front-news__more-sp js-opacity-word">
 
-        <a class="p-front-news__more" href="<?php echo esc_url(home_url('/blog-all')); ?>">
-          <span class="p-front-news__more-text">一覧を見る</span>
-          <span class="p-front-news__more-divider" aria-hidden="true"></span>
-          <span class="p-front-news__more-icon" aria-hidden="true">
+        <a class="c-btn c-btn--primary" href="<?php echo esc_url(home_url('/blog-all')); ?>">
+          <span class="c-btn__text">一覧を見る</span>
+          <span class="c-btn__divider" aria-hidden="true"></span>
+          <span class="c-btn__icon" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.5 5L12.1 6.4L16.7 11H5V13H16.7L12.1 17.6L13.5 19L20.5 12L13.5 5Z" fill="currentColor" />
             </svg>
@@ -735,10 +734,10 @@
                 </svg>
               </button>
             </div>
-            <a class="p-top-column__more" href="#">
-              <span class="p-top-column__more-text">一覧を見る</span>
-              <span class="p-top-column__more-divider" aria-hidden="true"></span>
-              <span class="p-top-column__more-icon" aria-hidden="true">
+            <a class="c-btn c-btn--light" href="#">
+              <span class="c-btn__text">一覧を見る</span>
+              <span class="c-btn__divider" aria-hidden="true"></span>
+              <span class="c-btn__icon" aria-hidden="true">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
               </span>
             </a>
@@ -811,10 +810,10 @@
         </div>
         <div class="p-top-column__more-sp">
 
-          <a class="p-top-column__more" href="#">
-            <span class="p-top-column__more-text">一覧を見る</span>
-            <span class="p-top-column__more-divider" aria-hidden="true"></span>
-            <span class="p-top-column__more-icon" aria-hidden="true">
+          <a class="c-btn c-btn--light" href="#">
+            <span class="c-btn__text">一覧を見る</span>
+            <span class="c-btn__divider" aria-hidden="true"></span>
+            <span class="c-btn__icon" aria-hidden="true">
               <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
             </span>
           </a>
@@ -927,10 +926,10 @@
               </button>
             </div>
 
-            <a class="p-top-interview__more" href="#">
-              <span class="p-top-interview__more-text">一覧を見る</span>
-              <span class="p-top-interview__more-divider" aria-hidden="true"></span>
-              <span class="p-top-interview__more-icon" aria-hidden="true">
+            <a class="c-btn c-btn--primary" href="#">
+              <span class="c-btn__text">一覧を見る</span>
+              <span class="c-btn__divider" aria-hidden="true"></span>
+              <span class="c-btn__icon" aria-hidden="true">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-arrow.svg" alt="" width="20" height="20">
               </span>
             </a>
@@ -982,10 +981,10 @@
           </div>
         </div>
         <div class="p-top-interview__bottom-sp">
-          <a class="p-top-interview__more" href="#">
-            <span class="p-top-interview__more-text">一覧を見る</span>
-            <span class="p-top-interview__more-divider" aria-hidden="true"></span>
-            <span class="p-top-interview__more-icon" aria-hidden="true">
+          <a class="c-btn c-btn--primary" href="#">
+            <span class="c-btn__text">一覧を見る</span>
+            <span class="c-btn__divider" aria-hidden="true"></span>
+            <span class="c-btn__icon" aria-hidden="true">
               <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-arrow.svg" alt="" width="20" height="20">
             </span>
           </a>

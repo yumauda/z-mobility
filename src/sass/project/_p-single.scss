@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .p-single {
-  padding-top: rem(80);
+  padding-top: rem(140);
   padding-bottom: rem(120);
 
   @include mq(md) {
@@ -12,8 +12,13 @@
 
 .p-single__content {
   display: grid;
-  gap: rem(64);
-  margin-top: rem(96);
+  margin-top: rem(48);
+  gap: rem(32);
+  @include mq(md){
+    gap: rem(64);
+    margin-top: rem(96);
+    
+  }
 }
 
 .p-single__breadcrumbs {

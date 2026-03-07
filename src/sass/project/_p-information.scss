@@ -300,8 +300,12 @@
 }
 
 .p-information__groupList {
-  margin-top: rem(56);
   border-top: 1px solid #c2c9d0;
+  margin-top: rem(24);
+  @include mq(md){
+    margin-top: rem(56);
+    
+  }
 }
 
 .p-information__groupList--group {

@@ -176,6 +176,7 @@ proWords.forEach((proWord) => {
       opacity: 1,
       duration: 1.5,
       ease: 'power3.out',
+      stagger: 0.08,
       scrollTrigger: {
         trigger: proWord,
         start: 'top 90%',
