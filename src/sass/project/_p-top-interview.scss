@@ -179,6 +179,26 @@
   background: #dfdfdf;
   border-radius: rem(10);
   aspect-ratio: 339 / 460;
+  position: relative;
+  z-index: 1;
+}
+.p-top-interview__thumb::before {
+  position: absolute;
+  content: '';
+  background: url(../images/common/movie_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  width: rem(48);
+  height: rem(48);
+  bottom: rem(20);
+  right: rem(20);
+  @include mq(md){
+    width: rem(80);
+    height: rem(80);
+    
+  }
 }
 
 .p-top-interview__thumb img {
