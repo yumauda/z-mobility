@@ -80,30 +80,59 @@
                                 <div class="p-drawer-content__items">
                                     <ul class="p-drawer-content__lists">
                                         <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
+                                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">Top</a>
+                                        </li>
+                                        <li class="p-drawer-content__list">
+                                            <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
                                         </li>
                                         <li class="p-drawer-content__list">
                                             <a href="<?php echo esc_url(home_url('/work')); ?>" class="p-drawer-content__link">仕事について</a>
+                                            <ul class="p-drawer-content__sub">
+                                                <li class="p-drawer-content__subItem">
+                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">仕事内容</a>
+                                                </li>
+                                                <li class="p-drawer-content__subItem">
+                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">車両紹介</a>
+                                                </li>
+                                                <li class="p-drawer-content__subItem">
+                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">二種免許支援教育体制</a>
+                                                </li>
+                                                <li class="p-drawer-content__subItem">
+                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">数字で見るZ</a>
+                                                </li>
+                                                <li class="p-drawer-content__subItem">
+                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">よくある質問</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="p-drawer-content__list">
+                                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">インタビュー動画</a>
                                         </li>
                                         <li class="p-drawer-content__list">
                                             <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-drawer-content__link">会社情報</a>
+                                            <ul class="p-drawer-content__sub">
+                                                <li class="p-drawer-content__subItem">
+                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/company/message')); ?>">代表メッセージ</a>
+                                                </li>
+                                                <li class="p-drawer-content__subItem">
+                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/company/information')); ?>">会社概要</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/company/message')); ?>" class="p-drawer-content__link">代表メッセージ</a>
+                                            <a href="<?php echo esc_url(home_url('/work')); ?>" class="p-drawer-content__link">募集要項</a>
                                         </li>
                                         <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/blog-all')); ?>" class="p-drawer-content__link">お知らせ</a>
+                                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__link">エントリー</a>
+                                        </li>
+                                        <li class="p-drawer-content__list p-drawer-content__list--legal">
+                                            <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-drawer-content__sublink">プライバシーポリシー</a>
+                                        </li>
+                                        <li class="p-drawer-content__list p-drawer-content__list--legal">
+                                            <a href="<?php echo esc_url(home_url('/conditions')); ?>" class="p-drawer-content__sublink">運送約款</a>
                                         </li>
                                     </ul>
-                                    <div class="p-drawer-content__sns">
-                                        <p class="p-drawer-content__sns-text">FOLLOW US</p>
-                                        <a href="https://www.instagram.com/truxia.management/" class="p-drawer-content__sns-link" target="_blank">
-                                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/instagram.svg" alt="インスタグラム" width="30" height="30">
-                                        </a>
-                                        <a href="https://x.com/truxia_mg" class="p-drawer-content__sns-link" target="_blank">
-                                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/x.svg" alt="x" width="30" height="30">
-                                        </a>
-                                    </div>
+                                  
                                     <div class="p-drawer-content__contact-wrapper">
                                         <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__contact">
                                             <p class="p-drawer-content__contact-text">お問い合わせ</p>
