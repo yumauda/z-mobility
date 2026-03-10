@@ -26,9 +26,9 @@
     <div class="l-inner">
       <div class="p-mv__titles">
         <h1 class="p-mv__title">
-          <span class="p-mv__title-en js-en-title">The era <br class="u-mobile">of hire</span>
-          <span class="p-mv__title-ja js-ja-title">ハイヤー時代、到来。</span>
-          <span class="p-mv__title-en p-mv__title-en--last js-en-title">cars has <br class="u-mobile">arrived.</span>
+          <span class="p-mv__title-en js-en-title">The era <br class="u-mobile"><span class="p-mv__title-space">of hire</span>
+          <span class="p-mv__title-ja js-ja-title p-mv__title-space--2">ハイヤー時代、到来。</span>
+          <span class="p-mv__title-en p-mv__title-en--last js-en-title p-mv__title-space--3">cars has <br class="u-mobile"><span class="p-mv__title-space--4">arrived.</span></span>
         </h1>
       </div>
     </div>

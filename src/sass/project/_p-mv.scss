@@ -95,6 +95,7 @@
 }
 
 .p-mv__title-en--last {
+  margin-top: rem(-12);
   @include mq(md) {
 
     margin-left: rem(148);
@@ -140,5 +141,31 @@
   @include mq(md){
     bottom: rem(-80);
     
+  }
+}
+.p-mv__title-space {
+  margin-left: rem(48);
+  @include mq(md){
+   margin-left: initial; 
+  }
+}
+.p-mv__title-space--2 {
+  margin-left: rem(56);
+  @include mq(md){
+   margin-left: initial; 
+  }
+}
+.p-mv__title-space--3 {
+  margin-left: rem(32);
+  @include mq(md){
+   margin-left: initial; 
+  }
+}
+.p-mv__title-space--4 {
+  margin-left: rem(92);
+  margin-top: rem(-16);
+  @include mq(md){
+   margin-left: initial; 
+   margin-top: initial;
   }
 }

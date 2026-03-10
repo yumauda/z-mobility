@@ -3424,6 +3424,9 @@ input::placeholder {
   }
 }
 
+.p-mv__title-en--last {
+  margin-top: -0.75rem;
+}
 @media screen and (min-width: 768px) {
   .p-mv__title-en--last {
     margin-left: 9.25rem;
@@ -3471,6 +3474,44 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-mv__ribbon {
     bottom: -5rem;
+  }
+}
+
+.p-mv__title-space {
+  margin-left: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__title-space {
+    margin-left: initial;
+  }
+}
+
+.p-mv__title-space--2 {
+  margin-left: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__title-space--2 {
+    margin-left: initial;
+  }
+}
+
+.p-mv__title-space--3 {
+  margin-left: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__title-space--3 {
+    margin-left: initial;
+  }
+}
+
+.p-mv__title-space--4 {
+  margin-left: 5.75rem;
+  margin-top: -1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__title-space--4 {
+    margin-left: initial;
+    margin-top: initial;
   }
 }
 
