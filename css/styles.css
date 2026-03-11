@@ -3179,7 +3179,7 @@ input::placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    aspect-ratio: 1440/576;
+    aspect-ratio: 1440/776;
     object-fit: cover;
   }
 }
