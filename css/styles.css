@@ -672,7 +672,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-conditions {
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 16.25rem;
   }
 }
 
@@ -4066,7 +4066,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-privacy {
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 16.25rem;
   }
 }
 
