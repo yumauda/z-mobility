@@ -35,12 +35,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(100);
+  width: rem(50);
   height: auto;
   aspect-ratio: 100 / 100;
   object-fit: cover;
   bottom: 0;
   right: 0;
+  @include mq(md){
+    width: rem(100);
+  }
 }
 
 .p-top-column__title {

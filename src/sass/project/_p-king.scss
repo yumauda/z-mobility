@@ -7,23 +7,31 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: rem(114);
-  padding-bottom: rem(152);
+  aspect-ratio: 375 / 560;
+  object-fit: cover;
 
   @include mq(md) {
-    padding-top: rem(180);
-    padding-bottom: rem(220);
-    background-image: image-set(url(../images/top/king_bg.webp) type("image/webp"),
-        url(../images/top/king_bg.png) type("image/png"));
+    padding-top: initial;
+    padding-bottom: initial;
+    background: url(../images/top/king_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
+    aspect-ratio: 1440 / 576;
+    object-fit: cover;
   }
 }
+.p-king .l-inner {
+  position: relative;
+  height: 100%;
+}
 
-
-.p-king__content {}
+.p-king__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(20);
+}
 
 .p-king__title {
   color: #fff;
@@ -94,6 +102,7 @@
   justify-content: center;
   line-height: 1.2;
   width: rem(84);
+
   @include mq(md) {
     width: initial;
     font-size: rem(16);

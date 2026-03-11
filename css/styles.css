@@ -407,11 +407,33 @@ select::-ms-expand {
   background: #1a1a1a;
   padding-top: 3.5rem;
   padding-bottom: 4.5rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-company {
     padding-top: 7.5rem;
     padding-bottom: 18.75rem;
+  }
+}
+
+.p-company::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/company_top_curve.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  aspect-ratio: 100/100;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 3.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-company::before {
+    width: 6.25rem;
   }
 }
 
@@ -1724,6 +1746,12 @@ input::placeholder {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+@media screen and (min-width: 768px) {
+  .p-front-news {
+    padding-top: 12.375rem;
+    padding-bottom: 6.25rem;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .p-front-news__inner {
@@ -1964,9 +1992,51 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-front-work {
-    padding-top: initial;
+    padding-top: 7.5rem;
     padding-bottom: 12.5rem;
     border-bottom-right-radius: 6.25rem;
+  }
+}
+
+.p-front-work::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/work_top_curve.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 3.125rem;
+  height: auto;
+  aspect-ratio: 100/100;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-front-work::before {
+    width: 6.25rem;
+  }
+}
+
+.p-front-work::after {
+  position: absolute;
+  content: "";
+  background: url(../images/top/work_bottom_curve.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 3.125rem;
+  height: auto;
+  aspect-ratio: 100/100;
+  object-fit: cover;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-front-work::after {
+    width: 6.25rem;
   }
 }
 
@@ -3098,18 +3168,32 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 7.125rem;
-  padding-bottom: 9.5rem;
+  aspect-ratio: 375/560;
+  object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .p-king {
-    padding-top: 11.25rem;
-    padding-bottom: 13.75rem;
-    background-image: image-set(url(../images/top/king_bg.webp) type("image/webp"), url(../images/top/king_bg.png) type("image/png"));
+    padding-top: initial;
+    padding-bottom: initial;
+    background: url(../images/top/king_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    aspect-ratio: 1440/576;
+    object-fit: cover;
   }
+}
+
+.p-king .l-inner {
+  position: relative;
+  height: 100%;
+}
+
+.p-king__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.25rem;
 }
 
 .p-king__title {
@@ -4060,6 +4144,29 @@ input::placeholder {
   padding-top: 5rem;
   padding-bottom: 5rem;
   overflow-x: clip;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-pro {
+    padding-top: 6.25rem;
+    padding-bottom: 10.25rem;
+  }
+}
+
+.p-pro::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/pro_bottom_curve.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 6.25rem;
+  height: auto;
+  aspect-ratio: 100/100;
+  object-fit: cover;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .p-pro__content {
@@ -5016,12 +5123,17 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 6.25rem;
+  width: 3.125rem;
   height: auto;
   aspect-ratio: 100/100;
   object-fit: cover;
   bottom: 0;
   right: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-top-column::before {
+    width: 6.25rem;
+  }
 }
 
 .p-top-column__title {
@@ -5276,7 +5388,6 @@ input::placeholder {
   .p-top-interview {
     padding-top: 7.5rem;
     padding-bottom: 12.5rem;
-    border-top-left-radius: 6.25rem;
   }
 }
 
@@ -5287,13 +5398,18 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 6.25rem;
+  width: 3.125rem;
   height: auto;
   aspect-ratio: 100/100;
   object-fit: cover;
   top: 0;
   left: 0;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-top-interview::before {
+    width: 6.25rem;
+  }
 }
 
 .p-top-interview::after {
@@ -5303,13 +5419,18 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 6.25rem;
+  width: 3.125rem;
   height: auto;
   aspect-ratio: 100/100;
   object-fit: cover;
   bottom: 0;
   right: 0;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-top-interview::after {
+    width: 6.25rem;
+  }
 }
 
 .p-top-interview__content {

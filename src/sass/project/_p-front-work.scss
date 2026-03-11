@@ -8,10 +8,46 @@
   padding-bottom: rem(56);
 
   @include mq(md) {
-    padding-top: initial;
+    padding-top: rem(120);
     padding-bottom: rem(200);
     border-bottom-right-radius: rem(100);
 
+  }
+}
+.p-front-work::before {
+  position: absolute;
+  content: '';
+  background: url(../images/top/work_top_curve.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(50);
+  height: auto;
+  aspect-ratio: 100 / 100;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  @include mq(md){
+    width: rem(100);
+  }
+}
+.p-front-work::after {
+  position: absolute;
+  content: '';
+  background: url(../images/top/work_bottom_curve.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(50);
+  height: auto;
+  aspect-ratio: 100 / 100;
+  object-fit: cover;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  @include mq(md){
+    width: rem(100);
   }
 }
 
