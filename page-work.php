@@ -47,7 +47,7 @@
                 </figure>
                 <div class="p-front-work__card-body">
                   <div class="p-front-work__card-head">
-                    <p class="p-front-work__card-subtitle">Job Description</p>
+                    <p class="p-front-work__card-subtitle">Hire introduction</p>
                     <p class="p-front-work__card-title">車両紹介</p>
                   </div>
                   <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
@@ -70,7 +70,7 @@
                 </figure>
                 <div class="p-front-work__card-body">
                   <div class="p-front-work__card-head">
-                    <p class="p-front-work__card-subtitle">Job Description</p>
+                    <p class="p-front-work__card-subtitle">Educational System</p>
                     <p class="p-front-work__card-title">二種免許支援<br class="u-mobile">教育体制</p>
                   </div>
                   <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
@@ -93,7 +93,7 @@
                 </figure>
                 <div class="p-front-work__card-body">
                   <div class="p-front-work__card-head">
-                    <p class="p-front-work__card-subtitle">Job Description</p>
+                    <p class="p-front-work__card-subtitle">In Numbers</p>
                     <p class="p-front-work__card-title">数字で見るZ</p>
                   </div>
                   <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
@@ -116,7 +116,7 @@
                 </figure>
                 <div class="p-front-work__card-body">
                   <div class="p-front-work__card-head">
-                    <p class="p-front-work__card-subtitle">Job Description</p>
+                    <p class="p-front-work__card-subtitle">FAQ</p>
                     <p class="p-front-work__card-title">よくある質問</p>
                   </div>
                   <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>

@@ -410,7 +410,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-company {
-    padding-top: 5rem;
+    padding-top: 7.5rem;
     padding-bottom: 18.75rem;
   }
 }
@@ -1964,8 +1964,9 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-front-work {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: initial;
+    padding-bottom: 12.5rem;
+    border-bottom-right-radius: 6.25rem;
   }
 }
 
@@ -1976,7 +1977,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-front-work__bg {
-    top: -7.5rem;
+    top: -11.25rem;
   }
 }
 
@@ -3473,25 +3474,20 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-mv__ribbon {
-    bottom: -5rem;
+    bottom: -3.75rem;
   }
 }
 
 .p-mv__title-space {
   margin-left: 3rem;
 }
-@media screen and (min-width: 768px) {
-  .p-mv__title-space {
-    margin-left: initial;
-  }
-}
-
 .p-mv__title-space--2 {
   margin-left: 3.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-mv__title-space--2 {
-    margin-left: initial;
+    margin-left: 5.5rem;
+    margin-top: -1rem;
   }
 }
 
@@ -3500,7 +3496,8 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-mv__title-space--3 {
-    margin-left: initial;
+    margin-left: 9.25rem;
+    margin-top: -2.25rem;
   }
 }
 
@@ -4262,8 +4259,8 @@ input::placeholder {
     transform: initial;
     position: static;
     width: 43.4375rem;
-    margin-left: -5.5rem;
-    margin-top: 5.5rem;
+    margin-left: -9.375rem;
+    margin-top: 6rem;
     margin-right: -6rem;
   }
 }
@@ -4987,6 +4984,15 @@ input::placeholder {
   padding-bottom: 5rem;
   background: #044396;
   overflow-x: clip;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-top-column {
+    padding-top: 7.5rem;
+    padding-bottom: 12.5rem;
+    border-top-left-radius: 6.25rem;
+    border-bottom-right-radius: 6.25rem;
+  }
 }
 
 .p-top-column__head {
@@ -5001,6 +5007,21 @@ input::placeholder {
     align-items: flex-end;
     gap: 2.5rem;
   }
+}
+
+.p-top-column::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/interview_curve.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 6.25rem;
+  height: auto;
+  aspect-ratio: 100/100;
+  object-fit: cover;
+  bottom: 0;
+  right: 0;
 }
 
 .p-top-column__title {
@@ -5247,12 +5268,48 @@ input::placeholder {
   position: relative;
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+  background: #fff;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .p-top-interview {
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 12.5rem;
+    border-top-left-radius: 6.25rem;
   }
+}
+
+.p-top-interview::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/interview_top_curve.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 6.25rem;
+  height: auto;
+  aspect-ratio: 100/100;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.p-top-interview::after {
+  position: absolute;
+  content: "";
+  background: url(../images/top/interview_bottom_curve.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 6.25rem;
+  height: auto;
+  aspect-ratio: 100/100;
+  object-fit: cover;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .p-top-interview__content {

@@ -8,8 +8,9 @@
   padding-bottom: rem(56);
 
   @include mq(md) {
-    padding-top: rem(80);
-    padding-bottom: rem(80);
+    padding-top: initial;
+    padding-bottom: rem(200);
+    border-bottom-right-radius: rem(100);
 
   }
 }
@@ -20,7 +21,7 @@
   z-index: -1;
 
   @include mq(md) {
-    top: rem(-120);
+    top: rem(-180);
 
   }
 }
