@@ -106,7 +106,7 @@ $title_en_lines = array_values(array_filter(array_map('strval', $title_en_lines)
       </div>
 
       <nav class="p-page-mv__pan" aria-label="パンくずリスト">
-        <a class="p-page-mv__panLink" href="<?php echo esc_url(home_url('/')); ?>">トップ</a>
+        <a class="p-page-mv__panLink p-page-mv__panLink--link" href="<?php echo esc_url(home_url('/')); ?>">トップ</a>
 
         <?php if ($pan_parent_label !== '' && $pan_parent_url !== '') : ?>
           <span class="p-page-mv__panDivider" aria-hidden="true"></span>

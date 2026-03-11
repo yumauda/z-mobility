@@ -14,6 +14,7 @@
 
   }
 }
+
 .p-front-work::before {
   position: absolute;
   content: '';
@@ -28,10 +29,12 @@
   top: 0;
   left: 0;
   z-index: 2;
-  @include mq(md){
+
+  @include mq(md) {
     width: rem(100);
   }
 }
+
 .p-front-work::after {
   position: absolute;
   content: '';
@@ -46,7 +49,8 @@
   bottom: 0;
   right: 0;
   z-index: 2;
-  @include mq(md){
+
+  @include mq(md) {
     width: rem(100);
   }
 }
@@ -184,6 +188,7 @@
   overflow: hidden;
   border-radius: rem(8);
   aspect-ratio: 132 / 84;
+
   @include mq(md) {
     aspect-ratio: 188 / 233;
     width: rem(188);
@@ -199,6 +204,7 @@
 
 .p-front-work__card-img--large {
   aspect-ratio: 600 / 380;
+
   @include mq(md) {
     width: rem(600);
   }
@@ -362,8 +368,4 @@
   @include mq(md) {
     gap: rem(20);
   }
-}
-
-.pt-0 {
-  padding-top: initial;
 }

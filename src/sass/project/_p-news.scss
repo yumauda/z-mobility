@@ -6,7 +6,7 @@
 
   @include mq(md) {
     padding-top: rem(80);
-    padding-bottom: rem(120);
+    padding-bottom: rem(200);
 
   }
 }
@@ -67,6 +67,7 @@
   margin-top: rem(24);
 
   @include mq(md) {
+    border-top: initial;
     margin-top: initial;
     max-width: rem(1060);
     flex: 1;
@@ -88,6 +89,9 @@
     align-items: center;
     gap: rem(20);
   }
+}
+.p-news__item:first-child {
+  padding-top: initial;
 }
 
 .p-news__meta {
@@ -178,7 +182,7 @@
 
   @include mq(md) {
     gap: rem(16);
-    margin-top: rem(32);
+    margin-top: rem(96);
 
   }
 }

@@ -43,20 +43,21 @@
                     <p class="p-information__office-name">本社</p>
                     <p class="p-information__office-text">
                       〒104-0061　東京都中央区銀座8-3-10 トミタビル4F<br>
-                      TEL：050-3733-7504　FAX：050-3733-7505
+                      TEL：<a href="tel:05037337504">050-3733-7504</a>　FAX：050-3733-7505
                     </p>
                   </div>
                   <div class="p-information__office">
                     <p class="p-information__office-name">品川営業所</p>
                     <p class="p-information__office-text">
                       〒140-0001　東京都品川区北品川2-34-3<br>
-                      TEL：03-3471-4428　FAX：03-3471-4463
+                      TEL：<a href="tel:0334714428">03-3471-4428</a>　FAX：03-3471-4463
                     </p>
                   </div>
                   <div class="p-information__office">
                     <p class="p-information__office-name">五反田営業所</p>
                     <p class="p-information__office-text">
-                      〒141-0031　東京都品川区西五反田7-22-17 TOCビル5F
+                      〒141-0031　東京都品川区西五反田7-22-17 TOCビル5F<br>
+                      TEL：<a href="tel:0357479336">03-5747-9336</a>　FAX：03-5747-9337
                     </p>
                   </div>
                 </dd>
@@ -66,12 +67,12 @@
                 <dt class="p-information__dt">お問い合わせ</dt>
                 <dd class="p-information__dd">
                   <div class="p-information__office">
-                    <p class="p-information__office-name">Z-MOBILITYコールセンター</p>
-                    <p class="p-information__office-text">TEL：050-3733-7446　FAX：050-3733-7447</p>
+                    <p class="p-information__office-name">ハイヤーのご予約・お問い合わせ<br>Z-MOBILITYコールセンター</p>
+                    <p class="p-information__office-text">TEL：<a href="tel:05037337446">050-3733-7446</a>　FAX：050-3733-7447</p>
                   </div>
                   <div class="p-information__office">
                     <p class="p-information__office-name">お忘れ物・運行管理等</p>
-                    <p class="p-information__office-text">TEL：050-3733-7504　FAX：050-3733-7505</p>
+                    <p class="p-information__office-text">TEL：<a href="tel:05037337504">050-3733-7504</a>　FAX：050-3733-7505</p>
                   </div>
                 </dd>
               </div>

@@ -5,7 +5,7 @@
   padding-bottom: rem(64);
   @include mq(md){
     padding-top: rem(120);
-    padding-bottom: rem(120); 
+    padding-bottom: rem(205); 
   }
 }
 
@@ -13,7 +13,7 @@
   display: grid;
   gap: rem(32);
   @include mq(md){
-    gap: rem(120);
+    gap: rem(200);
     
   }
 }
@@ -84,12 +84,12 @@
   border-bottom: 1px solid #c2c9d0;
 
   @include mq(md) {
-    padding: rem(20) 0;
+    padding: rem(40) 0;
   }
 }
 
 .p-information__row:first-child {
-  border-top: 1px solid #c2c9d0;
+  padding-top: initial;
 }
 
 .p-information__dt {
@@ -162,7 +162,6 @@
 .p-information__accessList {
   display: grid;
   gap: rem(40);
-  padding-top: rem(32);
 }
 
 .p-information__divider {
@@ -338,7 +337,7 @@
   padding: rem(20) 0;
 
   @include mq(md) {
-    padding: rem(24) 0;
+    padding: rem(32) 0;
   }
 }
 

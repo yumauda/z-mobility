@@ -9,10 +9,10 @@
   ]);
   ?>
 
-  <section class="p-front-work pt-0">
+  <section class="p-front-work pt-96 pb-260">
     
     <div class="l-inner">
-      <div class="p-front-work__cards">
+      <div class="p-front-work__cards mt-0">
         <a class="p-front-work__card p-front-work__card--large" href="#">
           <div class="p-front-work__card-inner">
             <div class="p-front-work__card-content p-front-work__card-content--large">

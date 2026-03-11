@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+.pt-0 {
+  padding-top: initial;
+}
+
+.pt-96 {
+  padding-top: rem(48);
+
+  @include mq(md) {
+    padding-top: rem(96);
+  }
+}
+
+.pb-260 {
+  padding-bottom: rem(80);
+  position: relative;
+
+  @include mq(md) {
+    padding-bottom: rem(260);
+  }
+}
+
+.pb-260::after {
+  display: none;
+}
+
+.mt-0 {
+  margin-top: initial;
+}

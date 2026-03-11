@@ -6,7 +6,7 @@
 
   @include mq(md) {
     padding-top: rem(120);
-    padding-bottom: rem(120);
+    padding-bottom: rem(260);
   }
 }
 
@@ -17,7 +17,7 @@
   @include mq(md) {
     grid-template-columns: 1fr rem(360);
     align-items: start;
-    gap: rem(80);
+    gap: rem(120);
   }
 }
 
@@ -61,6 +61,7 @@
   font-size: rem(16);
   line-height: 2;
   color: #1a1a1a;
+  font-feature-settings: 'palt' on;
 
   @include mq(md) {
     font-size: rem(18);
@@ -73,7 +74,6 @@
   gap: rem(24);
 
   @include mq(md) {
-    padding-top: rem(120);
     justify-items: end;
   }
 }

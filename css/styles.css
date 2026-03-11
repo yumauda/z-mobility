@@ -2356,10 +2356,6 @@ input::placeholder {
   }
 }
 
-.pt-0 {
-  padding-top: initial;
-}
-
 .p-header {
   position: fixed;
   z-index: 9999;
@@ -2781,7 +2777,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-information {
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 12.8125rem;
   }
 }
 
@@ -2791,7 +2787,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-information__content {
-    gap: 7.5rem;
+    gap: 12.5rem;
   }
 }
 
@@ -2866,12 +2862,12 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-information__row {
-    padding: 1.25rem 0;
+    padding: 2.5rem 0;
   }
 }
 
 .p-information__row:first-child {
-  border-top: 1px solid #c2c9d0;
+  padding-top: initial;
 }
 
 .p-information__dt {
@@ -2949,7 +2945,6 @@ input::placeholder {
 .p-information__accessList {
   display: grid;
   gap: 2.5rem;
-  padding-top: 2rem;
 }
 
 .p-information__divider {
@@ -3129,7 +3124,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-information__groupItemInner {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
   }
 }
 
@@ -3297,7 +3292,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-message {
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 16.25rem;
   }
 }
 
@@ -3309,7 +3304,7 @@ input::placeholder {
   .p-message__content {
     grid-template-columns: 1fr 22.5rem;
     align-items: start;
-    gap: 5rem;
+    gap: 7.5rem;
   }
 }
 
@@ -3356,6 +3351,7 @@ input::placeholder {
   font-size: 1rem;
   line-height: 2;
   color: #1a1a1a;
+  font-feature-settings: "palt" on;
 }
 @media screen and (min-width: 768px) {
   .p-message__text {
@@ -3370,7 +3366,6 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-message__aside {
-    padding-top: 7.5rem;
     justify-items: end;
   }
 }
@@ -3603,7 +3598,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-news {
     padding-top: 5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 12.5rem;
   }
 }
 
@@ -3663,6 +3658,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-news__list {
+    border-top: initial;
     margin-top: initial;
     max-width: 66.25rem;
     flex: 1;
@@ -3684,6 +3680,10 @@ input::placeholder {
     align-items: center;
     gap: 1.25rem;
   }
+}
+
+.p-news__item:first-child {
+  padding-top: initial;
 }
 
 .p-news__meta {
@@ -3777,7 +3777,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-news__pager {
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
   }
 }
 
@@ -3818,8 +3818,8 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-page-company {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-top: 6rem;
+    padding-bottom: 16.25rem;
   }
 }
 
@@ -4052,6 +4052,10 @@ input::placeholder {
   .p-page-mv__titleEnSmall {
     font-size: 4rem;
   }
+}
+
+.p-page-mv__panLink--link {
+  text-decoration: underline;
 }
 
 .p-privacy {
@@ -5871,4 +5875,35 @@ input::placeholder {
 
 .js-parallax img {
   height: calc(100% + 60px);
+}
+
+.pt-0 {
+  padding-top: initial;
+}
+
+.pt-96 {
+  padding-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .pt-96 {
+    padding-top: 6rem;
+  }
+}
+
+.pb-260 {
+  padding-bottom: 5rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .pb-260 {
+    padding-bottom: 16.25rem;
+  }
+}
+
+.pb-260::after {
+  display: none;
+}
+
+.mt-0 {
+  margin-top: initial;
 }
