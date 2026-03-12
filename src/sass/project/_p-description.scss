@@ -1,0 +1,144 @@
+@use "../global" as *;
+
+.p-description {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  overflow-x: clip;
+
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(205);
+  }
+}
+
+.p-description__content {
+  
+}
+
+.p-description__section {
+  
+}
+
+.p-description__head {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+
+  @include mq(md) {
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: rem(40);
+  }
+}
+
+.p-description__title {
+  margin: 0;
+  font-size: rem(28);
+  font-weight: 500;
+  line-height: 1.6;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(48);
+  }
+}
+
+.p-description__text {
+  margin: 0;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 1.8;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(18);
+    max-width: rem(520);
+  }
+}
+
+.p-description__image {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: rem(32);
+  @include mq(md){
+    margin-top: rem(64);
+    
+  }
+}
+
+.p-description__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-description__section--hospitality {
+  margin-top: rem(64);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
+
+.p-description__intro {
+  display: grid;
+  gap: rem(12);
+  max-width: rem(1280);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-description__eyebrow {
+  margin: 0;
+  font-family: $special-gothic;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: 1;
+  color: #044396;
+}
+
+.p-description__headline {
+  margin: 0;
+  font-size: rem(26);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.p-description__bodyText {
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 2;
+  color: #1a1a1a;
+  margin-top: rem(16);
+
+  @include mq(md) {
+    font-size: rem(18);
+    margin-top: rem(48);
+  }
+}
+
+.p-description__collage {
+  width: 100%;
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(48);
+  }
+}
+
+.p-description__collage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: rem(10);
+}
+

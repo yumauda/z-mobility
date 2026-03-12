@@ -1,0 +1,142 @@
+@use "../global" as *;
+
+.p-uber {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-uber__content {
+  display: grid;
+  gap: rem(32);
+
+  @include mq(md) {
+    gap: rem(48);
+  }
+}
+
+.p-uber__head {
+  display: grid;
+  gap: rem(12);
+}
+
+.p-uber__eyebrow {
+  margin: 0;
+  font-family: $special-gothic;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: 1;
+  color: #044396;
+}
+
+.p-uber__title {
+  margin: 0;
+  font-size: rem(26);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.p-uber__main {
+  display: grid;
+  gap: rem(24);
+
+  @include mq(md) {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: rem(42);
+  }
+}
+
+.p-uber__lead {
+  margin: 0;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 2;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(18);
+    max-width: rem(865);
+  }
+}
+
+.p-uber__logos {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+
+  @include mq(md) {
+    justify-content: center;
+  }
+}
+
+.p-uber__logos img {
+  display: block;
+  width: rem(335);
+  height: auto;
+}
+
+.p-uber__cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: rem(16);
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, rem(413));
+    justify-content: space-between;
+    gap: rem(20);
+  }
+}
+
+.p-uber__card {
+  background: #ffffff;
+  border-radius: rem(10);
+  display: grid;
+  place-items: center;
+  padding: rem(32) rem(24);
+
+  @include mq(md) {
+    padding: rem(64) rem(40);
+  }
+}
+
+.p-uber__cardInner {
+  display: grid;
+  justify-items: center;
+  gap: rem(24);
+
+  @include mq(md) {
+    gap: rem(40);
+  }
+}
+
+.p-uber__cardIcon img {
+  display: block;
+  width: rem(96);
+  height: rem(96);
+}
+
+.p-uber__cardText {
+  margin: 0;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 2;
+  color: #1a1a1a;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
