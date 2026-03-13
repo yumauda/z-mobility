@@ -27,9 +27,22 @@
       <div class="p-mv__titles">
         <h1 class="p-mv__title">
           <span class="p-mv__title-en js-en-title">The era <br class="u-mobile"><span class="p-mv__title-space">of hire</span>
-          <span class="p-mv__title-ja js-ja-title p-mv__title-space--2">ハイヤー時代、到来。</span>
-          <span class="p-mv__title-en p-mv__title-en--last js-en-title p-mv__title-space--3">cars has <br class="u-mobile"><span class="p-mv__title-space--4">arrived.</span></span>
+            <span class="p-mv__title-ja js-ja-title p-mv__title-space--2">ハイヤー時代、到来。</span>
+            <span class="p-mv__title-en p-mv__title-en--last js-en-title p-mv__title-space--3">cars has <br class="u-mobile"><span class="p-mv__title-space--4">arrived.</span></span>
         </h1>
+      </div>
+      <div class="p-mv__banner">
+        <a href="#" class="p-mv__banner-link">
+          <div class="p-mv__banner-img">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/mv_banner.webp" media="(min-width: 768px)" width="1238" height="570" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv_banner_sp.webp" alt="" width="355" height="227">
+            </picture>
+          </div>
+          <button class="p-mv__banner-button" type="button" aria-label="バナーを閉じる">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/top/banner_icon.png" alt="" width="24" height="24">
+          </button>
+        </a>
       </div>
     </div>
     <div class="p-mv__ribbon u-desktop">

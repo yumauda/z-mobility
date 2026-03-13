@@ -17,6 +17,30 @@ jQuery(function ($) {
     updateHeaderClass();
   })();
 
+  // mvを過ぎたらバナーを表示（opacity/visibilityで切り替え）
+  (function () {
+    var $mv = $(".p-mv");
+    var $banner = $(".p-mv__banner");
+    if (!$mv.length || !$banner.length) return;
+
+    var update = function () {
+      if ($banner.hasClass("is-dismissed")) return;
+      var mvBottom = ($mv.offset()?.top || 0) + ($mv.outerHeight() || 0);
+      $banner.toggleClass("is-visible", $(window).scrollTop() >= mvBottom);
+    };
+
+    $(window).on("scroll resize", update);
+    update();
+  })();
+
+  // バナーを閉じる
+  $(document).on("click", ".p-mv__banner-button", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $banner = $(this).closest(".p-mv__banner");
+    $banner.removeClass("is-visible").addClass("is-dismissed");
+  });
+
   // ボタンの表示設定
   $(window).scroll(function () {
     if ($(this).scrollTop() > 70) {

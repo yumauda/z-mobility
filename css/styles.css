@@ -3867,6 +3867,71 @@ input::placeholder {
   }
 }
 
+.p-mv__banner {
+  position: fixed;
+  bottom: 2.5rem;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  pointer-events: none;
+  right: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__banner {
+    right: 2.5rem;
+  }
+}
+
+.p-mv__banner.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s linear 0s;
+  pointer-events: auto;
+}
+
+.p-mv__banner.is-dismissed {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  pointer-events: none;
+}
+
+.p-mv__banner-link {
+  display: inline-block;
+  position: relative;
+  width: 12.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__banner-link {
+    width: 16.75rem;
+  }
+}
+
+.p-mv__banner-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-mv__banner-button {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: -0.625rem;
+  right: -0.625rem;
+  z-index: 3;
+}
+
+.p-mv__banner-button img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
 .p-news {
   padding-top: 4rem;
   padding-bottom: 4rem;
