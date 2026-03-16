@@ -605,7 +605,7 @@
       </div>
 
       <div class="p-front-work__cards">
-        <a class="p-front-work__card p-front-work__card--large js-opacity-word" href="#">
+        <a class="p-front-work__card p-front-work__card--large js-opacity-word" href="<?php echo esc_url(home_url('/work/description')); ?>">
           <div class="p-front-work__card-inner">
             <div class="p-front-work__card-content p-front-work__card-content--large">
               <figure class="p-front-work__card-img p-front-work__card-img--large js-parallax">
@@ -651,7 +651,7 @@
             </div>
           </a>
 
-          <a class="p-front-work__card js-opacity-word" href="#">
+          <a class="p-front-work__card js-opacity-word" href="<?php echo esc_url(home_url('/work/education')); ?>">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img js-parallax">

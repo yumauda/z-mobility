@@ -1,0 +1,110 @@
+@use "../global" as *;
+
+.p-salary {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-salary__content {
+  display: grid;
+  gap: rem(32);
+
+  @include mq(md) {
+    gap: rem(48);
+  }
+}
+
+.p-salary__head {
+  display: grid;
+  gap: rem(12);
+  max-width: rem(1280);
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-salary__eyebrow {
+  margin: 0;
+  font-family: $special-gothic;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: 1;
+  color: #044396;
+}
+
+.p-salary__title {
+  margin: 0;
+  font-size: rem(26);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.p-salary__row {
+  display: grid;
+  gap: rem(24);
+  max-width: rem(1280);
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(md) {
+    grid-template-columns: rem(616) rem(616);
+    gap: rem(48);
+  }
+}
+
+.p-salary__text {
+  margin: 0;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 2;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.p-salary__card {
+  background: #ffffff;
+  border-radius: rem(10);
+  padding: rem(24);
+  display: grid;
+  gap: rem(16);
+}
+
+.p-salary__cardTitle {
+  margin: 0;
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 1.6;
+  color: #044396;
+
+  @include mq(md) {
+    font-size: rem(20);
+    width: rem(120);
+  }
+}
+
+.p-salary__cardText {
+  margin: 0;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.6;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+

@@ -35,7 +35,6 @@
 }
 
 .p-description__title {
-  margin: 0;
   font-size: rem(28);
   font-weight: 500;
   line-height: 1.6;
@@ -45,9 +44,14 @@
     font-size: rem(48);
   }
 }
+.p-description__title--small {
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
 
 .p-description__text {
-  margin: 0;
   font-size: rem(14);
   font-weight: 400;
   line-height: 1.8;
@@ -59,6 +63,13 @@
   }
 }
 
+.p-description__text--small {
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
 .p-description__image {
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -67,6 +78,11 @@
   @include mq(md){
     margin-top: rem(64);
     
+  }
+}
+.p-description__image--80 {
+  @include mq(md) {
+    margin-top: rem(80);
   }
 }
 
