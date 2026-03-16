@@ -31,12 +31,6 @@
                 <h1 class="p-single__title"><?php the_title(); ?></h1>
               </header>
 
-              <?php if (has_post_thumbnail()) : ?>
-                <figure class="p-single__thumb">
-                  <?php the_post_thumbnail('full', ['loading' => 'lazy', 'decoding' => 'async']); ?>
-                </figure>
-              <?php endif; ?>
-
               <div class="p-single__body">
                 <div class="p-single__entry">
                   <?php the_content(); ?>

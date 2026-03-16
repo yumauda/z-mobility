@@ -18,137 +18,157 @@
         </div>
 
         <div class="p-news__list">
-          <a class="p-news__item" href="<?php the_permalink(); ?>">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">3月会社説明会のお知らせ</p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="<?php the_permalink(); ?>">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">3月会社説明会のお知らせ</h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
 
-          <a class="p-news__item" href="#">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">
-                親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
-              </p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="#">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">
+                  親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                </h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
 
-          <a class="p-news__item" href="#">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">3月会社説明会のお知らせ</p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="#">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">3月会社説明会のお知らせ</h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
 
-          <a class="p-news__item" href="#">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">親譲りの無鉄砲で小供の時から損ばかりしている。</p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="#">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">親譲りの無鉄砲で小供の時から損ばかりしている。</h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
 
-          <a class="p-news__item" href="#">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">3月会社説明会のお知らせ</p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="#">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">3月会社説明会のお知らせ</h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
 
-          <a class="p-news__item" href="#">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">3月会社説明会のお知らせ</p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="#">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">3月会社説明会のお知らせ</h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
 
-          <a class="p-news__item" href="#">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">3月会社説明会のお知らせ</p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="#">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">3月会社説明会のお知らせ</h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
 
-          <a class="p-news__item" href="#">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">3月会社説明会のお知らせ</p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="#">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">3月会社説明会のお知らせ</h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
 
-          <a class="p-news__item" href="#">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">3月会社説明会のお知らせ</p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="#">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">3月会社説明会のお知らせ</h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
 
-          <a class="p-news__item" href="#">
-            <div class="p-news__meta">
-              <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
-              <span class="p-news__tag">お知らせ</span>
-            </div>
-            <div class="p-news__main">
-              <p class="p-news__title">3月会社説明会のお知らせ</p>
-              <span class="p-news__btn" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
-              </span>
-            </div>
-          </a>
+          <article class="p-news__article">
+            <a class="p-news__item" href="#">
+              <div class="p-news__meta">
+                <time class="p-news__date" datetime="2026-02-01">2026.02.01</time>
+                <span class="p-news__tag">お知らせ</span>
+              </div>
+              <div class="p-news__main">
+                <h2 class="p-news__title">3月会社説明会のお知らせ</h2>
+                <span class="p-news__btn" aria-hidden="true">
+                  <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/news/news-item-btn.svg" alt="" width="28" height="28">
+                </span>
+              </div>
+            </a>
+          </article>
         </div>
 
       </div>

@@ -90,7 +90,7 @@
     gap: rem(20);
   }
 }
-.p-news__item:first-child {
+ .p-news__article:first-child .p-news__item {
   padding-top: initial;
 }
 
