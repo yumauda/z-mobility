@@ -1,0 +1,440 @@
+@use "../global" as *;
+
+.p-guide {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(205);
+  }
+}
+
+.p-guide__content {
+  display: grid;
+  gap: rem(64);
+
+  @include mq(md) {
+    gap: rem(96);
+  }
+}
+
+.p-guide__intro {
+  
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: rem(48);
+  }
+}
+
+.p-guide__title {
+  font-size: rem(28);
+  font-weight: 500;
+  line-height: 1.6;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    max-width: rem(672);
+    width: 100%;
+    font-size: rem(48);
+  }
+}
+
+.p-guide__text {
+  font-size: rem(14);
+  font-feature-settings: 'palt' on;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #1a1a1a;
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: initial;
+    font-size: rem(18);
+  }
+}
+
+.p-guide__cards {
+  display: grid;
+  gap: rem(20);
+
+  @include mq(md) {
+    grid-template-columns: 1fr 1fr;
+    gap: rem(20);
+  }
+}
+
+.p-guide__cardImage {
+  margin: 0;
+}
+
+.p-guide__cardImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.p-guide__card {
+  display: grid;
+  grid-template-columns: rem(140) 1fr;
+  border-radius: rem(10);
+  overflow: hidden;
+  min-height: rem(120);
+
+  @include mq(md) {
+    grid-template-columns: rem(204) 1fr;
+    min-height: rem(160);
+  }
+}
+
+.p-guide__cardLabel {
+  display: grid;
+  place-items: center;
+  padding: rem(24) rem(16);
+}
+
+.p-guide__cardLabel--beginner {
+  background: #5e7695;
+}
+
+.p-guide__cardLabel--experienced {
+  background: #044396;
+}
+
+.p-guide__cardLabelText {
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-guide__cardMain {
+  background: #ffffff;
+  border-top-right-radius: rem(10);
+  border-bottom-right-radius: rem(10);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: rem(20);
+
+  @include mq(md) {
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    padding-right: rem(38);
+    padding-left: rem(38);
+  }
+}
+
+.p-guide__cardMain--experienced {
+  @include mq(md) {
+    padding-right: rem(84);
+    padding-left: rem(84);
+  }
+}
+
+.p-guide__formula {
+  display: flex;
+  align-items: flex-end;
+  gap: rem(20);
+
+  @include mq(md) {
+    position: relative;
+    display: block;
+    height: rem(80);
+  }
+}
+
+.p-guide__caption {
+  margin: 0;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(24);
+    position: absolute;
+    top: rem(36);
+    left: 0;
+  }
+}
+
+.p-guide__cardMain--beginner .p-guide__formula {
+  @include mq(md) {
+    width: rem(350);
+  }
+}
+
+.p-guide__cardMain--experienced .p-guide__formula {
+  @include mq(md) {
+    width: rem(258);
+  }
+}
+
+.p-guide__cardMain--experienced .p-guide__caption {
+  @include mq(md) {
+    width: rem(120);
+  }
+}
+
+.p-guide__term {
+  display: flex;
+  align-items: flex-end;
+  gap: rem(6);
+
+  @include mq(md) {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: rem(80);
+  }
+}
+
+.p-guide__num {
+  margin: 0;
+  font-size: rem(48);
+  font-weight: 500;
+  line-height: 1;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}
+
+.p-guide__unit {
+  margin: 0;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #1a1a1a;
+  align-self: center;
+
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.p-guide__times {
+  margin: 0;
+  font-size: rem(20);
+  font-weight: 500;
+  line-height: 1;
+  color: #1a1a1a;
+  align-self: flex-end;
+  margin-bottom: rem(12);
+
+  @include mq(md) {
+    font-size: rem(24);
+    position: absolute;
+    top: rem(36);
+    left: rem(230);
+    margin-bottom: 0;
+  }
+}
+
+// ---- Figma fine positioning (cards) ----
+@include mq(md) {
+  .p-guide__cardMain--beginner .p-guide__term--money {
+    left: 0;
+    width: rem(210);
+  }
+
+  .p-guide__cardMain--beginner .p-guide__term--money .p-guide__num {
+    position: absolute;
+    top: 0;
+    left: rem(88);
+  }
+
+  .p-guide__cardMain--beginner .p-guide__term--money .p-guide__unit {
+    position: absolute;
+    top: rem(22);
+    left: rem(186);
+  }
+
+  .p-guide__cardMain--beginner .p-guide__term--month {
+    left: rem(274);
+    width: rem(76);
+  }
+
+  .p-guide__cardMain--beginner .p-guide__term--month .p-guide__num {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .p-guide__cardMain--beginner .p-guide__term--month .p-guide__unit {
+    position: absolute;
+    top: rem(22);
+    left: rem(52);
+  }
+
+  .p-guide__cardMain--experienced .p-guide__term--money {
+    left: 0;
+    width: rem(258);
+  }
+
+  .p-guide__cardMain--experienced .p-guide__term--money .p-guide__num {
+    position: absolute;
+    top: 0;
+    left: rem(136);
+  }
+
+  .p-guide__cardMain--experienced .p-guide__term--money .p-guide__unit {
+    position: absolute;
+    top: rem(22);
+    left: rem(234);
+  }
+}
+
+.p-guideDetail {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+
+  @include mq(md) {
+    padding-top: rem(32);
+    padding-bottom: rem(80);
+  }
+}
+
+.p-guideDetail__content {
+  padding-top: rem(16);
+}
+
+.p-guideDetail__dl {
+  margin: 0;
+  display: grid;
+  gap: rem(24);
+
+  @include mq(md) {
+    gap: rem(40);
+    padding-top: rem(32);
+    max-width: rem(1280);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.p-guideDetail__row {
+  border-bottom: 1px solid #c2c9d0;
+  padding-bottom: rem(24);
+
+  @include mq(md) {
+    padding-bottom: rem(40);
+  }
+}
+
+.p-guideDetail__row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.p-guideDetail__dt {
+  margin: 0;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1.6;
+  color: #044396;
+
+  @include mq(md) {
+    font-size: rem(20);
+    width: rem(120);
+    flex: none;
+  }
+}
+
+.p-guideDetail__dd {
+  margin: 0;
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin-top: rem(12);
+  white-space: normal;
+
+  @include mq(md) {
+    font-size: rem(18);
+    width: rem(660);
+    margin-top: 0;
+  }
+}
+
+@include mq(md) {
+  .p-guideDetail__row {
+    display: flex;
+    gap: rem(96);
+    padding-right: rem(12);
+    padding-left: rem(12);
+  }
+}
+
+.p-guideDetail__cta {
+  margin-top: rem(40);
+  display: block;
+  background: #044396;
+  border-radius: rem(10);
+  color: #fff;
+  text-decoration: none;
+  padding: rem(40) rem(20);
+
+  @include mq(md) {
+    margin-top: rem(80);
+    padding: rem(64) rem(135);
+  }
+}
+
+.p-guideDetail__ctaInner {
+  display: grid;
+  place-items: center;
+  gap: rem(16);
+
+  @include mq(md) {
+    gap: rem(28);
+  }
+}
+
+.p-guideDetail__ctaJa {
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+}
+
+.p-guideDetail__ctaDot {
+  width: rem(6);
+  height: rem(6);
+  border-radius: 50%;
+  background: #c2c9d0;
+  display: inline-block;
+}
+
+.p-guideDetail__ctaJaText {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-guideDetail__ctaEn {
+  margin: 0;
+  font-family: $special-gothic;
+  font-weight: 400;
+  font-size: rem(44);
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}
+

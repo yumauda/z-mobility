@@ -2654,6 +2654,455 @@ input::placeholder {
   }
 }
 
+.p-guide {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide {
+    padding-top: 7.5rem;
+    padding-bottom: 12.8125rem;
+  }
+}
+
+.p-guide__content {
+  display: grid;
+  gap: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__content {
+    gap: 6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-guide__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 3rem;
+  }
+}
+
+.p-guide__title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__title {
+    max-width: 42rem;
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+
+.p-guide__text {
+  font-size: 0.875rem;
+  font-feature-settings: "palt" on;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #1a1a1a;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__text {
+    margin-top: initial;
+    font-size: 1.125rem;
+  }
+}
+
+.p-guide__cards {
+  display: grid;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.p-guide__cardImage {
+  margin: 0;
+}
+
+.p-guide__cardImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.p-guide__card {
+  display: grid;
+  grid-template-columns: 8.75rem 1fr;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  min-height: 7.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__card {
+    grid-template-columns: 12.75rem 1fr;
+    min-height: 10rem;
+  }
+}
+
+.p-guide__cardLabel {
+  display: grid;
+  place-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.p-guide__cardLabel--beginner {
+  background: #5e7695;
+}
+
+.p-guide__cardLabel--experienced {
+  background: #044396;
+}
+
+.p-guide__cardLabelText {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__cardLabelText {
+    font-size: 1.25rem;
+  }
+}
+
+.p-guide__cardMain {
+  background: #ffffff;
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__cardMain {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-right: 2.375rem;
+    padding-left: 2.375rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-guide__cardMain--experienced {
+    padding-right: 5.25rem;
+    padding-left: 5.25rem;
+  }
+}
+
+.p-guide__formula {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__formula {
+    position: relative;
+    display: block;
+    height: 5rem;
+  }
+}
+
+.p-guide__caption {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #1a1a1a;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__caption {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2.25rem;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-guide__cardMain--beginner .p-guide__formula {
+    width: 21.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-guide__cardMain--experienced .p-guide__formula {
+    width: 16.125rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-guide__cardMain--experienced .p-guide__caption {
+    width: 7.5rem;
+  }
+}
+
+.p-guide__term {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__term {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 5rem;
+  }
+}
+
+.p-guide__num {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #1a1a1a;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__num {
+    font-size: 5rem;
+  }
+}
+
+.p-guide__unit {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #1a1a1a;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__unit {
+    font-size: 1.5rem;
+  }
+}
+
+.p-guide__times {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #1a1a1a;
+  align-self: flex-end;
+  margin-bottom: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__times {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2.25rem;
+    left: 14.375rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-guide__cardMain--beginner .p-guide__term--money {
+    left: 0;
+    width: 13.125rem;
+  }
+  .p-guide__cardMain--beginner .p-guide__term--money .p-guide__num {
+    position: absolute;
+    top: 0;
+    left: 5.5rem;
+  }
+  .p-guide__cardMain--beginner .p-guide__term--money .p-guide__unit {
+    position: absolute;
+    top: 1.375rem;
+    left: 11.625rem;
+  }
+  .p-guide__cardMain--beginner .p-guide__term--month {
+    left: 17.125rem;
+    width: 4.75rem;
+  }
+  .p-guide__cardMain--beginner .p-guide__term--month .p-guide__num {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .p-guide__cardMain--beginner .p-guide__term--month .p-guide__unit {
+    position: absolute;
+    top: 1.375rem;
+    left: 3.25rem;
+  }
+  .p-guide__cardMain--experienced .p-guide__term--money {
+    left: 0;
+    width: 16.125rem;
+  }
+  .p-guide__cardMain--experienced .p-guide__term--money .p-guide__num {
+    position: absolute;
+    top: 0;
+    left: 8.5rem;
+  }
+  .p-guide__cardMain--experienced .p-guide__term--money .p-guide__unit {
+    position: absolute;
+    top: 1.375rem;
+    left: 14.625rem;
+  }
+}
+.p-guideDetail {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guideDetail {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.p-guideDetail__content {
+  padding-top: 1rem;
+}
+
+.p-guideDetail__dl {
+  margin: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guideDetail__dl {
+    gap: 2.5rem;
+    padding-top: 2rem;
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.p-guideDetail__row {
+  border-bottom: 1px solid #c2c9d0;
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guideDetail__row {
+    padding-bottom: 2.5rem;
+  }
+}
+
+.p-guideDetail__row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.p-guideDetail__dt {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #044396;
+}
+@media screen and (min-width: 768px) {
+  .p-guideDetail__dt {
+    font-size: 1.25rem;
+    width: 7.5rem;
+    flex: none;
+  }
+}
+
+.p-guideDetail__dd {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin-top: 0.75rem;
+  white-space: normal;
+}
+@media screen and (min-width: 768px) {
+  .p-guideDetail__dd {
+    font-size: 1.125rem;
+    width: 41.25rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-guideDetail__row {
+    display: flex;
+    gap: 6rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+.p-guideDetail__cta {
+  margin-top: 2.5rem;
+  display: block;
+  background: #044396;
+  border-radius: 0.625rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 2.5rem 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guideDetail__cta {
+    margin-top: 5rem;
+    padding: 4rem 8.4375rem;
+  }
+}
+
+.p-guideDetail__ctaInner {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guideDetail__ctaInner {
+    gap: 1.75rem;
+  }
+}
+
+.p-guideDetail__ctaJa {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.p-guideDetail__ctaDot {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  background: #c2c9d0;
+  display: inline-block;
+}
+
+.p-guideDetail__ctaJaText {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-guideDetail__ctaJaText {
+    font-size: 1.25rem;
+  }
+}
+
+.p-guideDetail__ctaEn {
+  margin: 0;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 2.75rem;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-guideDetail__ctaEn {
+    font-size: 5rem;
+  }
+}
+
 .p-header {
   position: fixed;
   z-index: 9999;
@@ -5742,6 +6191,11 @@ input::placeholder {
 
 .mt0 {
   margin-top: initial;
+}
+
+.p-submitGuide {
+  padding-top: 5rem;
+  background: #1a1a1a;
 }
 
 .p-top-column {
