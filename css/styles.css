@@ -2143,7 +2143,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-front-news__list {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     flex: 1;
   }
 }
@@ -2164,7 +2164,7 @@ input::placeholder {
 
 @media screen and (min-width: 768px) {
   .p-front-news__item:first-child {
-    border-top: 1px solid #c2c9d0;
+    padding-top: initial;
   }
 }
 
@@ -2209,8 +2209,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-front-news__category {
-    max-width: 8.75rem;
-    font-size: 0.75rem;
+    padding: 0.125rem 0.875rem;
   }
 }
 
@@ -2290,7 +2289,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-front-work {
-    padding-top: 7.5rem;
+    padding-top: initial;
     padding-bottom: 12.5rem;
     border-bottom-right-radius: 6.25rem;
   }
@@ -4341,7 +4340,7 @@ input::placeholder {
 .p-mv__banner {
   position: fixed;
   bottom: 2.5rem;
-  z-index: 2;
+  z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s;

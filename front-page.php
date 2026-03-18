@@ -227,7 +227,7 @@
         <a class="p-front-news__item js-opacity-word" href="#">
           <div class="p-front-news__meta">
             <time class="p-front-news__date" datetime="2026-02-01">2026.02.01</time>
-            <span class="p-front-news__category">TOPICS</span>
+            <span class="p-front-news__category">お知らせ</span>
           </div>
           <div class="p-front-news__body">
             <p class="p-front-news__text">3月会社説明会のお知らせ</p>

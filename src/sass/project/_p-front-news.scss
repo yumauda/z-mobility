@@ -98,7 +98,7 @@
   margin-top: rem(12);
 
   @include mq(md) {
-    margin-top: rem(64);
+    margin-top: rem(56);
     flex: 1;
   }
 }
@@ -119,8 +119,7 @@
 
 .p-front-news__item:first-child {
   @include mq(md) {
-
-    border-top: 1px solid #c2c9d0;
+    padding-top: initial;
   }
 }
 
@@ -163,8 +162,7 @@
   font-size: rem(13);
 
   @include mq(md) {
-    max-width: rem(140);
-    font-size: rem(12);
+    padding: rem(2) rem(14);
 
   }
 }
