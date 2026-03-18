@@ -2,13 +2,13 @@
 
 .p-pro {
   padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-bottom: rem(37);
   overflow-x: clip;
   position: relative;
 
   @include mq(md) {
     padding-top: rem(100);
-    padding-bottom: rem(164);
+    padding-bottom: rem(72);
   }
 }
 
@@ -219,7 +219,7 @@
 
 .p-pro__right {
   position: absolute;
-  top: rem(-32);
+  top: rem(-48);
   left: 50%;
   transform: translateX(-50%);
   width: 100%;

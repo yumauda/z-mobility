@@ -52,9 +52,11 @@
   border: 1px solid #c2c9d0;
   color: #fff;
   margin-top: rem(7);
+  height: rem(110);
 
   @include mq(md) {
     margin-top: rem(20);
+    height: rem(332);
   }
 }
 

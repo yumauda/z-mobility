@@ -4,8 +4,8 @@
   position: relative;
   z-index: 2;
   overflow-x: clip;
-  padding-top: rem(56);
-  padding-bottom: rem(56);
+  // padding-top: rem(56);
+  padding-bottom: rem(100);
 
   @include mq(md) {
     padding-top: initial;

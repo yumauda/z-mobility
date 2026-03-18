@@ -626,6 +626,7 @@ select::-ms-expand {
   aspect-ratio: 139/192;
   border-radius: 0.625rem;
   overflow: hidden;
+  height: fit-content;
 }
 @media screen and (min-width: 768px) {
   .p-company__card-media {
@@ -2284,8 +2285,7 @@ input::placeholder {
   position: relative;
   z-index: 2;
   overflow-x: clip;
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 6.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-front-work {
@@ -4957,14 +4957,14 @@ input::placeholder {
 
 .p-pro {
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2.3125rem;
   overflow-x: clip;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-pro {
     padding-top: 6.25rem;
-    padding-bottom: 10.25rem;
+    padding-bottom: 4.5rem;
   }
 }
 
@@ -5168,7 +5168,7 @@ input::placeholder {
 
 .p-pro__right {
   position: absolute;
-  top: -2rem;
+  top: -3rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -6098,10 +6098,12 @@ input::placeholder {
   border: 1px solid #c2c9d0;
   color: #fff;
   margin-top: 0.4375rem;
+  height: 6.875rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__ctaCard--reservation {
     margin-top: 1.25rem;
+    height: 20.75rem;
   }
 }
 
@@ -6198,11 +6200,12 @@ input::placeholder {
 }
 
 .p-top-column {
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
   background: #044396;
   overflow-x: clip;
   position: relative;
+  border-top-left-radius: 3.125rem;
 }
 @media screen and (min-width: 768px) {
   .p-top-column {
@@ -6490,7 +6493,7 @@ input::placeholder {
   overflow: hidden;
   position: relative;
   padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 6.25rem;
   background: #fff;
   position: relative;
   z-index: 2;
@@ -6553,17 +6556,18 @@ input::placeholder {
 .p-top-interview__bg {
   position: absolute;
   z-index: -1;
-  left: 0;
   top: 4.5rem;
   width: 100%;
   height: auto;
   aspect-ratio: 2880/866;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  left: 5rem;
 }
 @media screen and (min-width: 768px) {
   .p-top-interview__bg {
     margin-left: initial;
+    left: 0;
     top: 11.25rem;
   }
 }

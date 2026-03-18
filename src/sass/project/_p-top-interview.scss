@@ -4,7 +4,7 @@
   overflow: hidden;
   position: relative;
   padding-top: rem(56);
-  padding-bottom: rem(56);
+  padding-bottom: rem(100);
   background: #fff;
   position: relative;
   z-index: 2;
@@ -62,16 +62,16 @@
 .p-top-interview__bg {
   position: absolute;
   z-index: -1;
-  left: 0;
   top: rem(72);
   width: 100%;
   height: auto;
   aspect-ratio: 2880 / 866;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-
+  left: rem(80);
   @include mq(md) {
     margin-left: initial;
+    left: 0;
     top: rem(180);
 
   }

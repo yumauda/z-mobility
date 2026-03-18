@@ -209,6 +209,7 @@
   aspect-ratio: 139 / 192;
   border-radius: rem(10);
   overflow: hidden;
+  height: fit-content;
 
   @include mq(md) {
     aspect-ratio: 230 / 320;
