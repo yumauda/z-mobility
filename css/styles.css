@@ -6032,7 +6032,7 @@ input::placeholder {
 }
 
 .p-single__back {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1rem;
@@ -6040,6 +6040,8 @@ input::placeholder {
   border-radius: 0.25rem;
   text-decoration: none;
   color: #044396;
+  width: 12.3125rem;
+  height: 3.5rem;
 }
 
 .p-single__backIcon {
@@ -6057,6 +6059,7 @@ input::placeholder {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.2;
+  padding-left: 1.5rem;
 }
 
 .p-submit {

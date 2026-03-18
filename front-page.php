@@ -1029,8 +1029,7 @@
             </div>
 
             <div class="p-company__card-media">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company/company-message-2367a4.png" alt="" width="230" height="320">
-              <span class="p-company__card-label" aria-hidden="true">Message</span>
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company-message-2367a4.png" alt="" width="230" height="320">
             </div>
           </div>
         </a>
@@ -1052,8 +1051,7 @@
             </div>
 
             <div class="p-company__card-media">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company/company-information.png" alt="" width="230" height="320">
-              <span class="p-company__card-label p-company__card-label--left" aria-hidden="true">Information</span>
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company-information.png" alt="" width="230" height="320">
             </div>
           </div>
         </a>
