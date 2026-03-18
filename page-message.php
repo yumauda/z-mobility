@@ -6,6 +6,8 @@
     'title_ja' => '代表メッセージ',
     'title_en_lines' => ['Message', 'from the President'],
     'pan_current' => '代表メッセージ',
+    'pan_parent_label' => '会社情報',
+    'pan_parent_url' => home_url('/company'),
   ]);
   ?>
 

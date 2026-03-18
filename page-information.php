@@ -6,6 +6,8 @@
     'title_ja' => '会社概要',
     'title_en_lines' => ['Information'],
     'pan_current' => '会社概要',
+    'pan_parent_label' => '会社情報',
+    'pan_parent_url' => home_url('/company'),
   ]);
   ?>
 
@@ -28,13 +30,7 @@
                 <dt class="p-information__dt">代表</dt>
                 <dd class="p-information__dd">代表取締役　鈴木 嘉規</dd>
               </div>
-              <div class="p-information__row">
-                <dt class="p-information__dt">事業許認可</dt>
-                <dd class="p-information__dd">
-                  国土交通省　関自旅二第3244号　一般乗用旅客自動車運送業<br>
-                  その他ハイヤー等225台、タクシー51台　計276台
-                </dd>
-              </div>
+
 
               <div class="p-information__row p-information__row--stack">
                 <dt class="p-information__dt">事業許認可</dt>
@@ -60,6 +56,12 @@
                       TEL：<a href="tel:0357479336">03-5747-9336</a>　FAX：03-5747-9337
                     </p>
                   </div>
+                </dd>
+              </div>
+              <div class="p-information__row">
+                <dt class="p-information__dt">事業許認可</dt>
+                <dd class="p-information__dd">
+                  国土交通省　関自旅二第3244号　一般乗用旅客自動車運送業<br>その他ハイヤー285台、タクシー40台（2025年12月末時点）
                 </dd>
               </div>
 
