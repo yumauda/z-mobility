@@ -5812,7 +5812,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-single {
     padding-top: 14.875rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 16.25rem;
   }
 }
 
@@ -5842,10 +5842,6 @@ input::placeholder {
 
 .p-single__panLink {
   color: inherit;
-  text-decoration: none;
-}
-
-.p-single__panLink:hover {
   text-decoration: underline;
 }
 
@@ -5973,9 +5969,11 @@ input::placeholder {
   line-height: 1.4;
   color: #044396;
   border-bottom: 1px solid #c2c9d0;
+  margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-single__entry h2 {
+    margin-bottom: 1rem;
     font-size: 2rem;
   }
 }
@@ -5992,6 +5990,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-single__entry h3 {
     font-size: 1.5rem;
+    margin-top: 4rem;
   }
 }
 
@@ -6012,10 +6011,6 @@ input::placeholder {
   list-style: disc !important;
 }
 
-.p-single__entry li + li {
-  margin-top: 0.5rem;
-}
-
 .p-single__entry a {
   color: #044396;
   text-decoration: underline;
@@ -6029,6 +6024,12 @@ input::placeholder {
 .p-single__backWrapper {
   display: flex;
   justify-content: center;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__backWrapper {
+    margin-top: 3.5rem;
+  }
 }
 
 .p-single__back {
@@ -6060,6 +6061,15 @@ input::placeholder {
   font-weight: 700;
   line-height: 1.2;
   padding-left: 1.5rem;
+}
+
+.p-single .wp-block-list {
+  margin-top: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single .wp-block-list {
+    margin-top: 1.25rem;
+  }
 }
 
 .p-submit {
