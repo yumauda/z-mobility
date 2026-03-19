@@ -209,6 +209,22 @@
   }
 }
 
+.p-front-news__item-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+// Safari対策：presentation属性よりCSSを優先して矢印色を固定
+.p-front-news__item-icon svg path {
+  fill: currentColor;
+}
+
+// 背景は親要素で持つため、SVG側の背景は不要
+.p-front-news__item-icon svg rect {
+  display: none;
+}
+
 .p-front-news__item:hover .p-front-news__item-icon {
   opacity: 0.85;
 }
