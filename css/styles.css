@@ -2680,22 +2680,17 @@ input::placeholder {
 .p-guide {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  overflow-x: clip;
 }
 @media screen and (min-width: 768px) {
   .p-guide {
     padding-top: 7.5rem;
-    padding-bottom: 12.8125rem;
+    padding-bottom: 6rem;
   }
 }
 
 .p-guide__content {
   display: grid;
-  gap: 4rem;
-}
-@media screen and (min-width: 768px) {
-  .p-guide__content {
-    gap: 6rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2708,7 +2703,7 @@ input::placeholder {
 }
 
 .p-guide__title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.6;
   color: #1a1a1a;
@@ -2739,11 +2734,13 @@ input::placeholder {
 .p-guide__cards {
   display: grid;
   gap: 1.25rem;
+  margin-top: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-guide__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
+    margin-top: 7.5rem;
   }
 }
 
@@ -2979,17 +2976,12 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-guideDetail {
-    padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-top: initial;
+    padding-bottom: 12.5rem;
   }
 }
 
-.p-guideDetail__content {
-  padding-top: 1rem;
-}
-
 .p-guideDetail__dl {
-  margin: 0;
   display: grid;
   gap: 1.5rem;
 }
@@ -3123,6 +3115,31 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-guideDetail__ctaEn {
     font-size: 5rem;
+  }
+}
+
+.p-guide__image {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-guide__image {
+    margin-top: 4rem;
+  }
+}
+
+.p-guide__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media screen and (min-width: 768px) {
+  .p-guide__image--80 {
+    margin-top: 5rem;
   }
 }
 

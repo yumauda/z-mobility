@@ -146,7 +146,7 @@
                         </li>
                     </ul>
                     <div class="p-header__recruit">
-                        <a href="<?php echo esc_url(home_url('/work')); ?>" class="p-header__recruit-link">募集要項</a>
+                        <a href="<?php echo esc_url(home_url('/guidelines')); ?>" class="p-header__recruit-link">募集要項</a>
                     </div>
                 </nav>
             </div>

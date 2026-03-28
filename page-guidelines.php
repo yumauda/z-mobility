@@ -22,14 +22,17 @@
 
           <p class="p-guide__text">
             私たちは、未経験者をヒーローにするハイヤー企業です！<br>
-            二種免許取得支援制度やサービス講習・選任教官による<br>
-            同乗講習などの教習体制など、<br>
-            入社後のサポート体制に自信を持ってます。ハンドルを握るたびに、<br>
+            二種免許取得支援制度やサービス講習・選任教官による<br class="u-desktop">
+            同乗講習などの教習体制など、<br class="u-desktop">
+            入社後のサポート体制に自信を持ってます。ハンドルを握るたびに、<br class="u-desktop">
             自信もスキルも伸び、高収入を目指せる環境がここにあります。<br>
             経験なしでも安心して挑戦できるお仕事です。<br>
             「未経験スタートが80％」確かな成長とキャリアを掴みましょう！
           </p>
         </div>
+        <figure class="p-guide__image p-guide__image--80">
+          <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/guidelines/guidelines-block-01.webp" alt="ハイヤー企業のイメージ" width="1440" height="500">
+        </figure>
 
         <div class="p-guide__cards" aria-label="募集要項のポイント">
           <figure class="p-guide__cardImage">
