@@ -210,13 +210,6 @@ const openingAnimKeyframes = (content) => [
     opacity: 1,
   },
 ];
-jQuery(".p-drawer-icon").on("click", function (e) {
-  e.preventDefault();
-  jQuery(".p-drawer-icon").toggleClass("is-active");
-  jQuery(".p-drawer-content").toggleClass("is-active");
-  jQuery(".p-drawer-background").toggleClass("is-active");
-  return false;
-});
 
 window.onload = function () {
   document.body.classList.add("fade-in");
@@ -225,9 +218,239 @@ window.onload = function () {
 let scrollPosition = 0; // スクロール位置を記録する変数
 
 jQuery(document).ready(function ($) {
-  $(".p-drawer-icon, .p-drawer-icon--barge").on("click", function () {
+  const isDrawerDesktop = function () {
+    return window.matchMedia("(min-width: 768px)").matches;
+  };
+
+  const stopDrawerSubAnimation = function ($sub) {
+    const currentAnimation = $sub.data("drawerAnimation");
+
+    if (currentAnimation) {
+      currentAnimation.cancel();
+      $sub.removeData("drawerAnimation");
+    }
+  };
+
+  const showDrawerSubInstant = function ($sub) {
+    stopDrawerSubAnimation($sub);
+    $sub.css({
+      display: "flex",
+      height: "auto",
+      opacity: 1,
+      marginTop: "",
+      overflow: "visible",
+    });
+  };
+
+  const hideDrawerSubInstant = function ($sub) {
+    stopDrawerSubAnimation($sub);
+    $sub.css({
+      display: "none",
+      height: 0,
+      opacity: 0,
+      marginTop: 0,
+      overflow: "hidden",
+    });
+  };
+
+  const animateDrawerSubOpen = function ($sub) {
+    const subElement = $sub.get(0);
+    if (!subElement) return;
+
+    stopDrawerSubAnimation($sub);
+    $sub.css({
+      display: "flex",
+      height: "auto",
+      opacity: 1,
+      marginTop: "",
+      overflow: "hidden",
+    });
+
+    const endHeight = subElement.scrollHeight;
+    const endMarginTop =
+      parseFloat(window.getComputedStyle(subElement).marginTop) || 0;
+
+    $sub.css({
+      height: 0,
+      opacity: 0,
+      marginTop: 0,
+    });
+
+    const animation = subElement.animate(
+      [
+        {
+          height: "0px",
+          opacity: 0,
+          marginTop: "0px",
+        },
+        {
+          height: `${endHeight}px`,
+          opacity: 1,
+          marginTop: `${endMarginTop}px`,
+        },
+      ],
+      {
+        duration: 320,
+        easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+        fill: "forwards",
+      }
+    );
+
+    $sub.data("drawerAnimation", animation);
+
+    animation.onfinish = function () {
+      $sub.css({
+        display: "flex",
+        height: "auto",
+        opacity: 1,
+        marginTop: "",
+        overflow: "visible",
+      });
+      $sub.removeData("drawerAnimation");
+    };
+  };
+
+  const animateDrawerSubClose = function ($sub) {
+    const subElement = $sub.get(0);
+    if (!subElement) return;
+
+    stopDrawerSubAnimation($sub);
+
+    const startHeight = subElement.scrollHeight;
+    const startMarginTop =
+      parseFloat(window.getComputedStyle(subElement).marginTop) || 0;
+
+    $sub.css({
+      display: "flex",
+      height: `${startHeight}px`,
+      opacity: 1,
+      marginTop: `${startMarginTop}px`,
+      overflow: "hidden",
+    });
+
+    const animation = subElement.animate(
+      [
+        {
+          height: `${startHeight}px`,
+          opacity: 1,
+          marginTop: `${startMarginTop}px`,
+        },
+        {
+          height: "0px",
+          opacity: 0,
+          marginTop: "0px",
+        },
+      ],
+      {
+        duration: 280,
+        easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+        fill: "forwards",
+      }
+    );
+
+    $sub.data("drawerAnimation", animation);
+
+    animation.onfinish = function () {
+      $sub.css({
+        display: "none",
+        height: 0,
+        opacity: 0,
+        marginTop: 0,
+        overflow: "hidden",
+      });
+      $sub.removeData("drawerAnimation");
+    };
+  };
+
+  const setDrawerSectionState = function ($item, shouldOpen, options = {}) {
+    const $toggle = $item.find(".p-drawer-content__toggle").first();
+    const $sub = $item.find(".p-drawer-content__sub").first();
+    const shouldAnimate = options.animate === true;
+
+    $item.toggleClass("is-open", shouldOpen);
+    $toggle.attr("aria-expanded", shouldOpen ? "true" : "false");
+
+    if (!$sub.length) {
+      return;
+    }
+
+    if (isDrawerDesktop()) {
+      stopDrawerSubAnimation($sub);
+      $sub.removeAttr("style");
+      return;
+    }
+
+    if (!shouldAnimate) {
+      if (shouldOpen) {
+        showDrawerSubInstant($sub);
+      } else {
+        hideDrawerSubInstant($sub);
+      }
+      return;
+    }
+
+    if (shouldOpen) {
+      animateDrawerSubOpen($sub);
+    } else {
+      animateDrawerSubClose($sub);
+    }
+  };
+
+  const resetDrawerSections = function () {
+    $(".p-drawer-content__list--has-sub").each(function () {
+      const shouldOpen = $(this).data("default-open") === true;
+      setDrawerSectionState($(this), shouldOpen);
+    });
+  };
+
+  const syncDrawerSectionsForViewport = function () {
+    $(".p-drawer-content__list--has-sub").each(function () {
+      const $item = $(this);
+      const shouldOpen = $item.hasClass("is-open");
+
+      setDrawerSectionState($item, shouldOpen);
+    });
+  };
+
+  $(".p-drawer-icon").on("click", function (e) {
+    e.preventDefault();
+
+    const isOpening = !$(".p-drawer-content").hasClass("is-active");
+
+    $(".p-drawer-icon").toggleClass("is-active");
+    $(".p-drawer-content").toggleClass("is-active");
+    $(".p-drawer-background").toggleClass("is-active");
     $("body").toggleClass("drawer-open");
+
+    if (isOpening) {
+      resetDrawerSections();
+    }
+
+    return false;
   });
+
+  $(document).on("click", ".p-drawer-content__toggle", function (e) {
+    if (isDrawerDesktop()) {
+      return;
+    }
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    const $item = $(this).closest(".p-drawer-content__list--has-sub");
+    const shouldOpen = !$item.hasClass("is-open");
+
+    setDrawerSectionState($item, shouldOpen, { animate: true });
+  });
+
+  $(".p-drawer-icon, .p-drawer-icon--barge").on("click", function () {
+    if (!$(this).hasClass("p-drawer-icon")) {
+      $("body").toggleClass("drawer-open");
+    }
+  });
+
+  $(window).on("resize", syncDrawerSectionsForViewport);
+  syncDrawerSectionsForViewport();
 });
 
 

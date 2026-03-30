@@ -78,68 +78,93 @@
                             </button>
                             <div class="p-header__drawer-content p-drawer-content">
                                 <div class="p-drawer-content__items">
-                                    <ul class="p-drawer-content__lists">
-                                        <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">Top</a>
-                                        </li>
-                                        <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
-                                        </li>
-                                        <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/work')); ?>" class="p-drawer-content__link">仕事について</a>
-                                            <ul class="p-drawer-content__sub">
-                                                <li class="p-drawer-content__subItem">
-                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">仕事内容</a>
-                                                </li>
-                                                <li class="p-drawer-content__subItem">
-                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">車両紹介</a>
-                                                </li>
-                                                <li class="p-drawer-content__subItem">
-                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">二種免許支援教育体制</a>
-                                                </li>
-                                                <li class="p-drawer-content__subItem">
-                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">数字で見るZ</a>
-                                                </li>
-                                                <li class="p-drawer-content__subItem">
-                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">よくある質問</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">インタビュー動画</a>
-                                        </li>
-                                        <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-drawer-content__link">会社情報</a>
-                                            <ul class="p-drawer-content__sub">
-                                                <li class="p-drawer-content__subItem">
-                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/company/message')); ?>">代表メッセージ</a>
-                                                </li>
-                                                <li class="p-drawer-content__subItem">
-                                                    <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/company/information')); ?>">会社概要</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/work')); ?>" class="p-drawer-content__link">募集要項</a>
-                                        </li>
-                                        <li class="p-drawer-content__list">
-                                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__link">エントリー</a>
-                                        </li>
-                                        <li class="p-drawer-content__list p-drawer-content__list--legal">
-                                            <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-drawer-content__sublink">プライバシーポリシー</a>
-                                        </li>
-                                        <li class="p-drawer-content__list p-drawer-content__list--legal">
-                                            <a href="<?php echo esc_url(home_url('/conditions')); ?>" class="p-drawer-content__sublink">運送約款</a>
-                                        </li>
-                                    </ul>
-                                  
-                                    <div class="p-drawer-content__contact-wrapper">
-                                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__contact">
-                                            <p class="p-drawer-content__contact-text">お問い合わせ</p>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.5" height="4.81">
-                                                <path d="M.75 4.06h14l-2.831-3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                                            </svg>
-                                        </a>
+                                    <div class="p-drawer-content__layout">
+                                        <div class="p-drawer-content__lists">
+                                            <div class="p-drawer-content__column">
+                                                <div class="p-drawer-content__list">
+                                                    <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
+                                                        <span class="p-drawer-content__link-en">Top</span>
+                                                        <span class="p-drawer-content__link-ja">トップ</span>
+                                                    </a>
+                                                </div>
+                                                <div class="p-drawer-content__list">
+                                                    <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">
+                                                        <span class="p-drawer-content__link-en">News</span>
+                                                        <span class="p-drawer-content__link-ja">お知らせ</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="p-drawer-content__column">
+                                                <div class="p-drawer-content__list p-drawer-content__list--has-sub is-open" data-default-open="true">
+                                                    <div class="p-drawer-content__heading">
+                                                        <a href="<?php echo esc_url(home_url('/work')); ?>" class="p-drawer-content__link">
+                                                            <span class="p-drawer-content__link-en">Work</span>
+                                                            <span class="p-drawer-content__link-ja">仕事について</span>
+                                                        </a>
+                                                        <button type="button" class="p-drawer-content__toggle" aria-expanded="true" aria-controls="drawer-work-sub">
+                                                            <span class="p-drawer-content__toggle-line"></span>
+                                                            <span class="p-drawer-content__toggle-line p-drawer-content__toggle-line--vertical"></span>
+                                                        </button>
+                                                    </div>
+                                                    <ul class="p-drawer-content__sub" id="drawer-work-sub">
+                                                        <li class="p-drawer-content__subItem">
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">仕事内容</a>
+                                                        </li>
+                                                        <li class="p-drawer-content__subItem">
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">車両紹介</a>
+                                                        </li>
+                                                        <li class="p-drawer-content__subItem">
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">二種免許支援教育体制</a>
+                                                        </li>
+                                                        <li class="p-drawer-content__subItem">
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">数字で見るZ</a>
+                                                        </li>
+                                                        <li class="p-drawer-content__subItem">
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">よくある質問</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="p-drawer-content__column">
+                                                <div class="p-drawer-content__list">
+                                                    <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
+                                                        <span class="p-drawer-content__link-en">Interview Movie</span>
+                                                        <span class="p-drawer-content__link-ja">インタビュー動画</span>
+                                                    </a>
+                                                </div>
+                                                <div class="p-drawer-content__list p-drawer-content__list--has-sub">
+                                                    <div class="p-drawer-content__heading">
+                                                        <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-drawer-content__link">
+                                                            <span class="p-drawer-content__link-en">Company</span>
+                                                            <span class="p-drawer-content__link-ja">会社情報</span>
+                                                        </a>
+                                                        <button type="button" class="p-drawer-content__toggle" aria-expanded="false" aria-controls="drawer-company-sub">
+                                                            <span class="p-drawer-content__toggle-line"></span>
+                                                            <span class="p-drawer-content__toggle-line p-drawer-content__toggle-line--vertical"></span>
+                                                        </button>
+                                                    </div>
+                                                    <ul class="p-drawer-content__sub" id="drawer-company-sub">
+                                                        <li class="p-drawer-content__subItem">
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/company/message')); ?>">代表メッセージ</a>
+                                                        </li>
+                                                        <li class="p-drawer-content__subItem">
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/company/information')); ?>">会社概要</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="p-drawer-content__actions">
+                                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__action">
+                                                <span class="p-drawer-content__action-en">Entry</span>
+                                                <span class="p-drawer-content__action-ja">エントリー</span>
+                                            </a>
+                                            <a href="<?php echo esc_url(home_url('/guidelines')); ?>" class="p-drawer-content__action">
+                                                <span class="p-drawer-content__action-en">Guidelines</span>
+                                                <span class="p-drawer-content__action-ja">募集要項</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
