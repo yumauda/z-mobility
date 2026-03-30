@@ -13,7 +13,7 @@
     
     <div class="l-inner">
       <div class="p-front-work__cards mt-0">
-        <a class="p-front-work__card p-front-work__card--large" href="#">
+        <a class="p-front-work__card p-front-work__card--large" href="<?php echo esc_url(home_url('/work/description')); ?>">
           <div class="p-front-work__card-inner">
             <div class="p-front-work__card-content p-front-work__card-content--large">
               <figure class="p-front-work__card-img p-front-work__card-img--large">
@@ -59,7 +59,7 @@
             </div>
           </a>
 
-          <a class="p-front-work__card" href="#">
+          <a class="p-front-work__card" href="<?php echo esc_url(home_url('/work/education')); ?>">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img">
@@ -82,7 +82,7 @@
             </div>
           </a>
 
-          <a class="p-front-work__card" href="#">
+          <a class="p-front-work__card" href="<?php echo esc_url(home_url('/work/numbers')); ?>">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img">
@@ -105,7 +105,7 @@
             </div>
           </a>
 
-          <a class="p-front-work__card" href="#">
+          <a class="p-front-work__card" href="<?php echo esc_url(home_url('/work/faq')); ?>">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img">

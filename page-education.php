@@ -6,15 +6,17 @@
     'title_ja' => '二種免許支援・教育体制',
     'title_en_lines' => ['Job Description'],
     'pan_current' => '二種免許支援・教育体制',
+    'pan_parent_label' => '仕事について',
+    'pan_parent_url' => home_url('/work/'),
   ]);
   ?>
 
-  <section class="p-description">
+  <section class="p-description pb0">
     <div class="l-inner">
       <div class="p-description__content">
         <div class="p-description__section">
           <div class="p-description__head">
-            <h2 class="p-description__title p-description__title--small">未経験でも、<br>プロになれる研修がある。</h2>
+            <h1 class="p-description__title p-description__title--small">未経験でも、<br>プロになれる研修がある。</h1>
             <p class="p-description__text p-description__text--small">
             専任コーチと経験豊富な講師陣による約2ヶ月の研修プログラムで、<br>
             未経験からプロのタクシードライバーを目指せます。

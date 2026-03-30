@@ -13,12 +13,12 @@
     <div class="l-inner">
       <div class="p-guide__content">
         <div class="p-guide__intro">
-          <h2 class="p-guide__title">
+          <h1 class="p-guide__title">
             全てが予想外のハイヤー企業<br>
             Z MOBILITY<br>
             未経験者でも熱い<br>
             高収入ドライバーになれる！
-          </h2>
+          </h1>
 
           <p class="p-guide__text">
             私たちは、未経験者をヒーローにするハイヤー企業です！<br>

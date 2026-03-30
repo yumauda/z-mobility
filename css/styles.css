@@ -5248,7 +5248,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-program {
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -5338,7 +5338,7 @@ input::placeholder {
   .p-program__cardRow {
     grid-template-columns: auto 0.0625rem 12.75rem 1fr;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
   }
 }
 
@@ -5423,8 +5423,8 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-salary {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-top: 5rem;
+    padding-bottom: 12.5rem;
   }
 }
 
@@ -6869,8 +6869,8 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-trainers {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -7013,10 +7013,6 @@ input::placeholder {
   .p-trainers__listItem {
     font-size: 1rem;
   }
-}
-
-.p-trainers__image {
-  margin: 0;
 }
 
 .p-trainers__image img {
@@ -7398,4 +7394,8 @@ input::placeholder {
 
 .mt-0 {
   margin-top: initial;
+}
+
+.pb0 {
+  padding-bottom: initial;
 }

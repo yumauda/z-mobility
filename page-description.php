@@ -6,6 +6,8 @@
     'title_ja' => 'Z MOBILITYの仕事について',
     'title_en_lines' => ['Job Description'],
     'pan_current' => 'Z MOBILITYの仕事について',
+    'pan_parent_label' => '仕事について',
+    'pan_parent_url' => home_url('/work/'),
   ]);
   ?>
 
