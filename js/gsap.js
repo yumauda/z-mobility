@@ -172,7 +172,7 @@ proWords.forEach((proWord) => {
       opacity: 0,
     },
     {
-      "--width": "100%",
+      "--width": "101%",
       opacity: 1,
       duration: 1.5,
       ease: 'power3.out',

@@ -206,9 +206,15 @@ function initProSlider() {
   proSlider = new Swiper(".js-pro-swiper", {
     slidesPerView: "auto",
     centeredSlides: false,
-    width: "auto",
     spaceBetween: 10,
     loop: true,
+    speed: 5000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false,
+    },
   });
 }
 

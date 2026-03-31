@@ -76,7 +76,6 @@
 
 .p-mv__title-en {
   color: #fff;
-  line-height: 1;
   font-family: $special-gothic;
   display: block;
   width: fit-content;
@@ -85,9 +84,11 @@
   z-index: 2;
   font-size: rem(48);
   font-weight: 400;
-
+  line-height: 0.8;
+  
   @include mq(md) {
-
+    
+    line-height: 1;
     font-size: rem(114);
   }
 }
@@ -173,9 +174,11 @@
 
 .p-mv__title-space--4 {
   margin-left: rem(92);
-  margin-top: rem(-16);
+  margin-top: rem(-20);
+  line-height: 1;
 
   @include mq(md) {
+    line-height: initial;
     margin-left: initial;
     margin-top: initial;
   }

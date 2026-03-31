@@ -4444,7 +4444,6 @@ input::placeholder {
 
 .p-mv__title-en {
   color: #fff;
-  line-height: 1;
   font-family: "Special Gothic Expanded One", sans-serif;
   display: block;
   width: fit-content;
@@ -4453,9 +4452,11 @@ input::placeholder {
   z-index: 2;
   font-size: 3rem;
   font-weight: 400;
+  line-height: 0.8;
 }
 @media screen and (min-width: 768px) {
   .p-mv__title-en {
+    line-height: 1;
     font-size: 7.125rem;
   }
 }
@@ -4538,10 +4539,12 @@ input::placeholder {
 
 .p-mv__title-space--4 {
   margin-left: 5.75rem;
-  margin-top: -1rem;
+  margin-top: -1.25rem;
+  line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .p-mv__title-space--4 {
+    line-height: initial;
     margin-left: initial;
     margin-top: initial;
   }
@@ -5252,8 +5255,14 @@ input::placeholder {
 }
 
 .p-pro__catch-line:nth-child(2) {
-  margin-top: -0.5rem;
+  margin-top: -0.4375rem;
 }
+@media screen and (min-width: 768px) {
+  .p-pro__catch-line:nth-child(2) {
+    margin-top: -0.5rem;
+  }
+}
+
 .p-pro__catch-line::before {
   content: "";
   position: absolute;
@@ -5261,6 +5270,7 @@ input::placeholder {
   background: #044396;
   z-index: -1;
   width: var(--width);
+  left: -0.125rem;
 }
 
 .p-pro__texts {

@@ -21,7 +21,7 @@
 
                     <nav class="p-footer__nav" aria-label="フッターナビゲーション">
                         <div class="p-footer__navCol">
-                            <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/')); ?>">Top</a>
+                            <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/')); ?>">トップ</a>
                             <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a>
                         </div>
 

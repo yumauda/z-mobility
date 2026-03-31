@@ -73,9 +73,13 @@
 }
 
 .p-pro__catch-line:nth-child(2) {
-  margin-top: rem(-8);
+  margin-top: rem(-7);
 
-  @include mq(md) {}
+  @include mq(md) {
+    margin-top: rem(-8);
+
+  }
+
 }
 
 .p-pro__catch-line::before {
@@ -85,6 +89,7 @@
   background: #044396;
   z-index: -1;
   width: var(--width);
+  left: rem(-2);
 }
 
 .p-pro__texts {
