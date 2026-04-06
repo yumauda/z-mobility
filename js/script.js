@@ -118,6 +118,12 @@ const setUpAccordion = () => {
   details.forEach((element) => {
     const summary = element.querySelector(".js-summary");
     const content = element.querySelector(".js-content");
+    if (!summary || !content) return;
+
+    if (element.open) {
+      element.classList.add(IS_OPENED_CLASS);
+      summary.classList.add(IS_OPENED_CLASS);
+    }
 
     summary.addEventListener("click", (event) => {
       // デフォルトの挙動を無効化
@@ -128,7 +134,6 @@ const setUpAccordion = () => {
         return;
       }
 
-      let icon = element.children[0];
       // detailsのopen属性を判定
       if (element.open) {
         // アコーディオンを閉じるときの処理
@@ -142,7 +147,7 @@ const setUpAccordion = () => {
         // アニメーション実行中用の値を付与
         element.dataset.animStatus = RUNNING_VALUE;
 
-        icon.classList.toggle(IS_OPENED_CLASS);
+        summary.classList.toggle(IS_OPENED_CLASS);
         // アニメーションの完了後に
         closingAnim.onfinish = () => {
           // open属性を取り除く
@@ -165,7 +170,7 @@ const setUpAccordion = () => {
         // アニメーション実行中用の値を入れる
         element.dataset.animStatus = RUNNING_VALUE;
 
-        icon.classList.toggle(IS_OPENED_CLASS);
+        summary.classList.toggle(IS_OPENED_CLASS);
         // アニメーション完了後にアニメーション実行中用の値を取り除く
         openingAnim.onfinish = () => {
           element.dataset.animStatus = "";

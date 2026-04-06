@@ -7,7 +7,7 @@
 
   @include mq(md) {
     padding-top: rem(120);
-    padding-bottom: rem(205);
+    padding-bottom: rem(100);
   }
 }
 
@@ -41,7 +41,7 @@
   color: #1a1a1a;
 
   @include mq(md) {
-    font-size: rem(48);
+    font-size: rem(40);
   }
 }
 .p-description__title--small {

@@ -39,7 +39,7 @@ opening.fromTo(".js-ja-title", {
   opacity: 1,
   ease: "power2.inOut",
   duration: 1,
-  "--width": "100%",
+  "--width": "101%",
 }, "-=0.5");
 opening.fromTo(".js-top-header", {
   opacity: 0,
