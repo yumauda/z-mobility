@@ -43,19 +43,20 @@
                     </p>
                   </div>
                   <div class="p-information__office">
-                    <p class="p-information__office-name">品川営業所</p>
-                    <p class="p-information__office-text">
-                      〒140-0001　東京都品川区北品川2-34-3<br>
-                      TEL：<a href="tel:0334714428">03-3471-4428</a>　FAX：03-3471-4463
-                    </p>
-                  </div>
-                  <div class="p-information__office">
                     <p class="p-information__office-name">五反田営業所</p>
                     <p class="p-information__office-text">
                       〒141-0031　東京都品川区西五反田7-22-17 TOCビル5F<br>
                       TEL：<a href="tel:0357479336">03-5747-9336</a>　FAX：03-5747-9337
                     </p>
                   </div>
+                  <div class="p-information__office">
+                    <p class="p-information__office-name">品川営業所</p>
+                    <p class="p-information__office-text">
+                      〒140-0001　東京都品川区北品川2-34-3<br>
+                      TEL：<a href="tel:0334714428">03-3471-4428</a>　FAX：03-3471-4463
+                    </p>
+                  </div>
+                  
                 </dd>
               </div>
               <div class="p-information__row">

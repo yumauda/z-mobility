@@ -646,13 +646,13 @@
                 <figure class="p-front-work__card-img">
                   <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2.webp" media="(min-width: 768px)" width="188" height="233" />
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2_sp.png" alt="車両紹介" width="188" height="233">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2_sp.png" alt="Z MOBILITY のハイヤーとは" width="188" height="233">
                   </picture>
                 </figure>
                 <div class="p-front-work__card-body">
                   <div class="p-front-work__card-head">
                     <p class="p-front-work__card-subtitle">Hire introduction</p>
-                    <p class="p-front-work__card-title">車両紹介</p>
+                    <p class="p-front-work__card-title">Z MOBILITY のハイヤーとは</p>
                   </div>
                   <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
                 </div>
