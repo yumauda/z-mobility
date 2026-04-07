@@ -4315,6 +4315,142 @@ input::placeholder {
   place-items: center;
 }
 
+.p-interview {
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-interview {
+    padding-top: 7.5rem;
+    padding-bottom: 12.5rem;
+  }
+}
+
+.p-interview__items {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-interview__items {
+    gap: 7.5rem;
+  }
+}
+
+.p-interview__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-interview__item {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-interview__item:nth-child(even) {
+    flex-direction: row;
+  }
+}
+
+.p-interview__media {
+  width: 100%;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .p-interview__media {
+    width: min(43.75rem, 54.6875%);
+    flex-shrink: 0;
+  }
+}
+
+.p-interview__video {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 700/394;
+  object-fit: cover;
+  background: #000;
+}
+
+.p-interview__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-interview__body {
+    width: min(33.25rem, 41.5625%);
+    gap: 2rem;
+  }
+}
+
+.p-interview__number {
+  color: #044396;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.p-interview__numberLabel {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.p-interview__numberValue {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .p-interview__numberValue {
+    font-size: 3rem;
+  }
+}
+
+.p-interview__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-interview__texts {
+    gap: 2rem;
+  }
+}
+
+.p-interview__title {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-interview__title {
+    font-size: 2rem;
+  }
+}
+
+.p-interview__description {
+  color: #1a1a1a;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+@media screen and (min-width: 768px) {
+  .p-interview__description {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+}
+
 .p-king {
   position: relative;
   z-index: 1;
