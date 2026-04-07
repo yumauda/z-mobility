@@ -2,50 +2,56 @@ gsap.registerPlugin(ScrollTrigger);
 
 const opening = gsap.timeline();
 
-//ロゴ・ぼやっと表示させる
+var webStorage = function () {
+  if (sessionStorage.getItem('access')) {
+    //2回目以降ページを開いたときの処理をここに
 
-//背景・ぼやっと消す
+  } else {
+    sessionStorage.setItem('access', 0);
 
-opening.fromTo(".p-loading", {
-  opacity: 0,
-  zIndex: 0,
-}, {
-  opacity: 1,
-  zIndex: 99999,
-  duration: 1,
-  ease: "power2.inOut",
-  zIndex: 99999,
-});
-opening.fromTo(".p-loading__img", {
-  opacity: 0,
-  filter: "blur(10px)",
-}, {
-  opacity: 1,
-  filter: "blur(0px)",
-  duration: 1,
-  ease: "power2.inOut",
-});
-opening.fromTo(".p-loading__text", {
-  opacity: 0,
-  clipPath: "inset(100% 0 0 0)",
-}, {
-  opacity: 1,
-  clipPath: "inset(0% 0 0 0)",
-  duration: 1.2,
-  ease: "power2.inOut",
-});
-opening.to(".p-loading__text", {
-  scale: 15,
-  opacity: 0,
-  delay: 1,
-});
-opening.to(".p-loading__img", {
-  opacity: 0,
-  duration: 1,
-  delay: 0.5,
-  ease: "power2.inOut",
-});
+    opening.fromTo(".p-loading", {
+      opacity: 0,
+      zIndex: 0,
+    }, {
+      opacity: 1,
+      zIndex: 99999,
+      duration: 1,
+      ease: "power2.inOut",
+      zIndex: 99999,
+    });
+    opening.fromTo(".p-loading__img", {
+      opacity: 0,
+      filter: "blur(10px)",
+    }, {
+      opacity: 1,
+      filter: "blur(0px)",
+      duration: 1,
+      ease: "power2.inOut",
+    });
+    opening.fromTo(".p-loading__text", {
+      opacity: 0,
+      clipPath: "inset(100% 0 0 0)",
+    }, {
+      opacity: 1,
+      clipPath: "inset(0% 0 0 0)",
+      duration: 1.2,
+      ease: "power2.inOut",
+    });
+    opening.to(".p-loading__text", {
+      scale: 15,
+      opacity: 0,
+      delay: 1,
+    });
+    opening.to(".p-loading__img", {
+      opacity: 0,
+      duration: 1,
+      delay: 0.5,
+      ease: "power2.inOut",
+    });
 
+  }
+}
+webStorage();
 
 opening.to(".p-loading", {
   opacity: 0,
