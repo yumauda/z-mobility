@@ -2,6 +2,59 @@ gsap.registerPlugin(ScrollTrigger);
 
 const opening = gsap.timeline();
 
+//ロゴ・ぼやっと表示させる
+
+//背景・ぼやっと消す
+
+opening.fromTo(".p-loading", {
+  opacity: 0,
+  zIndex: 0,
+}, {
+  opacity: 1,
+  zIndex: 99999,
+  duration: 1,
+  ease: "power2.inOut",
+  zIndex: 99999,
+});
+opening.fromTo(".p-loading__img", {
+  opacity: 0,
+  filter: "blur(10px)",
+}, {
+  opacity: 1,
+  filter: "blur(0px)",
+  duration: 1,
+  ease: "power2.inOut",
+});
+opening.fromTo(".p-loading__text", {
+  opacity: 0,
+  clipPath: "inset(100% 0 0 0)",
+}, {
+  opacity: 1,
+  clipPath: "inset(0% 0 0 0)",
+  duration: 1.2,
+  ease: "power2.inOut",
+});
+opening.to(".p-loading__text", {
+  scale: 15,
+  opacity: 0,
+  delay: 1,
+});
+opening.to(".p-loading__img", {
+  opacity: 0,
+  duration: 1,
+  delay: 0.5,
+  ease: "power2.inOut",
+});
+
+
+opening.to(".p-loading", {
+  opacity: 0,
+  duration: 1,
+  ease: "power2.inOut",
+  zIndex: 0,
+  visibility: "hidden",
+});
+
 opening.fromTo(".js-mv-img", {
   opacity: 0,
   clipPath: "inset(0 100% 0 0)",
@@ -11,7 +64,7 @@ opening.fromTo(".js-mv-img", {
   stagger: 0.2,
   ease: "power2.inOut",
   duration: 1.5,
-});
+}, "-=1");
 opening.fromTo(".js-mv-ribbon", {
   opacity: 0,
   clipPath: "inset(0 100% 0 0)",

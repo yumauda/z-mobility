@@ -1,5 +1,17 @@
 <?php get_header(); ?>
 <main>
+  <div class="p-loading">
+    <div class="l-inner">
+      <div class="p-loading__content">
+        <div class="p-loading__img">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/header_logo.webp" alt="Loading" width="500" height="500">
+        </div>
+        <div class="p-loading__text-wrapper">
+          <p class="p-loading__text">ハイヤー時代、到来。</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <section class="p-mv">
     <div class="p-mv__row">
       <figure class="p-mv__img js-mv-img">

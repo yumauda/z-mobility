@@ -1,0 +1,65 @@
+@use "../global" as *;
+
+.p-loading {
+  height: 100vh;
+  display: flex;
+  overflow: clip;
+  align-items: center;
+  justify-content: center;
+  background: #044396;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.p-loading__content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: rem(20);
+  @include mq(md){
+    gap: rem(32);
+    
+  }
+}
+
+
+.p-loading__img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(250);
+
+  @include mq(md) {
+    max-width: rem(700);
+
+
+  }
+}
+
+.p-loading__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-loading__text-wrapper {
+  text-align: center;
+}
+
+.p-loading__text {
+  color: #fff;
+  font-size: rem(32);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  @include mq(md) {
+    font-size: rem(48);
+
+  }
+}
