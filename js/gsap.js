@@ -55,7 +55,7 @@ webStorage();
 
 opening.to(".p-loading", {
   opacity: 0,
-  duration: 1,
+  duration: 1.5,
   ease: "power2.inOut",
   zIndex: 0,
   visibility: "hidden",

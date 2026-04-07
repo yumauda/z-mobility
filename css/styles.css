@@ -4369,13 +4369,13 @@ input::placeholder {
   }
 }
 
-.p-interview__video {
+.p-interview__embed {
   width: 100%;
   height: auto;
   display: block;
   aspect-ratio: 700/394;
-  object-fit: cover;
   background: #000;
+  border: 0;
 }
 
 .p-interview__body {
@@ -4428,7 +4428,7 @@ input::placeholder {
 
 .p-interview__title {
   color: #1a1a1a;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.4;
 }
