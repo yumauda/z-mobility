@@ -93,7 +93,7 @@
   gap: rem(16);
 
   @include mq(md) {
-    grid-template-columns: repeat(3, rem(413));
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     gap: rem(20);
   }

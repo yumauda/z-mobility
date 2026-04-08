@@ -58,9 +58,9 @@
   margin-left: auto;
 
   @include mq(md) {
-    grid-template-columns: 1fr rem(460);
-    align-items: start;
+    display: flex;
     gap: rem(48);
+    align-items: start;
   }
 }
 

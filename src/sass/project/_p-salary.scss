@@ -58,7 +58,7 @@
   margin-left: auto;
 
   @include mq(md) {
-    grid-template-columns: rem(616) rem(616);
+    grid-template-columns: 1fr 1fr;
     gap: rem(48);
   }
 }

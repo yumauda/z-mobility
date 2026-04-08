@@ -1,11 +1,11 @@
 @use "../global" as *;
 
 .p-difference {
-  padding-top: rem(64);
+  padding-top: rem(20);
   padding-bottom: rem(64);
 
   @include mq(md) {
-    padding-top: rem(120);
+    padding-top: rem(40);
     padding-bottom: rem(120);
   }
 }
@@ -77,7 +77,8 @@
   padding: rem(24) rem(32);
 
   @include mq(md) {
-    padding: rem(32) rem(48);
+    padding: rem(0) rem(40);
+    height: rem(104);
   }
 }
 
