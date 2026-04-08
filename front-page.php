@@ -686,7 +686,7 @@
             </div>
           </a>
 
-          <a class="p-front-work__card js-opacity-word" href="#">
+          <a class="p-front-work__card js-opacity-word" href="<?php echo esc_url(home_url('/work/numbers')); ?>">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img">
