@@ -236,56 +236,51 @@
       </div>
 
       <div class="p-front-news__list">
-        <a class="p-front-news__item js-opacity-word" href="#">
-          <div class="p-front-news__meta">
-            <time class="p-front-news__date" datetime="2026-02-01">2026.02.01</time>
-            <span class="p-front-news__category">お知らせ</span>
-          </div>
-          <div class="p-front-news__body">
-            <p class="p-front-news__text">3月会社説明会のお知らせ</p>
-            <span class="p-front-news__item-icon" aria-hidden="true">
-              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="28" height="28" rx="3" fill="#044396" />
-                <path d="M17.0847 14.5H9V13.5H17.0847L13.2872 9.7025L14 9L19 14L14 19L13.2872 18.2975L17.0847 14.5Z" fill="white" />
-              </svg>
+        <?php
+        // パラメータの設定
+        $args = array(
+          'posts_per_page' => 3,
+          'post_status' => 'publish',
+          'post_type' => 'post',
+          'orderby' => 'date',
+        );
 
-            </span>
-          </div>
-        </a>
+        // WP_Queryインスタンスの生成
+        $my_query = new WP_Query($args);
+        if ($my_query->have_posts()) :
+          while ($my_query->have_posts()) : $my_query->the_post();
+        ?>
 
-        <a class="p-front-news__item js-opacity-word" href="#">
-          <div class="p-front-news__meta">
-            <time class="p-front-news__date" datetime="2026-02-01">2026.02.01</time>
-            <span class="p-front-news__category">TOPICS</span>
-          </div>
-          <div class="p-front-news__body">
-            <p class="p-front-news__text">
-              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
-            </p>
-            <span class="p-front-news__item-icon" aria-hidden="true">
-              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="28" height="28" rx="3" fill="#044396" />
-                <path d="M17.0847 14.5H9V13.5H17.0847L13.2872 9.7025L14 9L19 14L14 19L13.2872 18.2975L17.0847 14.5Z" fill="white" />
-              </svg>
-            </span>
-          </div>
-        </a>
+            <a class="p-front-news__item js-opacity-word" href="<?php the_permalink(); ?>">
+              <div class="p-front-news__meta">
+                <time class="p-front-news__date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <span class="p-front-news__category">
+                  <?php
+                  $categories = get_the_category();
+                  if (!empty($categories) && !is_wp_error($categories)) {
+                    echo esc_html($categories[0]->name);
+                  }
+                  ?>
+                </span>
+              </div>
+              <div class="p-front-news__body">
+                <p class="p-front-news__text"><?php the_title(); ?></p>
+                <span class="p-front-news__item-icon" aria-hidden="true">
+                  <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="28" height="28" rx="3" fill="#044396" />
+                    <path d="M17.0847 14.5H9V13.5H17.0847L13.2872 9.7025L14 9L19 14L14 19L13.2872 18.2975L17.0847 14.5Z" fill="white" />
+                  </svg>
 
-        <a class="p-front-news__item js-opacity-word" href="#">
-          <div class="p-front-news__meta">
-            <time class="p-front-news__date" datetime="2026-02-01">2026.02.01</time>
-            <span class="p-front-news__category">TOPICS</span>
-          </div>
-          <div class="p-front-news__body">
-            <p class="p-front-news__text">親譲りの無鉄砲で小供の時から損ばかりしている。</p>
-            <span class="p-front-news__item-icon" aria-hidden="true">
-              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="28" height="28" rx="3" fill="#044396" />
-                <path d="M17.0847 14.5H9V13.5H17.0847L13.2872 9.7025L14 9L19 14L14 19L13.2872 18.2975L17.0847 14.5Z" fill="white" />
-              </svg>
-            </span>
-          </div>
-        </a>
+                </span>
+              </div>
+            </a>
+
+        <?php
+          endwhile;
+        endif;
+        wp_reset_postdata();
+        ?>
+
       </div>
       <div class="p-front-news__more-sp js-opacity-word">
 

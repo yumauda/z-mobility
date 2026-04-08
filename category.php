@@ -1,20 +1,23 @@
 <?php get_header(); ?>
 <main>
 <?php
+  $current_category = get_queried_object();
+  $news_categories = get_categories(['hide_empty' => true]);
   get_template_part('includes/page-mv', null, [
-    'title_ja' => 'お知らせ',
+    'title_ja' => single_cat_title('', false),
     'title_en_lines' => ['News'],
-    'pan_current' => 'お知らせ',
+    'pan_current' => single_cat_title('', false),
+    'pan_parent_label' => 'お知らせ',
+    'pan_parent_url' => home_url('/news/'),
   ]);
-  ?>
+?>
   <section class="p-news">
     <div class="l-inner">
       <div class="p-news__content">
-        <?php $news_categories = get_categories(['hide_empty' => true]); ?>
         <div class="p-news__categories" aria-label="お知らせカテゴリ">
-          <a class="p-news__category is-active" href="<?php echo esc_url(home_url('/news/')); ?>">すべて</a>
+          <a class="p-news__category" href="<?php echo esc_url(home_url('/news/')); ?>">すべて</a>
           <?php foreach ($news_categories as $news_category) : ?>
-            <a class="p-news__category" href="<?php echo esc_url(get_category_link($news_category->term_id)); ?>">
+            <a class="p-news__category <?php echo ($current_category && (int) $current_category->term_id === (int) $news_category->term_id) ? 'is-active' : ''; ?>" href="<?php echo esc_url(get_category_link($news_category->term_id)); ?>">
               <?php echo esc_html($news_category->name); ?>
             </a>
           <?php endforeach; ?>
@@ -51,7 +54,6 @@
             <p class="p-news__empty">記事がありません。</p>
           <?php endif; ?>
         </div>
-
       </div>
       <?php
       $pagination_links = paginate_links([
@@ -86,9 +88,5 @@
       <?php endif; ?>
     </div>
   </section>
-
- 
-
-
 </main>
 <?php get_footer() ?>

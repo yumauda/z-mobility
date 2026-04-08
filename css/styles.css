@@ -5567,6 +5567,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   border-radius: 9999px;
   border: 1px solid #c2c9d0;
   background: transparent;
