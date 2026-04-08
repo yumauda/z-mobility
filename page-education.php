@@ -4,7 +4,7 @@
   <?php
   get_template_part('includes/page-mv-small', null, [
     'title_ja' => '二種免許支援・教育体制',
-    'title_en_lines' => ['Job Description'],
+    'title_en_lines' => ['Educational System'],
     'pan_current' => '二種免許支援・教育体制',
     'pan_parent_label' => '仕事について',
     'pan_parent_url' => home_url('/work/'),
