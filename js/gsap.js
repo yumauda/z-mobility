@@ -4,7 +4,9 @@ const opening = gsap.timeline();
 
 var webStorage = function () {
   if (sessionStorage.getItem('access')) {
-    //2回目以降ページを開いたときの処理をここに
+    opening.set(".p-loading", {
+      display: "none",
+    });
 
   } else {
     sessionStorage.setItem('access', 0);

@@ -1,0 +1,134 @@
+@use "../global" as *;
+
+.p-difference {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-difference__content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+
+  @include mq(md) {
+    gap: rem(48);
+  }
+}
+
+.p-difference__head {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12);
+}
+
+.p-difference__eyebrow {
+  color: #044396;
+  font-family: $special-gothic;
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.p-difference__title {
+  color: #1a1a1a;
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.p-difference__text {
+  color: #1a1a1a;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 1.9;
+
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 2;
+  }
+}
+
+.p-difference__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(16);
+
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(20);
+  }
+}
+
+.p-difference__card {
+  background: #044396;
+  border-radius: rem(10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(24) rem(32);
+
+  @include mq(md) {
+    padding: rem(32) rem(48);
+  }
+}
+
+.p-difference__cardInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12);
+
+  @include mq(md) {
+    gap: rem(16);
+  }
+}
+
+.p-difference__cardIcon {
+  width: rem(28);
+  height: rem(28);
+  position: relative;
+  flex: none;
+
+  @include mq(md) {
+    width: rem(40);
+    height: rem(40);
+  }
+}
+
+.p-difference__cardIcon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: rem(18);
+  height: rem(10);
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: translate(-50%, -60%) rotate(-45deg);
+
+  @include mq(md) {
+    width: rem(27);
+    height: rem(16);
+  }
+}
+
+.p-difference__cardText {
+  color: #fff;
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}

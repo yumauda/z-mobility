@@ -12,7 +12,9 @@
 @use "./project/_p-404";
 @use "./project/_p-company";
 @use "./project/_p-conditions";
+@use "./project/_p-customers";
 @use "./project/_p-description";
+@use "./project/_p-difference";
 @use "./project/_p-drawer";
 @use "./project/_p-faq";
 @use "./project/_p-flow";
@@ -44,6 +46,7 @@
 @use "./project/_p-top-interview";
 @use "./project/_p-trainers";
 @use "./project/_p-uber";
+@use "./project/_p-what";
 
 // Component
 @use "./component/_c-btn";

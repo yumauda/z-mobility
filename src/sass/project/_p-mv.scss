@@ -82,14 +82,15 @@
   overflow: hidden;
   position: relative;
   z-index: 2;
-  font-size: rem(48);
+  font-size: min(rem(48), calc(48 / 375) * 100vw);
   font-weight: 400;
   line-height: 0.8;
-  
+
   @include mq(md) {
-    
+
     line-height: 1;
-    font-size: rem(114);
+    font-size: min(rem(114), calc(114 / 1440) * 100vw);
+
   }
 }
 
@@ -199,9 +200,10 @@
   transition: opacity 0.3s ease, visibility 0s linear 0.3s;
   pointer-events: none;
   right: rem(8);
-  @include mq(md){
+
+  @include mq(md) {
     right: rem(40);
-    
+
   }
 }
 

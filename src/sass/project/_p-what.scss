@@ -1,0 +1,70 @@
+@use "../global" as *;
+
+.p-what {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-what__content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: rem(48);
+  }
+}
+
+.p-what__head {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12);
+
+  @include mq(md) {
+    flex: 0 0 auto;
+  }
+}
+
+.p-what__eyebrow {
+  color: #044396;
+  font-family: $special-gothic;
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.p-what__title {
+  color: #1a1a1a;
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.p-what__body {
+  @include mq(md) {
+    padding-top: rem(64);
+  }
+}
+
+.p-what__text {
+  color: #1a1a1a;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 1.9;
+
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 2;
+  }
+}
