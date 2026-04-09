@@ -211,7 +211,10 @@ $render_faq_text = static function ($text, $paragraph_class) {
               <?php foreach ($section['items'] as $item) : ?>
                 <details class="p-faq__item js-details" <?php echo !empty($item['open']) ? 'open' : ''; ?>>
                   <summary class="p-faq__summary js-summary">
-                    <span class="p-faq__question"><?php echo esc_html($item['question']); ?></span>
+                    <span class="p-faq__summaryHead">
+                      <span class="p-faq__questionLabel">Q</span>
+                      <span class="p-faq__question"><?php echo esc_html($item['question']); ?></span>
+                    </span>
                     <span class="p-faq__icon" aria-hidden="true">
                       <span class="p-faq__iconLine"></span>
                       <span class="p-faq__iconLine p-faq__iconLine--vertical"></span>
@@ -220,14 +223,19 @@ $render_faq_text = static function ($text, $paragraph_class) {
 
                   <div class="p-faq__answer js-content">
                     <div class="p-faq__answerInner">
-                      <div class="p-faq__answerText">
-                        <?php echo $render_faq_text($item['answer'], 'p-faq__answerParagraph'); ?>
-                      </div>
-                      <?php if (!empty($item['note'])) : ?>
-                        <div class="p-faq__answerNote">
-                          <?php echo $render_faq_text($item['note'], 'p-faq__answerNoteParagraph'); ?>
+                      <div class="p-faq__answerPanel">
+                        <span class="p-faq__answerLabel">A</span>
+                        <div class="p-faq__answerBody">
+                          <div class="p-faq__answerText">
+                            <?php echo $render_faq_text($item['answer'], 'p-faq__answerParagraph'); ?>
+                          </div>
+                          <?php if (!empty($item['note'])) : ?>
+                            <div class="p-faq__answerNote">
+                              <?php echo $render_faq_text($item['note'], 'p-faq__answerNoteParagraph'); ?>
+                            </div>
+                          <?php endif; ?>
                         </div>
-                      <?php endif; ?>
+                      </div>
                     </div>
                   </div>
                 </details>
