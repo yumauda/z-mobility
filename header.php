@@ -108,10 +108,10 @@
                                                     </div>
                                                     <ul class="p-drawer-content__sub" id="drawer-work-sub">
                                                         <li class="p-drawer-content__subItem">
-                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/description')); ?>">仕事内容</a>
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/description')); ?>">Z MOBILITYの仕事について</a>
                                                         </li>
                                                         <li class="p-drawer-content__subItem">
-                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/hire')); ?>">車両紹介</a>
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/hire')); ?>">Z MOBILITY のハイヤーとは</a>
                                                         </li>
                                                         <li class="p-drawer-content__subItem">
                                                             <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/education')); ?>">二種免許支援教育体制</a>

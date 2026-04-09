@@ -2393,7 +2393,7 @@ select::-ms-expand {
     width: 31.125rem;
     justify-content: end;
     gap: 4rem;
-    grid-template-columns: 4.5rem 10.75rem 7.875rem;
+    grid-template-columns: 4.5rem 13.25rem 7.875rem;
     max-width: initial;
   }
 }
@@ -2460,7 +2460,7 @@ select::-ms-expand {
 .p-footer__navSublink {
   color: #fff;
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1.2;
 }
