@@ -29,18 +29,18 @@
                             <div class="p-footer__navGroup">
                                 <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/work')); ?>">仕事について</a>
                                 <div class="p-footer__navSub">
-                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work')); ?>">仕事内容</a>
-                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work')); ?>">車両紹介</a>
-                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work')); ?>">二種免許支援教育体制</a>
-                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work')); ?>">数字で見るZ</a>
-                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work')); ?>">よくある質問</a>
+                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/description')); ?>">仕事内容</a>
+                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/hire')); ?>">車両紹介</a>
+                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/education')); ?>">二種免許支援教育体制</a>
+                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/numbers')); ?>">数字で見るZ</a>
+                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/faq')); ?>">よくある質問</a>
                                 </div>
                             </div>
-                            <a class="p-footer__navLink u-desktop" href="<?php echo esc_url(home_url('/')); ?>">インタビュー動画</a>
+                            <a class="p-footer__navLink u-desktop" href="<?php echo esc_url(home_url('/interview/')); ?>">インタビュー動画</a>
                         </div>
 
                         <div class="p-footer__navCol">
-                            <a class="p-footer__navLink u-mobile" href="<?php echo esc_url(home_url('/')); ?>">インタビュー動画</a>
+                            <a class="p-footer__navLink u-mobile" href="<?php echo esc_url(home_url('/interview/')); ?>">インタビュー動画</a>
                             <div class="p-footer__navGroup">
                                 <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/company')); ?>">会社情報</a>
                                 <div class="p-footer__navSub">
@@ -48,7 +48,7 @@
                                     <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/company/information')); ?>">会社概要</a>
                                 </div>
                             </div>
-                            <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/work')); ?>">募集要項</a>
+                            <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/guidelines')); ?>">募集要項</a>
                             <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/contact')); ?>">エントリー</a>
                         </div>
                     </nav>

@@ -108,26 +108,26 @@
                                                     </div>
                                                     <ul class="p-drawer-content__sub" id="drawer-work-sub">
                                                         <li class="p-drawer-content__subItem">
-                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">仕事内容</a>
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/description')); ?>">仕事内容</a>
                                                         </li>
                                                         <li class="p-drawer-content__subItem">
-                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">車両紹介</a>
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/hire')); ?>">車両紹介</a>
                                                         </li>
                                                         <li class="p-drawer-content__subItem">
-                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">二種免許支援教育体制</a>
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/education')); ?>">二種免許支援教育体制</a>
                                                         </li>
                                                         <li class="p-drawer-content__subItem">
-                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">数字で見るZ</a>
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/numbers')); ?>">数字で見るZ</a>
                                                         </li>
                                                         <li class="p-drawer-content__subItem">
-                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work')); ?>">よくある質問</a>
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/faq')); ?>">よくある質問</a>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="p-drawer-content__column">
                                                 <div class="p-drawer-content__list">
-                                                    <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
+                                                    <a href="<?php echo esc_url(home_url('/interview/')); ?>" class="p-drawer-content__link">
                                                         <span class="p-drawer-content__link-en">Interview Movie</span>
                                                         <span class="p-drawer-content__link-ja">インタビュー動画</span>
                                                     </a>

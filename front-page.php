@@ -44,7 +44,7 @@
         </h1>
       </div>
       <div class="p-mv__banner">
-        <a href="#" class="p-mv__banner-link">
+        <a href="<?php echo esc_url(home_url('/guidelines/')); ?>" class="p-mv__banner-link">
           <div class="p-mv__banner-img">
             <picture>
               <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/mv_banner.webp" media="(min-width: 768px)" width="1238" height="570" />
@@ -284,7 +284,7 @@
       </div>
       <div class="p-front-news__more-sp js-opacity-word">
 
-        <a class="c-btn c-btn--primary" href="<?php echo esc_url(home_url('/blog-all')); ?>">
+        <a class="c-btn c-btn--primary" href="<?php echo esc_url(home_url('/news/')); ?>">
           <span class="c-btn__text">一覧を見る</span>
           <span class="c-btn__divider" aria-hidden="true"></span>
           <span class="c-btn__icon" aria-hidden="true">
@@ -704,7 +704,7 @@
             </div>
           </a>
 
-          <a class="p-front-work__card js-opacity-word" href="#">
+          <a class="p-front-work__card js-opacity-word" href="<?php echo esc_url(home_url('/work/faq')); ?>">
             <div class="p-front-work__card-inner">
               <div class="p-front-work__card-content">
                 <figure class="p-front-work__card-img">
@@ -944,7 +944,7 @@
               </button>
             </div>
 
-            <a class="c-btn c-btn--primary" href="#">
+            <a class="c-btn c-btn--primary" href="<?php echo esc_url(home_url('/interview/')); ?>">
               <span class="c-btn__text">一覧を見る</span>
               <span class="c-btn__divider" aria-hidden="true"></span>
               <span class="c-btn__icon" aria-hidden="true">
@@ -957,7 +957,7 @@
           <div class="swiper p-top-interview__swiper js-top-interview-swiper">
             <div class="swiper-wrapper p-top-interview__tracks">
               <div class="swiper-slide p-top-interview__slide">
-                <a class="p-top-interview__card" href="#">
+                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview/')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
                     <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
                   </figure>
@@ -967,7 +967,7 @@
               </div>
 
               <div class="swiper-slide p-top-interview__slide">
-                <a class="p-top-interview__card" href="#">
+                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview/')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
                   </figure>
@@ -977,7 +977,7 @@
               </div>
 
               <div class="swiper-slide p-top-interview__slide">
-                <a class="p-top-interview__card" href="#">
+                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview/')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
                   </figure>
@@ -987,7 +987,7 @@
               </div>
 
               <div class="swiper-slide p-top-interview__slide">
-                <a class="p-top-interview__card" href="#">
+                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview/')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
                   </figure>
@@ -999,7 +999,7 @@
           </div>
         </div>
         <div class="p-top-interview__bottom-sp">
-          <a class="c-btn c-btn--primary" href="#">
+          <a class="c-btn c-btn--primary" href="<?php echo esc_url(home_url('/interview/')); ?>">
             <span class="c-btn__text">一覧を見る</span>
             <span class="c-btn__divider" aria-hidden="true"></span>
             <span class="c-btn__icon" aria-hidden="true">

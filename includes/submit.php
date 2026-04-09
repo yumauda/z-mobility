@@ -84,7 +84,7 @@
 
                 <div class="p-submit__row">
 
-                    <a class="p-submit__ctaCard mt0 js-opacity-word" href="#">
+                    <a class="p-submit__ctaCard mt0 js-opacity-word" href="<?php echo esc_url(home_url('/guidelines')); ?>">
                         <div class="p-submit__ctaCardInner">
                             <p class="p-submit__ctaJa p-submit__ctaJa--dark">
                                 <span class="p-submit__dot" aria-hidden="true"></span>
@@ -95,7 +95,7 @@
                         </div>
                     </a>
 
-                    <a class="p-submit__ctaCard p-submit__ctaCard--entry mt0 js-opacity-word" href="#">
+                    <a class="p-submit__ctaCard p-submit__ctaCard--entry mt0 js-opacity-word" href="<?php echo esc_url(home_url('/contact')); ?>">
                         <div class="p-submit__ctaCardInner">
                             <p class="p-submit__ctaJa">
                                 <span class="p-submit__dot p-submit__dot--line" aria-hidden="true"></span>
