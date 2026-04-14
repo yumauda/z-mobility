@@ -1428,7 +1428,7 @@ select::-ms-expand {
   font-family: "Special Gothic Expanded One", sans-serif;
   font-size: 0.75rem;
   line-height: 1;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 @media screen and (min-width: 768px) {
   .p-drawer-content__link-en {

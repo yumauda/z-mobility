@@ -247,7 +247,7 @@
   font-family: $special-gothic;
   font-size: rem(12);
   line-height: 1;
-  text-transform: uppercase;
+  text-transform: capitalize;
 
   @include mq(md) {
     font-size: rem(14);
