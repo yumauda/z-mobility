@@ -22,7 +22,7 @@
         }
     }
     $z_desc = preg_replace('/\s+/', ' ', trim(wp_strip_all_tags($z_desc)));
-    $z_ogp = esc_url(get_template_directory_uri() . '/images/common/ogp.png');
+    $z_ogp = esc_url(get_template_directory_uri() . '/images/common/ogp.webp');
     $z_url = is_singular() ? get_permalink() : esc_url(home_url('/'));
     $z_og_type = (is_front_page() || is_home()) ? 'website' : 'article';
     ?>
@@ -42,8 +42,6 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="<?php echo esc_url($z_ogp); ?>" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url(get_template_directory_uri() . '/images/common/favicon-32.png'); ?>" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url(get_template_directory_uri() . '/images/common/favicon-16.png'); ?>" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri() . '/images/common/apple-touch-icon.png'); ?>" />
     <!-- css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

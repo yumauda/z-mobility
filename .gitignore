@@ -5,3 +5,6 @@ node_modules
 
 # 画像圧縮の差分キャッシュ
 .cache/
+
+# Environment variables
+.env

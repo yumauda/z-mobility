@@ -616,7 +616,7 @@
           <div class="p-front-work__card-inner">
             <div class="p-front-work__card-content p-front-work__card-content--large">
               <figure class="p-front-work__card-img p-front-work__card-img--large">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work-card-large.png" alt="" width="600" height="380">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work-card-large.webp" alt="" width="600" height="380">
               </figure>
               <div class="p-front-work__card-body p-front-work__card-body--large">
                 <div class="p-front-work__card-head">
@@ -641,7 +641,7 @@
                 <figure class="p-front-work__card-img">
                   <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2.webp" media="(min-width: 768px)" width="188" height="233" />
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2_sp.png" alt="Z MOBILITY のハイヤーとは" width="188" height="233">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_2_sp.webp" alt="Z MOBILITY のハイヤーとは" width="188" height="233">
                   </picture>
                 </figure>
                 <div class="p-front-work__card-body">
@@ -664,7 +664,7 @@
                 <figure class="p-front-work__card-img">
                   <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_3.webp" media="(min-width: 768px)" width="188" height="233" />
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_3_sp.png" alt="二種免許支援教育体制" width="188" height="233">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_3_sp.webp" alt="二種免許支援教育体制" width="188" height="233">
                   </picture>
                 </figure>
                 <div class="p-front-work__card-body">
@@ -687,7 +687,7 @@
                 <figure class="p-front-work__card-img">
                   <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_4.webp" media="(min-width: 768px)" width="188" height="233" />
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_4_sp.png" alt="数字で見るZ" width="188" height="233">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_4_sp.webp" alt="数字で見るZ" width="188" height="233">
                   </picture>
                 </figure>
                 <div class="p-front-work__card-body">
@@ -710,7 +710,7 @@
                 <figure class="p-front-work__card-img">
                   <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_5.webp" media="(min-width: 768px)" width="188" height="233" />
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_5_sp.png" alt="よくある質問" width="188" height="233">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work_5_sp.webp" alt="よくある質問" width="188" height="233">
                   </picture>
                 </figure>
                 <div class="p-front-work__card-body">
