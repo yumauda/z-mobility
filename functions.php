@@ -45,11 +45,7 @@ function my_script_init()
 		wp_enqueue_script('js-swiper-bundle', get_template_directory_uri() . '/js/swiper.min.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.min.js')), true);
 		wp_enqueue_script('js-swiper-init', get_template_directory_uri() . '/js/swiper.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.js')), true);
 	}
-	if (is_page('banquet') || is_page('restaurant') || is_page('suite-a') || is_page('suite-b') || is_page('twin') || is_page('double') || is_page('single') || is_page('japanese')) {
-		wp_enqueue_style('swiper-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), filemtime(get_theme_file_path('/css/swiper-bundle.min.css')), 'all');
-		wp_enqueue_script('js-swiper-bundle', get_template_directory_uri() . '/js/swiper.min.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.min.js')), true);
-		wp_enqueue_script('js-swiper-init', get_template_directory_uri() . '/js/swiper.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.js')), true);
-	}
+
 	
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), filemtime(get_theme_file_path('/js/script.js')), true);
 }
@@ -348,7 +344,7 @@ function custom_hiragana_validation_filter($result, $tag)
 
 //投稿タイプの作成(カスタム投稿)
 register_post_type(
-	'allcolumn',
+	'column',
 	array(
 		'labels' => array(
 			'name' => __('コラム'),
@@ -419,3 +415,198 @@ function webp_is_displayable($result, $path)
 	return $result;
 }
 add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);
+
+function zm_register_column_acf_fields()
+{
+	if (!function_exists('acf_add_local_field_group')) {
+		return;
+	}
+
+	acf_add_local_field_group(array(
+		'key' => 'group_zm_column_single',
+		'title' => 'コラム詳細',
+		'fields' => array(
+			array(
+				'key' => 'field_zm_column_single_message',
+				'label' => '入力ガイド',
+				'name' => '',
+				'type' => 'message',
+				'message' => 'リード文は「抜粋」、メイン画像は「アイキャッチ画像」を使用します。プロフィールは下の「プロフィール」カスタムフィールドから入力してください。本文は各セクション内の「本文ブロック」で、テキスト・画像・白背景ボックスを並び順どおりに追加できます。カテゴリ表示を上書きしたい場合だけ「表示カテゴリ名」を入力してください。',
+				'new_lines' => 'wpautop',
+				'esc_html' => 0,
+			),
+			array(
+				'key' => 'field_zm_column_display_category',
+				'label' => '表示カテゴリ名',
+				'name' => 'column_display_category',
+				'type' => 'text',
+				'instructions' => '未入力時は投稿に設定されたタクソノミー名を表示します。',
+				'required' => 0,
+				'default_value' => '',
+			),
+			array(
+				'key' => 'field_zm_column_profile',
+				'label' => 'プロフィール',
+				'name' => 'column_profile',
+				'type' => 'repeater',
+				'layout' => 'block',
+				'button_label' => 'プロフィールを追加',
+				'sub_fields' => array(
+					array(
+						'key' => 'field_zm_column_profile_label',
+						'label' => '項目名',
+						'name' => 'label',
+						'type' => 'text',
+						'required' => 1,
+					),
+					array(
+						'key' => 'field_zm_column_profile_value',
+						'label' => '内容',
+						'name' => 'value',
+						'type' => 'textarea',
+						'required' => 1,
+						'rows' => 3,
+						'new_lines' => 'br',
+					),
+				),
+			),
+			array(
+				'key' => 'field_zm_column_sections',
+				'label' => '本文セクション',
+				'name' => 'column_sections',
+				'type' => 'repeater',
+				'layout' => 'block',
+				'button_label' => 'セクションを追加',
+				'sub_fields' => array(
+					array(
+						'key' => 'field_zm_column_section_title',
+						'label' => 'セクションタイトル',
+						'name' => 'title',
+						'type' => 'text',
+						'required' => 1,
+					),
+					array(
+						'key' => 'field_zm_column_section_index_title',
+						'label' => '目次タイトル',
+						'name' => 'index_title',
+						'type' => 'text',
+						'instructions' => '未入力時はセクションタイトルを使用します。',
+						'required' => 0,
+					),
+					array(
+						'key' => 'field_zm_column_section_content_blocks',
+						'label' => '本文ブロック',
+						'name' => 'content_blocks',
+						'type' => 'flexible_content',
+						'button_label' => 'ブロックを追加',
+						'instructions' => 'テキスト・画像・白背景ボックスを、表示したい順番どおりに追加してください。',
+						'layouts' => array(
+							'layout_zm_column_section_text' => array(
+								'key' => 'layout_zm_column_section_text',
+								'name' => 'text',
+								'label' => 'テキスト',
+								'display' => 'block',
+								'sub_fields' => array(
+									array(
+										'key' => 'field_zm_column_section_content_text',
+										'label' => '本文テキスト',
+										'name' => 'text',
+										'type' => 'textarea',
+										'required' => 1,
+										'rows' => 4,
+										'new_lines' => 'br',
+									),
+								),
+							),
+							'layout_zm_column_section_image' => array(
+								'key' => 'layout_zm_column_section_image',
+								'name' => 'image',
+								'label' => '画像',
+								'display' => 'block',
+								'sub_fields' => array(
+									array(
+										'key' => 'field_zm_column_section_content_image',
+										'label' => '画像',
+										'name' => 'image',
+										'type' => 'image',
+										'required' => 1,
+										'return_format' => 'array',
+										'preview_size' => 'medium',
+										'library' => 'all',
+									),
+								),
+							),
+							'layout_zm_column_section_quote_box' => array(
+								'key' => 'layout_zm_column_section_quote_box',
+								'name' => 'quote_box',
+								'label' => '白背景ボックス',
+								'display' => 'block',
+								'sub_fields' => array(
+									array(
+										'key' => 'field_zm_column_section_content_quote_text',
+										'label' => 'ボックス内テキスト',
+										'name' => 'text',
+										'type' => 'textarea',
+										'required' => 1,
+										'rows' => 4,
+										'new_lines' => 'br',
+									),
+								),
+							),
+						),
+					),
+				),
+			),
+			array(
+				'key' => 'field_zm_column_faq_heading',
+				'label' => 'FAQ見出し',
+				'name' => 'column_faq_heading',
+				'type' => 'text',
+				'default_value' => 'その他（FAQ）',
+			),
+			array(
+				'key' => 'field_zm_column_faq_items',
+				'label' => 'FAQ',
+				'name' => 'column_faq_items',
+				'type' => 'repeater',
+				'layout' => 'block',
+				'button_label' => 'FAQを追加',
+				'sub_fields' => array(
+					array(
+						'key' => 'field_zm_column_faq_question',
+						'label' => '質問',
+						'name' => 'question',
+						'type' => 'text',
+						'required' => 1,
+					),
+					array(
+						'key' => 'field_zm_column_faq_answer',
+						'label' => '回答',
+						'name' => 'answer',
+						'type' => 'textarea',
+						'required' => 1,
+						'rows' => 4,
+						'new_lines' => 'br',
+					),
+				),
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'column',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'active' => true,
+		'show_in_rest' => 1,
+	));
+}
+add_action('acf/init', 'zm_register_column_acf_fields');

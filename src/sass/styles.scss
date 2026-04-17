@@ -10,6 +10,7 @@
 
 // Project
 @use "./project/_p-404";
+@use "./project/_p-column-archive";
 @use "./project/_p-company";
 @use "./project/_p-conditions";
 @use "./project/_p-customers";
@@ -41,6 +42,7 @@
 @use "./project/_p-pro";
 @use "./project/_p-program";
 @use "./project/_p-salary";
+@use "./project/_p-single-column";
 @use "./project/_p-single-topics";
 @use "./project/_p-single";
 @use "./project/_p-submit";

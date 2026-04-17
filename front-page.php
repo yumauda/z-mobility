@@ -754,11 +754,11 @@
                 </svg>
               </button>
             </div>
-            <a class="c-btn c-btn--light" href="#">
+            <a class="c-btn c-btn--light" href="<?php echo esc_url(home_url('/column')); ?>">
               <span class="c-btn__text">一覧を見る</span>
               <span class="c-btn__divider" aria-hidden="true"></span>
               <span class="c-btn__icon" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-arrow.svg" alt="" width="20" height="20">
               </span>
             </a>
           </div>
@@ -769,7 +769,7 @@
               <div class="swiper-slide p-top-column__slide">
                 <a class="p-top-column__card" href="#">
                   <figure class="p-top-column__card-img js-parallax">
-                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-1.png" alt="" width="395" height="222">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-1.png" alt="" width="395" height="222">
                   </figure>
                   <p class="p-top-column__card-text">
                     親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
@@ -784,7 +784,7 @@
               <div class="swiper-slide p-top-column__slide">
                 <a class="p-top-column__card" href="#">
                   <figure class="p-top-column__card-img js-parallax">
-                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-2.png" alt="" width="395" height="222">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-2.png" alt="" width="395" height="222">
                   </figure>
                   <p class="p-top-column__card-text">
                     親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
@@ -799,7 +799,7 @@
               <div class="swiper-slide p-top-column__slide">
                 <a class="p-top-column__card" href="#">
                   <figure class="p-top-column__card-img js-parallax">
-                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-3.png" alt="" width="395" height="222">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-3.png" alt="" width="395" height="222">
                   </figure>
                   <p class="p-top-column__card-text">
                     親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
@@ -814,7 +814,7 @@
               <div class="swiper-slide p-top-column__slide">
                 <a class="p-top-column__card" href="#">
                   <figure class="p-top-column__card-img js-parallax">
-                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-4.png" alt="" width="395" height="222">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-4.png" alt="" width="395" height="222">
                   </figure>
                   <p class="p-top-column__card-text">
                     親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
@@ -834,7 +834,7 @@
             <span class="c-btn__text">一覧を見る</span>
             <span class="c-btn__divider" aria-hidden="true"></span>
             <span class="c-btn__icon" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/column/column-arrow.svg" alt="" width="20" height="20">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-arrow.svg" alt="" width="20" height="20">
             </span>
           </a>
         </div>
