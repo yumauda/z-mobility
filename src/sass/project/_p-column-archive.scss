@@ -34,7 +34,6 @@
 }
 
 .p-column-archive__thumb {
-  margin: 0;
   aspect-ratio: 395 / 222;
   border-radius: rem(5);
   overflow: hidden;
@@ -50,6 +49,10 @@
 .p-column-archive__img {
   display: block;
   object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.p-column-archive__img:hover {
+  transform: scale(1.05);
 }
 
 .p-column-archive__placeholder {
@@ -166,7 +169,7 @@
   display: block;
 }
 
-.p-column-archive__pagerBtn.is-prev img {
+.p-column-archive__pagerBtn.is-next img {
   transform: rotate(180deg);
 }
 

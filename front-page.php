@@ -246,7 +246,7 @@
         );
 
         // WP_Queryインスタンスの生成
-        $my_query = new WP_Query($args);
+        $my_query = new \WP_Query($args);
         if ($my_query->have_posts()) :
           while ($my_query->have_posts()) : $my_query->the_post();
         ?>
@@ -732,6 +732,36 @@
     </div>
   </section>
   <section class="p-top-column">
+    <?php
+    $top_column_query = new \WP_Query([
+      'post_type' => 'column',
+      'post_status' => 'publish',
+      'posts_per_page' => 4,
+      'ignore_sticky_posts' => true,
+    ]);
+    $get_top_column_category = static function ($post_id) {
+      if (function_exists('get_field')) {
+        $display_category = trim((string) get_field('column_display_category', $post_id));
+        if ($display_category !== '') {
+          return $display_category;
+        }
+      }
+
+      $taxonomies = get_object_taxonomies(get_post_type($post_id), 'names');
+      foreach ($taxonomies as $taxonomy) {
+        if ($taxonomy === 'post_format') {
+          continue;
+        }
+
+        $terms = get_the_terms($post_id, $taxonomy);
+        if (!is_wp_error($terms) && !empty($terms)) {
+          return $terms[0]->name;
+        }
+      }
+
+      return '';
+    };
+    ?>
     <div class="l-inner">
       <div class="p-top-column__content">
         <div class="p-top-column__head">
@@ -765,72 +795,54 @@
         </div>
         <div class="p-top-column__right js-opacity-word">
           <div class="swiper p-top-column__swiper js-top-column-swiper">
-            <div class="swiper-wrapper p-top-column__cards">
-              <div class="swiper-slide p-top-column__slide">
-                <a class="p-top-column__card" href="#">
-                  <figure class="p-top-column__card-img js-parallax">
-                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-1.png" alt="" width="395" height="222">
-                  </figure>
-                  <p class="p-top-column__card-text">
-                    親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
-                  </p>
-                  <div class="p-top-column__meta">
-                    <time class="p-top-column__date" datetime="2026-01-30">2026.01.30</time>
-                    <span class="p-top-column__category">カテゴリ</span>
-                  </div>
-                </a>
-              </div>
+            <?php if ($top_column_query->have_posts()) : ?>
+              <div class="swiper-wrapper p-top-column__cards">
+                <?php while ($top_column_query->have_posts()) : $top_column_query->the_post(); ?>
+                  <?php
+                  $post_id = get_the_ID();
+                  $thumbnail_id = get_post_thumbnail_id($post_id);
+                  $thumbnail_data = $thumbnail_id ? wp_get_attachment_image_src($thumbnail_id, 'full') : false;
+                  $thumbnail_url = $thumbnail_data ? $thumbnail_data[0] : '';
+                  $thumbnail_width = $thumbnail_data ? (int) $thumbnail_data[1] : 395;
+                  $thumbnail_height = $thumbnail_data ? (int) $thumbnail_data[2] : 222;
+                  $thumbnail_alt = $thumbnail_id ? get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true) : '';
+                  $category = $get_top_column_category($post_id);
 
-              <div class="swiper-slide p-top-column__slide">
-                <a class="p-top-column__card" href="#">
-                  <figure class="p-top-column__card-img js-parallax">
-                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-2.png" alt="" width="395" height="222">
-                  </figure>
-                  <p class="p-top-column__card-text">
-                    親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
-                  </p>
-                  <div class="p-top-column__meta">
-                    <time class="p-top-column__date" datetime="2026-01-30">2026.01.30</time>
-                    <span class="p-top-column__category">カテゴリ</span>
+                  if ($thumbnail_alt === '') {
+                    $thumbnail_alt = get_the_title();
+                  }
+                  ?>
+                  <div class="swiper-slide p-top-column__slide">
+                    <a class="p-top-column__card" href="<?php the_permalink(); ?>">
+                      <figure class="p-top-column__card-img js-parallax">
+                        <?php if ($thumbnail_url !== '') : ?>
+                          <img decoding="async" loading="lazy" src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($thumbnail_alt); ?>" width="<?php echo esc_attr((string) $thumbnail_width); ?>" height="<?php echo esc_attr((string) $thumbnail_height); ?>">
+                        <?php else : ?>
+                          <div class="p-top-column__card-placeholder" aria-hidden="true">
+                            <span class="p-top-column__card-placeholderText">COLUMN</span>
+                          </div>
+                        <?php endif; ?>
+                      </figure>
+                      <p class="p-top-column__card-text"><?php echo esc_html(get_the_title()); ?></p>
+                      <div class="p-top-column__meta">
+                        <time class="p-top-column__date" datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(get_the_date('Y.m.d')); ?></time>
+                        <?php if ($category !== '') : ?>
+                          <span class="p-top-column__category"><?php echo esc_html($category); ?></span>
+                        <?php endif; ?>
+                      </div>
+                    </a>
                   </div>
-                </a>
+                <?php endwhile; ?>
               </div>
-
-              <div class="swiper-slide p-top-column__slide">
-                <a class="p-top-column__card" href="#">
-                  <figure class="p-top-column__card-img js-parallax">
-                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-3.png" alt="" width="395" height="222">
-                  </figure>
-                  <p class="p-top-column__card-text">
-                    親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
-                  </p>
-                  <div class="p-top-column__meta">
-                    <time class="p-top-column__date" datetime="2026-01-30">2026.01.30</time>
-                    <span class="p-top-column__category">カテゴリ</span>
-                  </div>
-                </a>
-              </div>
-
-              <div class="swiper-slide p-top-column__slide">
-                <a class="p-top-column__card" href="#">
-                  <figure class="p-top-column__card-img js-parallax">
-                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-4.png" alt="" width="395" height="222">
-                  </figure>
-                  <p class="p-top-column__card-text">
-                    親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
-                  </p>
-                  <div class="p-top-column__meta">
-                    <time class="p-top-column__date" datetime="2026-01-30">2026.01.30</time>
-                    <span class="p-top-column__category">カテゴリ</span>
-                  </div>
-                </a>
-              </div>
-            </div>
+              <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+              <p class="p-top-column__empty">コラムはまだありません。</p>
+            <?php endif; ?>
           </div>
         </div>
         <div class="p-top-column__more-sp">
 
-          <a class="c-btn c-btn--light" href="#">
+          <a class="c-btn c-btn--light" href="<?php echo esc_url(home_url('/column')); ?>">
             <span class="c-btn__text">一覧を見る</span>
             <span class="c-btn__divider" aria-hidden="true"></span>
             <span class="c-btn__icon" aria-hidden="true">

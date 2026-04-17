@@ -365,13 +365,13 @@ register_post_type(
 		'show_in_rest' => true,
 	)
 );
-register_taxonomy('allcolumn_category', array('allcolumn'), array(
+register_taxonomy('allcolumn_category', array('column'), array(
 	'hierarchical' => true,
 	'label' => 'カテゴリー',
 	'show_ui' => true,
 	'public' => true
 ));
-register_taxonomy('allcolumn_tag', 'allcolumn', array(
+register_taxonomy('allcolumn_tag', 'column', array(
 	'hierarchical' => false,
 	'label' => 'タグ',
 	'show_ui' => true,
@@ -431,7 +431,7 @@ function zm_register_column_acf_fields()
 				'label' => '入力ガイド',
 				'name' => '',
 				'type' => 'message',
-				'message' => 'リード文は「抜粋」、メイン画像は「アイキャッチ画像」を使用します。プロフィールは下の「プロフィール」カスタムフィールドから入力してください。本文は各セクション内の「本文ブロック」で、テキスト・画像・白背景ボックスを並び順どおりに追加できます。カテゴリ表示を上書きしたい場合だけ「表示カテゴリ名」を入力してください。',
+				'message' => 'リード文は「抜粋」、メイン画像は「アイキャッチ画像」を使用します。プロフィールは下の「プロフィール」カスタムフィールドから入力してください。本文は各セクション内の「本文ブロック」で、テキスト・画像・白背景ボックスを並び順どおりに追加できます。FAQの下に追加したい内容は「FAQ下ブロック」から入力してください。カテゴリ表示を上書きしたい場合だけ「表示カテゴリ名」を入力してください。',
 				'new_lines' => 'wpautop',
 				'esc_html' => 0,
 			),
@@ -587,6 +587,68 @@ function zm_register_column_acf_fields()
 						'required' => 1,
 						'rows' => 4,
 						'new_lines' => 'br',
+					),
+				),
+			),
+			array(
+				'key' => 'field_zm_column_after_faq_blocks',
+				'label' => 'FAQ下ブロック',
+				'name' => 'column_after_faq_blocks',
+				'type' => 'flexible_content',
+				'button_label' => 'ブロックを追加',
+				'instructions' => 'FAQセクションの下に表示する内容です。テキスト・画像・白背景ボックスを並び順どおりに追加してください。',
+				'layouts' => array(
+					'layout_zm_column_after_faq_text' => array(
+						'key' => 'layout_zm_column_after_faq_text',
+						'name' => 'text',
+						'label' => 'テキスト',
+						'display' => 'block',
+						'sub_fields' => array(
+							array(
+								'key' => 'field_zm_column_after_faq_text',
+								'label' => '本文テキスト',
+								'name' => 'text',
+								'type' => 'textarea',
+								'required' => 1,
+								'rows' => 4,
+								'new_lines' => 'br',
+							),
+						),
+					),
+					'layout_zm_column_after_faq_image' => array(
+						'key' => 'layout_zm_column_after_faq_image',
+						'name' => 'image',
+						'label' => '画像',
+						'display' => 'block',
+						'sub_fields' => array(
+							array(
+								'key' => 'field_zm_column_after_faq_image',
+								'label' => '画像',
+								'name' => 'image',
+								'type' => 'image',
+								'required' => 1,
+								'return_format' => 'array',
+								'preview_size' => 'medium',
+								'library' => 'all',
+							),
+						),
+					),
+					'layout_zm_column_after_faq_quote_box' => array(
+						'key' => 'layout_zm_column_after_faq_quote_box',
+						'name' => 'quote_box',
+						'label' => '白背景ボックス',
+						'display' => 'block',
+						'sub_fields' => array(
+							array(
+								'key' => 'field_zm_column_after_faq_quote_text',
+								'label' => 'ボックス内テキスト',
+								'name' => 'text',
+								'type' => 'textarea',
+								'required' => 1,
+								'rows' => 4,
+								'new_lines' => 'br',
+							),
+						),
 					),
 				),
 			),

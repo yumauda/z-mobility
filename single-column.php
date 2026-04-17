@@ -212,6 +212,7 @@ if (!function_exists('zm_single_column_get_acf_content')) {
       'profile_items' => [],
       'sections' => [],
       'faq_items' => [],
+      'after_faq_blocks' => [],
       'faq_heading' => 'その他（FAQ）',
       'category' => '',
     ];
@@ -241,6 +242,53 @@ if (!function_exists('zm_single_column_get_acf_content')) {
       }
     }
 
+    $parse_content_blocks = static function ($content_block_rows) {
+      $blocks = [];
+      if (!is_array($content_block_rows)) {
+        return $blocks;
+      }
+
+      foreach ($content_block_rows as $content_block_row) {
+        $layout = $content_block_row['acf_fc_layout'] ?? '';
+        if ($layout === 'text') {
+          $text = zm_single_column_clean_text($content_block_row['text'] ?? '');
+          if ($text !== '') {
+            $blocks[] = [
+              'type' => 'text',
+              'text' => $text,
+            ];
+          }
+          continue;
+        }
+
+        if ($layout === 'image') {
+          $image = $content_block_row['image'] ?? null;
+          if (is_array($image) && !empty($image['url'])) {
+            $blocks[] = [
+              'type' => 'image',
+              'url' => (string) $image['url'],
+              'alt' => zm_single_column_clean_text($image['alt'] ?? ''),
+              'width' => (int) ($image['width'] ?? 0),
+              'height' => (int) ($image['height'] ?? 0),
+            ];
+          }
+          continue;
+        }
+
+        if ($layout === 'quote_box') {
+          $text = zm_single_column_clean_text($content_block_row['text'] ?? '');
+          if ($text !== '') {
+            $blocks[] = [
+              'type' => 'quote',
+              'text' => $text,
+            ];
+          }
+        }
+      }
+
+      return $blocks;
+    };
+
     $section_rows = get_field('column_sections', $post_id);
     if (is_array($section_rows)) {
       foreach ($section_rows as $row) {
@@ -252,49 +300,8 @@ if (!function_exists('zm_single_column_get_acf_content')) {
         $section = [
           'title' => $title,
           'index_title' => zm_single_column_clean_text($row['index_title'] ?? '') ?: $title,
-          'content_blocks' => [],
+          'content_blocks' => $parse_content_blocks($row['content_blocks'] ?? []),
         ];
-
-        $content_block_rows = $row['content_blocks'] ?? [];
-        if (is_array($content_block_rows)) {
-          foreach ($content_block_rows as $content_block_row) {
-            $layout = $content_block_row['acf_fc_layout'] ?? '';
-            if ($layout === 'text') {
-              $text = zm_single_column_clean_text($content_block_row['text'] ?? '');
-              if ($text !== '') {
-                $section['content_blocks'][] = [
-                  'type' => 'text',
-                  'text' => $text,
-                ];
-              }
-              continue;
-            }
-
-            if ($layout === 'image') {
-              $image = $content_block_row['image'] ?? null;
-              if (is_array($image) && !empty($image['url'])) {
-                $section['content_blocks'][] = [
-                  'type' => 'image',
-                  'url' => (string) $image['url'],
-                  'alt' => zm_single_column_clean_text($image['alt'] ?? ''),
-                  'width' => (int) ($image['width'] ?? 0),
-                  'height' => (int) ($image['height'] ?? 0),
-                ];
-              }
-              continue;
-            }
-
-            if ($layout === 'quote_box') {
-              $text = zm_single_column_clean_text($content_block_row['text'] ?? '');
-              if ($text !== '') {
-                $section['content_blocks'][] = [
-                  'type' => 'quote',
-                  'text' => $text,
-                ];
-              }
-            }
-          }
-        }
 
         $data['sections'][] = $section;
       }
@@ -314,6 +321,8 @@ if (!function_exists('zm_single_column_get_acf_content')) {
         ];
       }
     }
+
+    $data['after_faq_blocks'] = $parse_content_blocks(get_field('column_after_faq_blocks', $post_id));
 
     return $data;
   }
@@ -339,6 +348,7 @@ get_header();
       $profile_items = $acf_content['profile_items'];
       $sections = !empty($acf_content['sections']) ? $acf_content['sections'] : $parsed_content['sections'];
       $faq_items = !empty($acf_content['faq_items']) ? $acf_content['faq_items'] : $parsed_content['faq_items'];
+      $after_faq_blocks = $acf_content['after_faq_blocks'];
       $faq_heading = !empty($acf_content['faq_items']) ? $acf_content['faq_heading'] : $parsed_content['faq_heading'];
       $category = $acf_content['category'] !== '' ? $acf_content['category'] : zm_single_column_get_term_name($post_id);
 
@@ -476,7 +486,7 @@ get_header();
                 </div>
               <?php endif; ?>
 
-              <?php if (!empty($sections) || !empty($faq_items)) : ?>
+              <?php if (!empty($sections) || !empty($faq_items) || !empty($after_faq_blocks)) : ?>
                 <div class="p-single-column__sections">
                   <?php foreach ($sections as $section) : ?>
                     <section class="p-single-column__section" id="<?php echo esc_attr($section['id']); ?>">
@@ -547,6 +557,41 @@ get_header();
                         <?php endforeach; ?>
                       </div>
                     </section>
+                  <?php endif; ?>
+
+                  <?php if (!empty($after_faq_blocks)) : ?>
+                    <div class="p-single-column__afterFaq">
+                      <?php foreach ($after_faq_blocks as $content_block) : ?>
+                        <?php if (($content_block['type'] ?? '') === 'quote') : ?>
+                          <div class="p-single-column__quote">
+                            <span class="p-single-column__quoteIcon" aria-hidden="true">
+                              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.3956 8.44367C30.3956 11.7504 25.7402 10.9261 19.9986 10.9261C14.2566 10.9261 9.60156 11.7504 9.60156 8.44367C9.60156 5.13691 14.2566 0.828674 19.9986 0.828674C25.7406 0.828674 30.3956 5.13701 30.3956 8.44367Z" fill="#044396" />
+                                <path d="M9.26504 38.6267C9.26504 32.6993 14.071 27.8933 19.9984 27.8933C25.9257 27.8933 30.7317 32.6993 30.7317 38.6267C30.7317 38.8095 30.7238 38.9907 30.7145 39.1715H37.0049C36.9633 32.3071 33.1922 26.3678 27.7002 23.4508C25.6542 25.284 22.9549 26.4012 19.9962 26.4012C17.0398 26.4012 14.3405 25.284 12.2969 23.4508C6.80586 26.3692 3.03452 32.3071 2.99219 39.1715H9.28252C9.27328 38.9906 9.26533 38.8095 9.26533 38.6267H9.26504Z" fill="#044396" />
+                                <path d="M17.0018 38.25L11.9648 35.578C11.6048 36.5268 11.3984 37.5512 11.3984 38.626C11.3984 38.81 11.4112 38.9905 11.4245 39.1708H16.8501C16.8585 38.8508 16.9081 38.5408 17.0017 38.25H17.0018Z" fill="#044396" />
+                                <path d="M28.599 38.6267C28.599 37.5514 28.3926 36.5274 28.0326 35.5786L23.2383 38.1219C23.3591 38.4507 23.4294 38.8035 23.4398 39.1715H28.5735C28.5864 38.991 28.5992 38.8103 28.5992 38.6267H28.599Z" fill="#044396" />
+                                <path d="M20.1458 35.96C20.7486 35.96 21.3114 36.1241 21.7973 36.406L27.0027 33.6452C25.443 31.4579 22.8913 30.0272 20.0013 30.0272C17.111 30.0272 14.5597 31.458 13 33.6452L18.3593 36.488C18.8744 36.1552 19.4868 35.96 20.1457 35.96H20.1458Z" fill="#044396" />
+                                <path d="M20.0015 24.3007C25.1931 24.3007 29.4015 20.0923 29.4015 14.9007C29.4015 13.7298 29.1858 12.6095 28.7943 11.5759C27.6011 11.9236 26.2239 11.9244 25.24 11.9244C24.5004 11.9244 23.7128 11.9035 22.8788 11.8823C21.9535 11.858 20.9963 11.8331 20.0016 11.8331C19.0068 11.8331 18.0496 11.8578 17.124 11.8823C16.29 11.9039 15.5024 11.9244 14.7632 11.9244C13.5871 11.9244 12.2776 11.8767 11.2095 11.574C10.818 12.6083 10.6016 13.7292 10.6016 14.9004C10.6016 20.0921 14.8099 24.3007 20.0016 24.3007L20.0015 24.3007Z" fill="#044396" />
+                              </svg>
+                            </span>
+                            <p class="p-single-column__quoteText"><?php echo nl2br(esc_html($content_block['text'] ?? '')); ?></p>
+                          </div>
+                        <?php elseif (($content_block['type'] ?? '') === 'image' && !empty($content_block['url'])) : ?>
+                          <figure class="p-single-column__contentImage">
+                            <img
+                              class="p-single-column__contentImageImg"
+                              decoding="async"
+                              loading="lazy"
+                              src="<?php echo esc_url($content_block['url']); ?>"
+                              alt="<?php echo esc_attr($content_block['alt'] ?? ''); ?>"
+                              width="<?php echo esc_attr((string) max(1, (int) ($content_block['width'] ?? 1))); ?>"
+                              height="<?php echo esc_attr((string) max(1, (int) ($content_block['height'] ?? 1))); ?>">
+                          </figure>
+                        <?php elseif (($content_block['type'] ?? '') === 'text') : ?>
+                          <p class="p-single-column__text"><?php echo nl2br(esc_html($content_block['text'] ?? '')); ?></p>
+                        <?php endif; ?>
+                      <?php endforeach; ?>
+                    </div>
                   <?php endif; ?>
                 </div>
               <?php endif; ?>
