@@ -77,6 +77,10 @@
                     <p class="p-information__office-name">お忘れ物・運行管理等</p>
                     <p class="p-information__office-text">TEL：<a href="tel:05037337504">050-3733-7504</a>　FAX：050-3733-7505</p>
                   </div>
+                  <div class="p-information__office">
+                    <p class="p-information__office-name">Z-MOBILITY採用窓口</p>
+                    <p class="p-information__office-text">TEL：<a href="tel:03-6263-9958">03-6263-9958</a></p>
+                  </div>
                 </dd>
               </div>
             </dl>
