@@ -5386,6 +5386,7 @@ input::placeholder {
   top: 0;
   left: 0;
   width: 100%;
+  visibility: visible;
 }
 
 .p-loading__content {

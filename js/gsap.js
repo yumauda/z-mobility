@@ -19,7 +19,6 @@ var webStorage = function () {
       zIndex: 99999,
       duration: 1,
       ease: "power2.inOut",
-      zIndex: 99999,
     });
     opening.fromTo(".p-loading__img", {
       opacity: 0,
@@ -50,18 +49,21 @@ var webStorage = function () {
       delay: 0.5,
       ease: "power2.inOut",
     });
+    opening.to(".p-loading", {
+      opacity: 0,
+      duration: 1,
+      ease: "power2.inOut",
+      zIndex: 0,
+    });
+    opening.to(".p-loading", {
+      display: "none",
+    });
 
   }
 }
 webStorage();
 
-opening.to(".p-loading", {
-  opacity: 0,
-  duration: 1.5,
-  ease: "power2.inOut",
-  zIndex: 0,
-  visibility: "hidden",
-});
+
 
 opening.fromTo(".js-mv-img", {
   opacity: 0,
