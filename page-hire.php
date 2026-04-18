@@ -18,7 +18,7 @@
           <div class="p-description__head">
             <h1 class="p-description__title p-description__title--small">日本での移動体験を、<br>あなたがつくる。</h1>
             <p class="p-description__text p-description__text--small">
-              空港に降り立った瞬間から、その人の日本は始まっています。<br>
+              空港に降り立った瞬間から、お客様の日本は始まっています。<br>
               あなたがご案内するのは、ただの移動ではありません。
             </p>
           </div>
@@ -35,7 +35,7 @@
       <div class="p-what__content">
         <div class="p-what__head">
           <p class="p-what__eyebrow">What is Hire</p>
-          <h2 class="p-what__title">事前予約の<br class="u-mobile">お客様だけを、<br>丁寧にご案内する仕事</h2>
+          <h2 class="p-what__title">予約の<br class="u-mobile">お客様だけを、<br>丁寧にご案内する仕事</h2>
         </div>
 
         <div class="p-what__body">

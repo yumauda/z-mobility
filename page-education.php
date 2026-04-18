@@ -18,8 +18,8 @@
           <div class="p-description__head">
             <h1 class="p-description__title p-description__title--small">未経験でも、<br>プロになれる研修がある。</h1>
             <p class="p-description__text p-description__text--small">
-            専任コーチと経験豊富な講師陣による約2ヶ月の研修プログラムで、<br>
-            未経験からプロのタクシードライバーを目指せます。
+            経験豊富な講師陣による約2ヶ月の研修プログラムで、<br>
+            未経験からプロのハイヤードライバーを目指せます。
             </p>
           </div>
 
@@ -136,7 +136,7 @@
       <div class="p-trainers__content">
         <div class="p-trainers__head">
           <p class="p-trainers__eyebrow">Trainers and Instructors</p>
-          <h2 class="p-trainers__title">教育トレーナーと経験豊富な講師陣について</h2>
+          <h2 class="p-trainers__title">教育トレーナーと経験豊富な講師について</h2>
         </div>
 
         <div class="p-trainers__row">
