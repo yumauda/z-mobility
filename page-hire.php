@@ -221,7 +221,7 @@
         <p class="p-make__text">
           ハイヤーは1件あたりの単価が高く、長距離案件が多いのが特徴です。<br>
           闇雲に件数をこなすより、エリアや時間帯を考えて動くことが収入に直結します。<br>
-          インバウンド需要に支えられた、安定感のある仕事です。
+          成長するインバウンド需要に支えられた、安定感のある仕事です。
         </p>
 
         <div class="p-make__card">
@@ -265,7 +265,7 @@
         </div>
 
         <p class="p-customers__text">
-          未経験からスタートする方も多く、Zでは約8割が未経験スタートです。
+          約8割が未経験からスタートしており、新しいことにチャレンジしたい方などに向いています。
         </p>
 
         <div class="p-customers__cards">
@@ -392,7 +392,7 @@
             </div>
             <div class="p-english__card">
               <p class="p-english__cardNumber">02</p>
-              <p class="p-english__cardText">現場の会話は<br>短いフレーズが中心</p>
+              <p class="p-english__cardText">アプリのチャット機能は<br>自動翻訳機能が付いてます</p>
             </div>
             <div class="p-english__card">
               <p class="p-english__cardNumber">03</p>
