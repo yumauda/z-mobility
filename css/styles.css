@@ -2008,6 +2008,116 @@ select::-ms-expand {
   text-align: center;
 }
 
+.p-episode {
+  padding-bottom: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-episode {
+    padding-bottom: 12.5rem;
+  }
+}
+
+.p-episode__head {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-episode__head {
+    margin-bottom: 3rem;
+  }
+}
+
+.p-episode__eyebrow {
+  margin: 0;
+  color: #044396;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 0.8;
+}
+@media screen and (min-width: 768px) {
+  .p-episode__eyebrow {
+    font-size: 1rem;
+  }
+}
+
+.p-episode__title {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  color: #1a1a1a;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-episode__title {
+    font-size: 2.5rem;
+  }
+}
+
+.p-episode__cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-episode__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
+  }
+}
+
+.p-episode__card {
+  display: flex;
+  align-items: flex-start;
+  min-height: 11.25rem;
+  height: fit-content;
+  padding: 1.5rem;
+  border: 1px solid #c2c9d0;
+  border-radius: 0.625rem;
+  background: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-episode__card {
+    min-height: 14rem;
+    padding: 3rem;
+  }
+}
+
+.p-episode__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: none;
+}
+@media screen and (min-width: 768px) {
+  .p-episode__icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.p-episode__icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.p-episode__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .p-episode__text {
+    margin-left: 1.5625rem;
+    font-size: 1.125rem;
+  }
+}
+
 .p-faq {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -6063,12 +6173,12 @@ input::placeholder {
 
 .p-numbers {
   padding-top: 4rem;
-  padding-bottom: 6.25rem;
+  padding-bottom: 4rem;
 }
 @media screen and (min-width: 768px) {
   .p-numbers {
     padding-top: 7.5rem;
-    padding-bottom: 12.5rem;
+    padding-bottom: 7.5rem;
   }
 }
 

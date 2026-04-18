@@ -2,11 +2,11 @@
 
 .p-numbers {
   padding-top: rem(64);
-  padding-bottom: rem(100);
+  padding-bottom: rem(64);
 
   @include mq(md) {
     padding-top: rem(120);
-    padding-bottom: rem(200);
+    padding-bottom: rem(120);
   }
 }
 

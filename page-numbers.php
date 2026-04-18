@@ -46,6 +46,15 @@ $number_sections = [
     'sp_height' => 184,
   ],
 ];
+
+$episode_items = [
+  '英語が話せない自分が、外国人の方に単語や翻訳機を使いコミュニケーションや会話をして喜んで頂いた。',
+  'また乗車したい、指名できますか？など言われた時がとても嬉しかった。',
+  '羽田空港に行き、少し休憩して出ようとしたタイミングでアプリから予約が入りました。そのままお客様をお乗せしたところ、行き先が成田空港で、とても驚きました。初勤務のときの出来事です。',
+  '降車間際、プロの音楽家のお客様が車内で一曲披露してくださいました。思わぬサプライズに感動し、特別な瞬間でした。',
+  'ある芸能人の方ご乗車された時、急に雨が降って来た為車に積んである傘を差し上げたらお返しにその方のグッズ(エコバッグ)をいただき妻が使っています。',
+  'フェンシング経験のあるポルトガル人男性を、トランプ来日の渋滞の中、東京駅までご案内しました。「大刀剣市」の意味を英語で説明したところ大変喜ばれ、3,000円の運賃に6,000円のチップをいただきました。',
+];
 ?>
 <?php get_header(); ?>
 <main>
@@ -95,6 +104,30 @@ $number_sections = [
             </figure>
           </section>
         <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+  <section class="p-episode">
+    <div class="l-inner">
+      <div class="p-episode__content">
+        <div class="p-episode__head">
+          <p class="p-episode__eyebrow">Episode</p>
+          <h2 class="p-episode__title">ドライバーやっていて印象に残ったエピソード</h2>
+        </div>
+
+        <div class="p-episode__cards">
+          <?php foreach ($episode_items as $episode_item) : ?>
+            <div class="p-episode__card">
+              <span class="p-episode__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 44V8C4 6.9 4.39167 5.95833 5.175 5.175C5.95833 4.39167 6.9 4 8 4H40C41.1 4 42.0417 4.39167 42.825 5.175C43.6083 5.95833 44 6.9 44 8V32C44 33.1 43.6083 34.0417 42.825 34.825C42.0417 35.6083 41.1 36 40 36H12L4 44Z" fill="#044396" />
+                </svg>
+
+              </span>
+              <p class="p-episode__text"><?php echo esc_html($episode_item); ?></p>
+            </div>
+          <?php endforeach; ?>
+        </div>
       </div>
     </div>
   </section>
