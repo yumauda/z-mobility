@@ -414,6 +414,52 @@ select::-ms-expand {
   }
 }
 
+.p-column-archive__categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -0.75rem;
+  margin-left: -0.75rem;
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-column-archive__categories {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+.p-column-archive__categoryLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  margin-top: 0.75rem;
+  margin-left: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #c2c9d0;
+  border-radius: 9999px;
+  color: #1a1a1a;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+@media screen and (min-width: 768px) {
+  .p-column-archive__categoryLink {
+    min-height: 2.875rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.p-column-archive__categoryLink.is-active {
+  background: #044396;
+  border-color: #044396;
+  color: #fff;
+}
+
 .p-column-archive__grid {
   display: grid;
   gap: 2rem;
@@ -7010,12 +7056,10 @@ input::placeholder {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
 }
 @media screen and (min-width: 768px) {
   .p-single-column__article {
-    margin-top: 6rem;
-    gap: 3rem;
+    margin-top: 7.5rem;
   }
 }
 
@@ -7092,9 +7136,14 @@ input::placeholder {
 }
 
 .p-single-column__hero {
-  margin: 0;
   border-radius: 1.25rem;
   overflow: hidden;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single-column__hero {
+    margin-top: 3rem;
+  }
 }
 
 .p-single-column__hero img {
@@ -7107,11 +7156,11 @@ input::placeholder {
 
 .p-single-column__info {
   display: grid;
-  gap: 2rem;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-single-column__info {
-    gap: 2rem;
+    margin-top: 3rem;
   }
 }
 
@@ -7300,17 +7349,26 @@ input::placeholder {
 .p-single-column__sections {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  margin-top: 3rem;
 }
 @media screen and (min-width: 768px) {
   .p-single-column__sections {
-    gap: 2.5rem;
+    margin-top: 7.5rem;
   }
 }
 
 .p-single-column__section {
   display: flex;
   flex-direction: column;
+}
+
+.p-single-column__section + .p-single-column__section {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single-column__section + .p-single-column__section {
+    margin-top: 6rem;
+  }
 }
 
 .p-single-column__sectionHead {
@@ -7345,7 +7403,12 @@ input::placeholder {
 .p-single-column__sectionBody {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single-column__sectionBody {
+    margin-top: 2.5rem;
+  }
 }
 
 .p-single-column__text {
@@ -7360,10 +7423,25 @@ input::placeholder {
   }
 }
 
+.p-single-column__text + .p-single-column__text {
+  margin-top: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single-column__text + .p-single-column__text {
+    margin-top: 1.25rem;
+  }
+}
+
 .p-single-column__contentImage {
-  margin: 0;
-  border-radius: 0.625rem;
   overflow: hidden;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single-column__contentImage {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
 }
 
 .p-single-column__contentImageImg {
@@ -7380,12 +7458,16 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-single-column__quote {
     padding: 2rem;
     flex-direction: row;
     gap: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -7488,6 +7570,7 @@ input::placeholder {
 .p-single-column__faqLabel--a {
   color: #aab9cb;
   font-size: 1.25rem;
+  line-height: 1.4;
 }
 @media screen and (min-width: 768px) {
   .p-single-column__faqLabel--a {
@@ -7567,17 +7650,22 @@ input::placeholder {
 .p-single-column__afterFaq {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single-column__afterFaq {
+    margin-top: 2.5rem;
+  }
 }
 
 .p-single-column__backWrapper {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 @media screen and (min-width: 768px) {
   .p-single-column__backWrapper {
-    margin-top: 0.75rem;
+    margin-top: 7.5rem;
   }
 }
 

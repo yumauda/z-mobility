@@ -1,0 +1,11 @@
+---
+description: 
+alwaysApply: true
+---
+
+# 余白の基本ルール
+
+- 基本的な余白の付与は、`margin-left` と `margin-top` を基準に考える。
+- `flex-direction: column;` を使用している場合、各要素間の余白調整に `gap` は使わない。
+- 縦並び要素の余白は、原則として各要素に `margin-top` を付与して調整する。
+- 横方向の余白が必要な場合は、原則として `margin-left` を使って調整する。

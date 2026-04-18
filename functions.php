@@ -369,7 +369,8 @@ register_taxonomy('allcolumn_category', array('column'), array(
 	'hierarchical' => true,
 	'label' => 'カテゴリー',
 	'show_ui' => true,
-	'public' => true
+	'public' => true,
+	'show_in_rest' => true,
 ));
 register_taxonomy('allcolumn_tag', 'column', array(
 	'hierarchical' => false,

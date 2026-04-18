@@ -242,7 +242,7 @@ if (proSliderBreakpoint.addEventListener) {
 const topColumnSlider = new Swiper(".js-top-column-swiper", {
   slidesPerView: 1.3,
   centeredSlides: false,
-  loop: true,
+  loop: false,
   spaceBetween: 20,
   breakpoints: {
     768: {

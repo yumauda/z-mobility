@@ -788,7 +788,7 @@
               <span class="c-btn__text">一覧を見る</span>
               <span class="c-btn__divider" aria-hidden="true"></span>
               <span class="c-btn__icon" aria-hidden="true">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-arrow.svg" alt="" width="20" height="20">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/top-column-arrow.svg" alt="" width="20" height="20">
               </span>
             </a>
           </div>
@@ -846,7 +846,7 @@
             <span class="c-btn__text">一覧を見る</span>
             <span class="c-btn__divider" aria-hidden="true"></span>
             <span class="c-btn__icon" aria-hidden="true">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/column/column-arrow.svg" alt="" width="20" height="20">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/top-column-arrow.svg" alt="" width="20" height="20">
             </span>
           </a>
         </div>

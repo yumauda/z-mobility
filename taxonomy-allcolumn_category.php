@@ -9,6 +9,7 @@
     'taxonomy' => 'allcolumn_category',
     'hide_empty' => true,
   ]);
+  $current_term = get_queried_object();
 
   $get_column_category = static function ($post_id) {
     if (function_exists('get_field')) {
@@ -33,10 +34,14 @@
     return '';
   };
 
+  $current_term_name = (is_object($current_term) && isset($current_term->name)) ? (string) $current_term->name : 'コラムカテゴリー';
+
   get_template_part('includes/page-mv', null, [
-    'title_ja' => 'コラム',
+    'title_ja' => $current_term_name,
     'title_en_lines' => ['Column'],
-    'pan_current' => 'コラム',
+    'pan_current' => $current_term_name,
+    'pan_parent_label' => 'コラム',
+    'pan_parent_url' => $column_archive_url,
   ]);
   ?>
 
@@ -44,9 +49,9 @@
     <div class="l-inner">
       <?php if (is_array($column_terms) && !empty($column_terms)) : ?>
         <div class="p-column-archive__categories" aria-label="コラムカテゴリー">
-          <a class="p-column-archive__categoryLink is-active" href="<?php echo esc_url($column_archive_url); ?>">すべて</a>
+          <a class="p-column-archive__categoryLink" href="<?php echo esc_url($column_archive_url); ?>">すべて</a>
           <?php foreach ($column_terms as $column_term) : ?>
-            <a class="p-column-archive__categoryLink" href="<?php echo esc_url(get_term_link($column_term)); ?>">
+            <a class="p-column-archive__categoryLink <?php echo (is_object($current_term) && isset($current_term->term_id) && (int) $current_term->term_id === (int) $column_term->term_id) ? 'is-active' : ''; ?>" href="<?php echo esc_url(get_term_link($column_term)); ?>">
               <?php echo esc_html($column_term->name); ?>
             </a>
           <?php endforeach; ?>
@@ -105,7 +110,7 @@
             </article>
           <?php endwhile; ?>
         <?php else : ?>
-          <p class="p-column-archive__empty">コラムはまだありません。</p>
+          <p class="p-column-archive__empty">このカテゴリーのコラムはまだありません。</p>
         <?php endif; ?>
       </div>
 
