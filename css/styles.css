@@ -2056,6 +2056,7 @@ select::-ms-expand {
 
 .p-episode__cards {
   display: grid;
+  align-items: start;
   grid-template-columns: minmax(0, 1fr);
   row-gap: 1rem;
 }

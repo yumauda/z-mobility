@@ -44,6 +44,7 @@
 
 .p-episode__cards {
   display: grid;
+  align-items: start;
   grid-template-columns: minmax(0, 1fr);
   row-gap: rem(16);
 
