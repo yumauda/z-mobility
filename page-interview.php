@@ -50,8 +50,8 @@ $render_interview_text = static function ($text) {
     <div class="p-interview__content">
       <div class="l-inner">
         <div class="p-interview__items">
-          <?php foreach ($interview_items as $item) : ?>
-            <article class="p-interview__item">
+          <?php foreach ($interview_items as $index => $item) : ?>
+            <article class="p-interview__item" id="<?php echo esc_attr(sprintf('anc%02d', $index + 1)); ?>">
               <figure class="p-interview__media">
                 <iframe
                   class="p-interview__embed"
