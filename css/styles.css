@@ -5630,6 +5630,7 @@ input::placeholder {
   font-size: 1rem;
   line-height: 2;
   color: #1a1a1a;
+  text-indent: 1em;
   font-feature-settings: "palt" on;
 }
 @media screen and (min-width: 768px) {

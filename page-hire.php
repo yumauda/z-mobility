@@ -79,7 +79,7 @@
           <div class="p-difference__card">
             <div class="p-difference__cardInner">
               <span class="p-difference__cardIcon" aria-hidden="true"></span>
-              <p class="p-difference__cardText">事前予約のみ</p>
+              <p class="p-difference__cardText">予約のみ</p>
             </div>
           </div>
           <div class="p-difference__card">

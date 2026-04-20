@@ -61,6 +61,7 @@
   font-size: rem(16);
   line-height: 2;
   color: #1a1a1a;
+  text-indent: 1em;
   font-feature-settings: 'palt' on;
 
   @include mq(md) {

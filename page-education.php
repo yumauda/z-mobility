@@ -187,9 +187,8 @@
           </p>
 
           <section class="p-salary__card" aria-label="給与・制度">
-            <h3 class="p-salary__cardTitle">事業許認可</h3>
+            <h3 class="p-salary__cardTitle">正社員雇用</h3>
             <p class="p-salary__cardText">
-              正社員雇用<br>
               二種免許取得費用(教習所、筆記試験1回)※社内規定あり<br>
               日給14,000円(二種免許保有者／入社祝い金制度選択)<br>
               日給16,600円(二種免許非保有者／給与保証制度選択)
