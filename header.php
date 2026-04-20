@@ -6,24 +6,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <?php
+    global $wp;
     $z_site_name = get_bloginfo('name');
-    $z_title = function_exists('wp_get_document_title') ? wp_get_document_title() : $z_site_name;
-    $z_default_desc = 'Z-MOBILITY（株式会社Z）の採用・コーポレートサイトです。仕事について、会社情報、代表メッセージなどをご案内します。';
-    $z_desc = $z_default_desc;
-    if (is_singular()) {
-        $z_desc_candidate = get_the_excerpt();
-        if (is_string($z_desc_candidate) && $z_desc_candidate !== '') {
-            $z_desc = $z_desc_candidate;
-        }
-    } else {
-        $z_tagline = get_bloginfo('description');
-        if (is_string($z_tagline) && $z_tagline !== '') {
-            $z_desc = $z_tagline;
-        }
-    }
-    $z_desc = preg_replace('/\s+/', ' ', trim(wp_strip_all_tags($z_desc)));
+    $z_meta = function_exists('zm_get_meta_data') ? zm_get_meta_data() : [
+        'title' => $z_site_name,
+        'description' => get_bloginfo('description'),
+    ];
+    $z_title = isset($z_meta['title']) ? (string) $z_meta['title'] : $z_site_name;
+    $z_desc = isset($z_meta['description']) ? (string) $z_meta['description'] : '';
     $z_ogp = esc_url(get_template_directory_uri() . '/images/common/ogp.webp');
-    $z_url = is_singular() ? get_permalink() : esc_url(home_url('/'));
+    $z_url = is_singular() ? get_permalink() : home_url(isset($wp->request) && $wp->request !== '' ? trailingslashit($wp->request) : '/');
     $z_og_type = (is_front_page() || is_home()) ? 'website' : 'article';
     ?>
     <title><?php echo esc_html($z_title); ?></title>
@@ -112,7 +104,7 @@
                                                             <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/hire')); ?>">Z MOBILITY のハイヤーとは</a>
                                                         </li>
                                                         <li class="p-drawer-content__subItem">
-                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/education')); ?>">二種免許支援教育体制</a>
+                                                            <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/education')); ?>">二種免許支援・教育体制</a>
                                                         </li>
                                                         <li class="p-drawer-content__subItem">
                                                             <a class="p-drawer-content__sublink" href="<?php echo esc_url(home_url('/work/numbers')); ?>">数字で見るZ</a>

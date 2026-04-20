@@ -31,7 +31,7 @@
                                 <div class="p-footer__navSub">
                                     <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/description')); ?>">Z MOBILITYの仕事について</a>
                                     <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/hire')); ?>">Z MOBILITY のハイヤーとは</a>
-                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/education')); ?>">二種免許支援教育体制</a>
+                                    <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/education')); ?>">二種免許支援・教育体制</a>
                                     <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/numbers')); ?>">数字で見るZ</a>
                                     <a class="p-footer__navSublink" href="<?php echo esc_url(home_url('/work/faq')); ?>">よくある質問</a>
                                 </div>

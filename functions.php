@@ -243,6 +243,209 @@ function remove_title_tag()
 }
 add_action('init', 'remove_title_tag');
 
+function zm_get_site_title_suffix()
+{
+	return '【公式】株式会社Z┃ハイヤー求人┃採用サイト';
+}
+
+function zm_normalize_meta_text($text)
+{
+	$text = is_string($text) ? $text : '';
+	return preg_replace('/\s+/u', ' ', trim(wp_strip_all_tags($text)));
+}
+
+function zm_trim_meta_text($text, $length = 120)
+{
+	$text = zm_normalize_meta_text($text);
+	if ($text === '') {
+		return '';
+	}
+
+	if (function_exists('mb_strlen') && function_exists('mb_substr') && mb_strlen($text) > $length) {
+		return mb_substr($text, 0, $length) . '…';
+	}
+
+	return $text;
+}
+
+function zm_get_singular_meta_description($post = null)
+{
+	$post = get_post($post);
+	if (!is_object($post) || !isset($post->post_excerpt) || !isset($post->post_content)) {
+		return '';
+	}
+
+	$excerpt = has_excerpt($post) ? $post->post_excerpt : get_the_excerpt($post);
+	$excerpt = zm_trim_meta_text($excerpt);
+	if ($excerpt !== '') {
+		return $excerpt;
+	}
+
+	return zm_trim_meta_text($post->post_content);
+}
+
+function zm_get_meta_data()
+{
+	$site_suffix = zm_get_site_title_suffix();
+	$default_description = 'Z-MOBILITY（株式会社Z）の採用・コーポレートサイトです。仕事について、会社情報、代表メッセージなどをご案内します。';
+	$title = $site_suffix;
+	$description = $default_description;
+
+	if (is_front_page()) {
+		return [
+			'title' => $site_suffix,
+			'description' => 'Zハイヤーはアルファード保有数都内最大級のハイヤー企業です。未経験者の方も高年収を目指せる環境が強み。ハイヤー転職なら当社へお任せください。',
+		];
+	}
+
+	if (is_home()) {
+		return [
+			'title' => 'お知らせ | ' . $site_suffix,
+			'description' => 'Z MOBILITYからの最新情報をお届けします。サービスのご案内、採用に関するお知らせなど、最新情報をご確認ください。',
+		];
+	}
+
+	if (is_singular('post')) {
+		return [
+			'title' => get_the_title() . ' | ' . $site_suffix,
+			'description' => zm_get_singular_meta_description(),
+		];
+	}
+
+	if (is_page('work')) {
+		return [
+			'title' => '仕事について | ' . $site_suffix,
+			'description' => 'Z MOBILITYのドライバーの仕事について詳しくご紹介します。仕事内容・ハイヤーの特徴・二種免許支援・教育体制・よくある質問など、働くイメージが広がるコンテンツを揃えています。',
+		];
+	}
+
+	if (is_page('description')) {
+		return [
+			'title' => 'Z MOBILITYの仕事について | 仕事について | ' . $site_suffix,
+			'description' => '流し営業なし、配車アプリ予約専門。トヨタ アルファードやクラウンで最上級のおもてなしを提供するZ MOBILITYのドライバーの仕事内容を詳しくご紹介します。',
+		];
+	}
+
+	if (is_page('hire')) {
+		return [
+			'title' => 'Z MOBILITY のハイヤーとは | 仕事について | ' . $site_suffix,
+			'description' => 'Z MOBILITYのハイヤーサービスについてご紹介します。タクシーとの違い、対応するお客様層、稼ぎやすい理由など、ハイヤードライバーとして働く魅力をわかりやすく解説します。',
+		];
+	}
+
+	if (is_page('education')) {
+		return [
+			'title' => '二種免許支援・教育体制 | 仕事について | ' . $site_suffix,
+			'description' => '未経験でも安心の約1ヶ月間の研修プログラム。二種免許の取得サポートから接客マナー・安全運転・Uberシステムまで、プロのドライバーとして活躍できる体制を整えています。',
+		];
+	}
+
+	if (is_page('numbers')) {
+		return [
+			'title' => '数字で見るZ | 仕事について | ' . $site_suffix,
+			'description' => 'Z MOBILITYのリアルなデータをご紹介。社員構成・転職理由・二種免許取得率・収入変化・有給取得率など、入社前に知っておきたい数字を公開しています。',
+		];
+	}
+
+	if (is_page('faq')) {
+		return [
+			'title' => 'よくある質問 | 仕事について | ' . $site_suffix,
+			'description' => 'Z MOBILITYの採用に関するよくある質問をまとめました。未経験・資格・勤務条件・研修・応募方法など、気になる疑問にお答えします。',
+		];
+	}
+
+	if (is_page('interview')) {
+		return [
+			'title' => 'インタビュー動画 | ' . $site_suffix,
+			'description' => '実際に働くZ MOBILITYのドライバーへのインタビュー動画を公開中。元ロケドライバー・元自衛隊・異業種転職など、さまざまなバックグラウンドを持つ先輩たちのリアルな声をご覧ください。',
+		];
+	}
+
+	if (is_page('company')) {
+		return [
+			'title' => '会社情報 | ' . $site_suffix,
+			'description' => '株式会社Zの会社情報ページです。代表メッセージ・会社概要をご覧いただけます。東京・銀座を拠点に、ハイヤー・タクシーサービスを展開しています。',
+		];
+	}
+
+	if (is_page('message')) {
+		return [
+			'title' => '代表メッセージ | 会社情報 | ' . $site_suffix,
+			'description' => 'ロイヤルリムジングループ 株式会社Z代表取締役・鈴木嘉規からのメッセージ。「すべての人を、豊かで楽しく」を理念に、プロフェッショナルドライバーとして働く魅力と想いをお伝えします。',
+		];
+	}
+
+	if (is_page('information')) {
+		return [
+			'title' => '会社概要 | 会社情報 | ' . $site_suffix,
+			'description' => '株式会社Zの会社概要ページです。社名・代表者・事業所・アクセス・グループ会社など、Z MOBILITYの基本情報をご確認いただけます。',
+		];
+	}
+
+	if (is_page('privacy')) {
+		return [
+			'title' => 'プライバシーポリシー | ' . $site_suffix,
+			'description' => '株式会社Zのプライバシーポリシーページです。お客様の個人情報の取り扱いおよび保護方針についてご説明しています。',
+		];
+	}
+
+	if (is_page('conditions')) {
+		return [
+			'title' => '運送約款 | ' . $site_suffix,
+			'description' => '株式会社Zの運送約款ページです。ハイヤー・タクシーサービスのご利用にあたっての規約・条件をご確認いただけます。',
+		];
+	}
+
+	if (is_page('contact')) {
+		return [
+			'title' => 'エントリー | ' . $site_suffix,
+			'description' => 'Z MOBILITYのドライバー採用エントリーフォームです。必要事項をご入力のうえ、ご応募ください。',
+		];
+	}
+
+	if (is_page('guidelines')) {
+		return [
+			'title' => '募集要項 | ' . $site_suffix,
+			'description' => 'Z MOBILITYのドライバー募集要項ページです。給与・勤務時間・待遇・応募資格など、採用条件の詳細をご確認いただけます。',
+		];
+	}
+
+	if (is_post_type_archive('column')) {
+		return [
+			'title' => 'コラム | ' . $site_suffix,
+			'description' => 'ハイヤー・タクシードライバーの仕事や日常をお届けするZ MOBILITYのコラムページです。ドライバーのリアルな声、働き方のヒントなど役立つ情報を発信しています。',
+		];
+	}
+
+	if (is_singular('column')) {
+		return [
+			'title' => get_the_title() . ' | コラム | ' . $site_suffix,
+			'description' => zm_get_singular_meta_description(),
+		];
+	}
+
+	if (is_tax('allcolumn_category')) {
+		$term_name = single_term_title('', false);
+		return [
+			'title' => $term_name . ' | コラム | ' . $site_suffix,
+			'description' => 'ハイヤー・タクシードライバーの仕事や日常をお届けするZ MOBILITYのコラムページです。ドライバーのリアルな声、働き方のヒントなど役立つ情報を発信しています。',
+		];
+	}
+
+	if (is_category()) {
+		$term_name = single_cat_title('', false);
+		return [
+			'title' => $term_name . ' | お知らせ | ' . $site_suffix,
+			'description' => 'Z MOBILITYからの最新情報をお届けします。サービスのご案内、採用に関するお知らせなど、最新情報をご確認ください。',
+		];
+	}
+
+	return [
+		'title' => $title,
+		'description' => $description,
+	];
+}
+
 
 // 管理画面上「投稿」の名前変更
 function Change_menulabel()
