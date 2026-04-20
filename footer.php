@@ -41,6 +41,7 @@
 
                         <div class="p-footer__navCol">
                             <a class="p-footer__navLink u-mobile" href="<?php echo esc_url(home_url('/interview/')); ?>">インタビュー動画</a>
+                            <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/column')); ?>">コラム</a>
                             <div class="p-footer__navGroup">
                                 <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/company')); ?>">会社情報</a>
                                 <div class="p-footer__navSub">

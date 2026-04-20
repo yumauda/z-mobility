@@ -117,6 +117,12 @@
                                             </div>
                                             <div class="p-drawer-content__column">
                                                 <div class="p-drawer-content__list">
+                                                    <a href="<?php echo esc_url(home_url('/column')); ?>" class="p-drawer-content__link">
+                                                        <span class="p-drawer-content__link-en">Column</span>
+                                                        <span class="p-drawer-content__link-ja">コラム</span>
+                                                    </a>
+                                                </div>
+                                                <div class="p-drawer-content__list">
                                                     <a href="<?php echo esc_url(home_url('/interview/')); ?>" class="p-drawer-content__link">
                                                         <span class="p-drawer-content__link-en">Interview Movie</span>
                                                         <span class="p-drawer-content__link-ja">インタビュー動画</span>
