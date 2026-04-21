@@ -969,7 +969,7 @@
           <div class="swiper p-top-interview__swiper js-top-interview-swiper">
             <div class="swiper-wrapper p-top-interview__tracks">
               <div class="swiper-slide p-top-interview__slide">
-                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview/')); ?>">
+                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview#anc01')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
                     <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
                   </figure>
@@ -979,7 +979,7 @@
               </div>
 
               <div class="swiper-slide p-top-interview__slide">
-                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview/')); ?>">
+                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview#anc02')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
                   </figure>
@@ -989,7 +989,7 @@
               </div>
 
               <div class="swiper-slide p-top-interview__slide">
-                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview/')); ?>">
+                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview#anc03')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
                   </figure>
@@ -999,9 +999,18 @@
               </div>
 
               <div class="swiper-slide p-top-interview__slide">
-                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview/')); ?>">
+                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview#anc04')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
+                  </figure>
+                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
+                  <p class="p-top-interview__name">田中 太郎</p>
+                </a>
+              </div>
+              <div class="swiper-slide p-top-interview__slide">
+                <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview#anc05')); ?>">
+                  <figure class="p-top-interview__thumb js-parallax">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview-5.webp" alt="" width="339" height="460">
                   </figure>
                   <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
                   <p class="p-top-interview__name">田中 太郎</p>

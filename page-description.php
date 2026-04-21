@@ -17,10 +17,15 @@
         <section class="p-description__section">
           <div class="p-description__head">
             <h2 class="p-description__title">流し営業なし！<br>配車アプリ予約専門</h2>
-            <p class="p-description__text">
-              予約が入ってから動く、効率重視のスタイル。<br>
-              無駄な待機や流し走行がなく、安定して稼ぐことができます。
-            </p>
+            <div class="p-description__lead">
+              <p class="p-description__text">
+                <span class="p-description__textLine">予約が入ってから動く、効率重視のスタイル。</span>
+                <span class="p-description__textLine">無駄な待機や流し走行がなく、安定した稼働が実現できます。</span>
+              </p>
+              <figure class="p-description__appIcon" aria-hidden="true">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/description/description-app-icon.svg" alt="" width="96" height="96">
+              </figure>
+            </div>
           </div>
 
           <figure class="p-description__image">
