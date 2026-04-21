@@ -670,7 +670,7 @@
                 <div class="p-front-work__card-body">
                   <div class="p-front-work__card-head">
                     <p class="p-front-work__card-subtitle">Educational System</p>
-                    <p class="p-front-work__card-title">二種免許支援<br class="u-mobile">教育体制</p>
+                    <p class="p-front-work__card-title">二種免許支援・<br class="u-mobile">教育体制</p>
                   </div>
                   <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
                 </div>
@@ -1056,9 +1056,9 @@
               </span>
             </div>
 
-            <div class="p-company__card-media">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company-message-2367a4.png" alt="" width="230" height="320">
-            </div>
+            <figure class="p-company__card-media">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company-message1.webp" alt="" width="230" height="320">
+            </figure>
           </div>
         </a>
 
@@ -1078,9 +1078,9 @@
               </span>
             </div>
 
-            <div class="p-company__card-media">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company-information.png" alt="" width="230" height="320">
-            </div>
+            <figure class="p-company__card-media">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/company-message2.webp" alt="" width="230" height="320">
+            </figure>
           </div>
         </a>
       </div>
