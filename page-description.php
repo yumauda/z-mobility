@@ -65,8 +65,10 @@
             世界15,000以上の都市で使われているUberは、海外のお客様にとって最も身近な配車サービス。日本語変換機能とクレジット決済対応で、言葉の壁や現金のやり取りも不要です。実際にUber Premiumをご利用のお客様の6割〜7割強が海外からのゲストと、インバウンド需要に直結したサービスです。
           </p>
 
-          <figure class="p-uber__logos" aria-hidden="true">
-            <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/description/uber-logos.svg" alt="" width="335" height="96">
+          <figure class="p-uber__logos">
+            <a href="https://www.uber.com/global/ja/ride/app/" target="_blank" rel="noopener noreferrer" aria-label="Uberアプリのページを別タブで開く">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/description/uber-logos.svg" alt="" width="335" height="96">
+            </a>
           </figure>
         </div>
 
