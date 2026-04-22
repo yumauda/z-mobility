@@ -427,7 +427,7 @@
 
         <div class="p-top-voices__cards">
           <article class="p-top-voices__card">
-            <a class="p-top-voices__cardLink" href="<?php echo esc_url(home_url('/interview/')); ?>">
+            <a class="p-top-voices__cardLink" href="<?php echo esc_url(home_url('/interview#anc01')); ?>">
               <figure class="p-top-voices__image">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/hire/hire-voice-01.webp" alt="30代 / 元ロケドライバーのインタビュー" width="401" height="222">
               </figure>
@@ -451,7 +451,7 @@
           </article>
 
           <article class="p-top-voices__card">
-            <a class="p-top-voices__cardLink" href="<?php echo esc_url(home_url('/interview/')); ?>">
+            <a class="p-top-voices__cardLink" href="<?php echo esc_url(home_url('/interview#anc03')); ?>">
               <figure class="p-top-voices__image">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/hire/hire-voice-02.webp" alt="20代 / 元家電量販店のインタビュー" width="401" height="222">
               </figure>
@@ -475,8 +475,10 @@
           </article>
 
           <article class="p-top-voices__card">
-            <a class="p-top-voices__cardLink" href="<?php echo esc_url(home_url('/interview/')); ?>">
-              <div class="p-top-voices__image p-top-voices__image--placeholder" aria-hidden="true"></div>
+            <a class="p-top-voices__cardLink" href="<?php echo esc_url(home_url('/interview#anc02')); ?>">
+              <figure class="p-top-voices__image">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/hire/hire-voice-03.webp" alt="40代 / 元海上自衛官のインタビュー" width="401" height="222">
+              </figure>
               <div class="p-top-voices__body">
                 <div class="p-top-voices__comment">
                   <span class="p-top-voices__commentIcon" aria-hidden="true">

@@ -46,7 +46,7 @@
           </p>
 
           <figure class="p-description__collage">
-            <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/description/description-block-02.png" alt="最高級の車両とおもてなしのイメージ" width="2560" height="1066">
+            <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/description/description-block-02.webp" alt="最高級の車両とおもてなしのイメージ" width="2560" height="1066">
           </figure>
         </section>
       </div>

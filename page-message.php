@@ -51,7 +51,7 @@
           <figure class="p-message__media">
             <picture>
               <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/message/message-president.webp" type="image/webp">
-              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/message/message-president.png" alt="株式会社Z　代表取締役 鈴木 嘉規" width="360" height="480">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/message/message-president.webp" alt="株式会社Z　代表取締役 鈴木 嘉規" width="360" height="480">
             </picture>
           </figure>
 
