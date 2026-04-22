@@ -1,5 +1,19 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const refreshScrollTriggers = () => {
+  ScrollTrigger.refresh();
+};
+
+window.addEventListener("load", refreshScrollTriggers);
+
+document.querySelectorAll("img").forEach((img) => {
+  if (img.complete) {
+    return;
+  }
+
+  img.addEventListener("load", refreshScrollTriggers, { once: true });
+});
+
 const opening = gsap.timeline();
 
 var webStorage = function () {
