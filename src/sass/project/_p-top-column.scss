@@ -202,13 +202,14 @@
 .p-top-column__card-img {
   border-radius: rem(5);
   overflow: hidden;
-  aspect-ratio: 395 / 222;
+  // aspect-ratio: 395 / 222;
 }
 
 .p-top-column__card-img img {
-  width: 100%;
-  height: 100%;
+  aspect-ratio: 395 / 222;
   object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .p-top-column__card-placeholder {
@@ -237,6 +238,15 @@
     font-size: rem(18);
     margin-top: initial;
   }
+}
+
+.p-top-column__card-text > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.p-top-column__card-text > * + * {
+  margin-top: rem(8);
 }
 
 .p-top-column__meta {

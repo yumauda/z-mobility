@@ -90,7 +90,7 @@
                 </figure>
 
                 <div class="p-column-archive__body">
-                  <h2 class="p-column-archive__title"><?php echo esc_html(get_the_title()); ?></h2>
+                  <h2 class="p-column-archive__title"><?php the_content()?></h2>
 
                   <div class="p-column-archive__meta">
                     <time class="p-column-archive__date" datetime="<?php echo esc_attr(get_the_date('c')); ?>">

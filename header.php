@@ -57,7 +57,7 @@
                 <nav class="p-header__nav">
                     <ul class="p-header__lists">
                         <li class="p-header__list">
-                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-header__link">entry</a>
+                            <a href="<?php echo esc_url(home_url('/entry')); ?>" class="p-header__link">entry</a>
                         </li>
                         <li class="p-header__list">
                             <button class="p-header__drawer p-drawer-icon">
@@ -152,7 +152,7 @@
                                         </div>
 
                                         <div class="p-drawer-content__actions">
-                                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__action">
+                                            <a href="<?php echo esc_url(home_url('/entry')); ?>" class="p-drawer-content__action">
                                                 <span class="p-drawer-content__action-en">Entry</span>
                                                 <span class="p-drawer-content__action-ja">エントリー</span>
                                             </a>

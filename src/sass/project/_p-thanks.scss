@@ -1,0 +1,93 @@
+@use "../global" as *;
+
+.p-thanks {
+  padding-top: rem(64);
+  padding-bottom: rem(80);
+
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-thanks__content {
+  max-width: rem(960);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-thanks__box {
+  padding: rem(40) rem(20);
+  border-radius: rem(12);
+  background: #fff;
+  box-shadow: 0 rem(16) rem(40) rgba(4, 67, 150, 0.08);
+  text-align: center;
+
+  @include mq(md) {
+    padding: rem(80) rem(40);
+  }
+}
+
+.p-thanks__title {
+  font-size: rem(28);
+  font-weight: 500;
+  line-height: 1.6;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.p-thanks__text {
+  margin-top: rem(24);
+  font-size: rem(14);
+  line-height: 2;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    margin-top: rem(32);
+    font-size: rem(16);
+  }
+}
+
+.p-thanks__actions {
+  margin-top: rem(32);
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.p-thanks__back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: rem(240);
+  min-height: rem(56);
+  padding: rem(14) rem(24);
+  border: 1px solid #044396;
+  border-radius: 9999px;
+  color: #044396;
+  background: #fff;
+  transition: opacity 0.3s ease;
+
+  @include mq(md) {
+    min-width: rem(280);
+    min-height: rem(64);
+  }
+}
+
+.p-thanks__back:hover {
+  opacity: 0.8;
+}
+
+.p-thanks__backText {
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}

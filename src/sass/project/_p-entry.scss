@@ -1,0 +1,96 @@
+@use "../global" as *;
+
+.p-entry {
+  padding-top: rem(64);
+  padding-bottom: rem(80);
+
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-entry__content {
+  max-width: rem(960);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-entry__lead {
+  padding: rem(24) rem(20);
+  text-align: center;
+
+  @include mq(md) {
+    padding: rem(40);
+  }
+}
+
+.p-entry__eyebrow {
+  font-family: $special-gothic;
+  font-size: rem(14);
+  line-height: 1;
+  color: #044396;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-entry__title {
+  margin-top: rem(12);
+  font-size: rem(28);
+  font-weight: 500;
+  line-height: 1.4;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(40);
+    margin-top: rem(16);
+  }
+}
+
+.p-entry__text {
+  margin-top: rem(16);
+  font-size: rem(14);
+  line-height: 1.8;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    margin-top: rem(24);
+    font-size: rem(16);
+  }
+}
+
+.p-entry__form {
+  margin-top: rem(24);
+  padding: rem(16);
+  border-radius: rem(12);
+  background: #fff;
+  box-shadow: 0 rem(16) rem(40) rgba(4, 67, 150, 0.08);
+
+  @include mq(md) {
+    margin-top: rem(32);
+    padding: rem(24);
+  }
+}
+
+.p-entry__form .formrun-embed {
+  min-height: rem(1200);
+}
+
+.p-entry__note {
+  margin-top: rem(16);
+  font-size: rem(14);
+  line-height: 1.8;
+  color: #1a1a1a;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-entry__noteLink {
+  color: #044396;
+  text-decoration: underline;
+  text-underline-offset: rem(3);
+}

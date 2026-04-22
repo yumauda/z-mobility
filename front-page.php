@@ -7,7 +7,7 @@
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/header_logo.webp" alt="Loading" width="500" height="500">
         </div>
         <div class="p-loading__text-wrapper">
-          <p class="p-loading__text">ハイヤー時代、到来。</p>
+          <p class="p-loading__text">ハイヤー新時代、到来。</p>
         </div>
       </div>
     </div>
@@ -39,12 +39,12 @@
       <div class="p-mv__titles">
         <h1 class="p-mv__title">
           <span class="p-mv__title-en js-en-title">The era <br class="u-mobile"><span class="p-mv__title-space">of hire</span>
-            <span class="p-mv__title-ja js-ja-title p-mv__title-space--2">ハイヤー時代、到来。</span>
+            <span class="p-mv__title-ja js-ja-title p-mv__title-space--2">ハイヤー新時代、到来。</span>
             <span class="p-mv__title-en p-mv__title-en--last js-en-title p-mv__title-space--3">cars has <br class="u-mobile"><span class="p-mv__title-space--4">arrived.</span></span>
         </h1>
       </div>
       <div class="p-mv__banner">
-        <a href="<?php echo esc_url(home_url('/guidelines/')); ?>" class="p-mv__banner-link">
+        <a href="https://j-premium.co.jp/" target="_blank" class="p-mv__banner-link">
           <div class="p-mv__banner-img">
             <picture>
               <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/mv_banner.webp" media="(min-width: 768px)" width="1238" height="570" />
@@ -302,7 +302,7 @@
         <div class="p-pro__left">
           <div class="p-pro__catch">
             <div class="p-pro__catch-group">
-              <p class="p-pro__catch-line js-pro-word">ハイヤー時代、到来。</p>
+              <p class="p-pro__catch-line js-pro-word">ハイヤー新時代、到来。</p>
               <p class="p-pro__catch-line js-pro-word">移動は「量」から「質」へ。</p>
             </div>
             <div class="p-pro__catch-group">
@@ -312,22 +312,24 @@
           </div>
           <div class="p-pro__texts">
             <p class="p-pro__text js-opacity-word">
-              今、「タクシー」ではなく「ハイヤー」が選ばれています。<br class="u-desktop">
-              それは、単に移動するのではなく、接客力と判断力を備えたプロフェッショナルドライバーが、<br>
-              移動そのものの価値を提供する仕事だからです。
+              今、「タクシー」ではなく「ハイヤー」の仕事が選ばれています。
+            </p>
+            <p class="p-pro__text js-opacity-word">
+              それは、単に移動するのではなく、<br class="u-desktop">
+              接客力と判断力を備えたプロフェッショナルドライバー<br class="u-desktop">
+              が、移動そのものの価値を提供する仕事だからです。
             </p>
             <p class="p-pro__text js-opacity-word">
               株式会社Zは、2021年に銀座でハイヤー事業をスタート。<br class="u-desktop">
-              以降、圧倒的なスピードで成長を続け、アルファードの保有台数は都内最大級クラス、<br class="u-desktop">
-              拠点は都内9か所まで拡大してきました。<br class="u-desktop">
-              インバウンド需要が高まる中、ハイヤー業界でも高水準の収入実績を重ねています。
+              以降、圧倒的なスピードで成長を続け、アルファードの保有台数は都内最大級クラス、拠点は都内9か所まで拡大してきました。<br class="u-desktop">
+              インバウンド需要の成長と共に、ハイヤー業界でも高水準の収入実績を重ねています。
             </p>
             <p class="p-pro__text js-opacity-word">
-              Zの強みは、質の高い需要に集中できる環境です。<br class="u-desktop">
-              世界中で利用されている配車アプリ Uber と連携し、<br class="u-desktop">
+              Zの強みは、需要の成長と共に成長できる環境です。<br>
+              世界中で利用されている配車アプリ「 Uber」 とのパートナーシップにより、<br class="u-desktop">
               観光・ビジネス利用を中心とした完全予約制のUber Premium専属運行。<br class="u-desktop">
-              流し営業はなく、行き先案内・決済・翻訳までアプリがサポートするため、<br class="u-desktop">
-              ドライバーは「運転と接客」に集中できます。<br class="u-desktop">
+              流し営業はなく、行き先案内・決済・翻訳まで最新アプリがサポートするため、<br class="u-desktop">
+              ドライバーは「運転と接客」に集中することができます。<br class="u-desktop">
               その結果、平均売上・歩合率ともに高水準を実現。<br class="u-desktop">
               努力がそのまま収入に反映されやすく、高年収を目指す方に適した環境です。
             </p>
@@ -624,7 +626,7 @@
                   <p class="p-front-work__card-title p-front-work__card-title--large">Z MOBILITYの仕事について</p>
                 </div>
                 <p class="p-front-work__card-text p-front-work__card-text--large">
-                  親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                  Uberプレミアムのお客様をメインターゲットとし、アルフアードなどの高級車でお客様を送迎する、新しいスタイルのハイヤードライバーの仕事です。流し営業のなく予約専門で、配車もナビも決済も最新アプリひとつで完結し、効率よく働けることが特徴です。Uberはグローバル配車アプリなので、インバウンド需要の成長と共に、安定して稼ぐことができます。
                 </p>
               </div>
             </div>
@@ -649,7 +651,7 @@
                     <p class="p-front-work__card-subtitle">Hire introduction</p>
                     <p class="p-front-work__card-title">Z MOBILITY のハイヤーとは</p>
                   </div>
-                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
+                  <p class="p-front-work__card-text">日本のプレミアムな移動体験（おもてなし）を提供する仕事です。空港送迎や観光などで、お客様一人ひとりに丁寧に向き合い、接客や振る舞いによりお客様を笑顔にする仕事です。</p>
                 </div>
               </div>
               <span class="p-front-work__card-btn" aria-hidden="true">
@@ -672,7 +674,7 @@
                     <p class="p-front-work__card-subtitle">Educational System</p>
                     <p class="p-front-work__card-title">二種免許支援・<br class="u-mobile">教育体制</p>
                   </div>
-                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
+                  <p class="p-front-work__card-text">未経験からプロへ育つ研修体制。二種免許取得支援や実践型研修、同乗指導まで段階的に学べ、安心して着実に成長できる体制です。</p>
                 </div>
               </div>
               <span class="p-front-work__card-btn" aria-hidden="true">
@@ -695,7 +697,7 @@
                     <p class="p-front-work__card-subtitle">In Numbers</p>
                     <p class="p-front-work__card-title">数字で見るZ</p>
                   </div>
-                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
+                  <p class="p-front-work__card-text">年齢層や前職、入社の決め手など、私たちの「今」を数字でご紹介します。入社前の不安がどう変化したのか、現在の働き方への満足度など、リアルを公開しています。</p>
                 </div>
               </div>
               <span class="p-front-work__card-btn" aria-hidden="true">
@@ -718,7 +720,7 @@
                     <p class="p-front-work__card-subtitle">FAQ</p>
                     <p class="p-front-work__card-title">よくある質問</p>
                   </div>
-                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
+                  <p class="p-front-work__card-text">応募前によくある不安や疑問にお答えします。未経験からのスタートや働き方、研修内容まで分かりやすく解説し、気になるポイントを事前に解消できます。</p>
                 </div>
               </div>
               <span class="p-front-work__card-btn" aria-hidden="true">
@@ -814,7 +816,7 @@
                   ?>
                   <div class="swiper-slide p-top-column__slide">
                     <a class="p-top-column__card" href="<?php the_permalink(); ?>">
-                      <figure class="p-top-column__card-img js-parallax">
+                      <figure class="p-top-column__card-img">
                         <?php if ($thumbnail_url !== '') : ?>
                           <img decoding="async" loading="lazy" src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($thumbnail_alt); ?>" width="<?php echo esc_attr((string) $thumbnail_width); ?>" height="<?php echo esc_attr((string) $thumbnail_height); ?>">
                         <?php else : ?>
@@ -823,7 +825,7 @@
                           </div>
                         <?php endif; ?>
                       </figure>
-                      <p class="p-top-column__card-text"><?php echo esc_html(get_the_title()); ?></p>
+                      <div class="p-top-column__card-text"><?php the_content(); ?></div>
                       <div class="p-top-column__meta">
                         <time class="p-top-column__date" datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(get_the_date('Y.m.d')); ?></time>
                         <?php if ($category !== '') : ?>
@@ -971,40 +973,40 @@
               <div class="swiper-slide p-top-interview__slide">
                 <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview#anc01')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
-                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview-1.webp" alt="" width="339" height="460">
                   </figure>
-                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
-                  <p class="p-top-interview__name">田中 太郎</p>
+                  <p class="p-top-interview__text">子育てをきっかけにハイヤードライバーへ転職した森本さんの実話・転職ストーリー「パパは隔日勤務」</p>
+                  <p class="p-top-interview__name">森本さん（30代）</p>
                 </a>
               </div>
 
               <div class="swiper-slide p-top-interview__slide">
                 <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview#anc02')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview-2.webp" alt="" width="339" height="460">
                   </figure>
-                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
-                  <p class="p-top-interview__name">田中 太郎</p>
+                  <p class="p-top-interview__text">元海上自衛官・上野さんの転職実話。不安や働き方のリアル、今の働き方への変化を語ります。</p>
+                  <p class="p-top-interview__name">上野さん（元・海上自衛官）</p>
                 </a>
               </div>
 
               <div class="swiper-slide p-top-interview__slide">
                 <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview#anc03')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-1.png" alt="" width="339" height="460">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview-3.webp" alt="" width="339" height="460">
                   </figure>
-                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
-                  <p class="p-top-interview__name">田中 太郎</p>
+                  <p class="p-top-interview__text">「正直、きついです。」<br>でも、それでも続ける理由がある。元家電量販店スタッフの転職実話。</p>
+                  <p class="p-top-interview__name">岩田さん（20代）</p>
                 </a>
               </div>
 
               <div class="swiper-slide p-top-interview__slide">
                 <a class="p-top-interview__card" href="<?php echo esc_url(home_url('/interview#anc04')); ?>">
                   <figure class="p-top-interview__thumb js-parallax">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview/interview-2.png" alt="" width="339" height="460">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview-4.webp" alt="" width="339" height="460">
                   </figure>
-                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
-                  <p class="p-top-interview__name">田中 太郎</p>
+                  <p class="p-top-interview__text">「一緒にいられる時間は、思っているより少ない。」施工管理からハイヤーへ。祖父との時間を選んだ、転職の決断。</p>
+                  <p class="p-top-interview__name">佐野さん（30代）</p>
                 </a>
               </div>
               <div class="swiper-slide p-top-interview__slide">
@@ -1012,8 +1014,8 @@
                   <figure class="p-top-interview__thumb js-parallax">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/interview-5.webp" alt="" width="339" height="460">
                   </figure>
-                  <p class="p-top-interview__text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の。</p>
-                  <p class="p-top-interview__name">田中 太郎</p>
+                  <p class="p-top-interview__text">ドライバーじゃないからこそ、分かるリアル。第三者目線で切り取る、ハイヤーの現場。</p>
+                  <p class="p-top-interview__name">ディヤナさん（広報担当）</p>
                 </a>
               </div>
             </div>
@@ -1048,7 +1050,7 @@
               <div class="p-company__card-texts">
                 <p class="p-company__card-title">代表メッセージ</p>
                 <p class="p-company__card-text">
-                  親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                  代表が語る「豊かで楽しい人生」を実現する働き方。高収入とやりがい、プライベートの充実を両立できる理由や、仕事に向き合う価値観・考え方、事業の成長背景についても分かりやすくご紹介します。
                 </p>
               </div>
               <span class="p-company__card-btn" aria-hidden="true">
@@ -1070,7 +1072,7 @@
               <div class="p-company__card-texts">
                 <p class="p-company__card-title">会社概要</p>
                 <p class="p-company__card-text">
-                  親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                  会社の基本情報や拠点一覧、事業内容をまとめたページです。営業所の所在地やアクセス、グループ企業の展開など、Zの事業規模や運営体制について全体像を確認できます。
                 </p>
               </div>
               <span class="p-company__card-btn" aria-hidden="true">

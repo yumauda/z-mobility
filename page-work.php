@@ -17,7 +17,7 @@
           <div class="p-front-work__card-inner">
             <div class="p-front-work__card-content p-front-work__card-content--large">
               <figure class="p-front-work__card-img p-front-work__card-img--large">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work-card-large.png" alt="" width="600" height="380">
+                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/work-card-large.webp" alt="" width="600" height="380">
               </figure>
               <div class="p-front-work__card-body p-front-work__card-body--large">
                 <div class="p-front-work__card-head">
@@ -25,7 +25,7 @@
                   <p class="p-front-work__card-title p-front-work__card-title--large">Z MOBILITYの仕事について</p>
                 </div>
                 <p class="p-front-work__card-text p-front-work__card-text--large">
-                  親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                Uberプレミアムのお客様をメインターゲットとし、アルフアードなどの高級車でお客様を送迎する、新しいスタイルのハイヤードライバーの仕事です。流し営業のなく予約専門で、配車もナビも決済も最新アプリひとつで完結し、効率よく働けることが特徴です。Uberはグローバル配車アプリなので、インバウンド需要の成長と共に、安定して稼ぐことができます。
                 </p>
               </div>
             </div>
@@ -50,7 +50,7 @@
                     <p class="p-front-work__card-subtitle">Hire introduction</p>
                     <p class="p-front-work__card-title">Z MOBILITY のハイヤーとは</p>
                   </div>
-                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
+                  <p class="p-front-work__card-text">日本のプレミアムな移動体験（おもてなし）を提供する仕事です。空港送迎や観光などで、お客様一人ひとりに丁寧に向き合い、接客や振る舞いによりお客様を笑顔にする仕事です。</p>
                 </div>
               </div>
               <span class="p-front-work__card-btn" aria-hidden="true">
@@ -73,7 +73,7 @@
                     <p class="p-front-work__card-subtitle">Educational System</p>
                     <p class="p-front-work__card-title">二種免許支援<br class="u-mobile">教育体制</p>
                   </div>
-                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
+                  <p class="p-front-work__card-text">未経験からプロへ育つ研修体制。二種免許取得支援や実践型研修、同乗指導まで段階的に学べ、安心して着実に成長できる体制です。</p>
                 </div>
               </div>
               <span class="p-front-work__card-btn" aria-hidden="true">
@@ -96,7 +96,7 @@
                     <p class="p-front-work__card-subtitle">In Numbers</p>
                     <p class="p-front-work__card-title">数字で見るZ</p>
                   </div>
-                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
+                  <p class="p-front-work__card-text">年齢層や前職、入社の決め手など、私たちの「今」を数字でご紹介します。入社前の不安がどう変化したのか、現在の働き方への満足度など、リアルを公開しています。</p>
                 </div>
               </div>
               <span class="p-front-work__card-btn" aria-hidden="true">
@@ -119,7 +119,7 @@
                     <p class="p-front-work__card-subtitle">FAQ</p>
                     <p class="p-front-work__card-title">よくある質問</p>
                   </div>
-                  <p class="p-front-work__card-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
+                  <p class="p-front-work__card-text">応募前によくある不安や疑問にお答えします。未経験からのスタートや働き方、研修内容まで分かりやすく解説し、気になるポイントを事前に解消できます。</p>
                 </div>
               </div>
               <span class="p-front-work__card-btn" aria-hidden="true">

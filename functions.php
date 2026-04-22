@@ -4,6 +4,9 @@
  * Functions
  */
 
+require_once get_template_directory() . '/inc/faq-data.php';
+require_once get_template_directory() . '/inc/structured-data.php';
+
 /**
  * WordPress標準機能
  *
@@ -396,7 +399,7 @@ function zm_get_meta_data()
 		];
 	}
 
-	if (is_page('contact')) {
+	if (is_page(['contact', 'entry'])) {
 		return [
 			'title' => 'エントリー | ' . $site_suffix,
 			'description' => 'Z MOBILITYのドライバー採用エントリーフォームです。必要事項をご入力のうえ、ご応募ください。',

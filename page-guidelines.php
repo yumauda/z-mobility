@@ -143,7 +143,7 @@
           </div>
         </dl>
 
-        <a class="p-guideDetail__cta" href="<?php echo esc_url(home_url('/contact')); ?>">
+        <a class="p-guideDetail__cta" href="<?php echo esc_url(home_url('/entry')); ?>">
           <div class="p-guideDetail__ctaInner">
             <div class="p-guideDetail__ctaJa" aria-hidden="true">
               <span class="p-guideDetail__ctaDot"></span>
@@ -159,7 +159,7 @@
 </main>
 <div class="p-submitGuide">
   <div class="l-inner">
-    <a class="p-submit__ctaCard p-submit__ctaCard--reservation js-opacity-word" href="#">
+    <a class="p-submit__ctaCard p-submit__ctaCard--reservation js-opacity-word" href="https://j-premium.co.jp/" target="_blank" rel="noopener noreferrer">
       <div class="p-submit__ctaCardInner">
         <p class="p-submit__ctaJa">
           <span class="p-submit__dot" aria-hidden="true"></span>

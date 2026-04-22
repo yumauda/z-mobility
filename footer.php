@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/guidelines')); ?>">募集要項</a>
-                            <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/contact')); ?>">エントリー</a>
+                            <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/entry')); ?>">エントリー</a>
                         </div>
                     </nav>
                     <div class="p-footer__footerBottom">
