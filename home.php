@@ -86,9 +86,6 @@
       <?php endif; ?>
     </div>
   </section>
-
- 
-
-
+  <?php get_template_part('includes/submit'); ?>
 </main>
 <?php get_footer() ?>
