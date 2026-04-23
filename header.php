@@ -264,6 +264,10 @@
                                                 <span class="p-drawer-content__action-en">Guidelines</span>
                                                 <span class="p-drawer-content__action-ja">募集要項</span>
                                             </a>
+                                            <a href="https://j-premium.co.jp/" class="p-drawer-content__action" target="_blank" rel="noopener noreferrer">
+                                                <span class="p-drawer-content__action-en">Reservation</span>
+                                                <span class="p-drawer-content__action-ja">ハイヤーのご予約</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

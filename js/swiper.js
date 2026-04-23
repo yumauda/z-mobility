@@ -262,6 +262,10 @@ if (document.querySelector(".js-top-interview-swiper")) {
     slidesPerView: 1.3,
     centeredSlides: false,
     loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     spaceBetween: 20,
     breakpoints: {
       768: {

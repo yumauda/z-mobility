@@ -1777,8 +1777,8 @@ select::-ms-expand {
 .p-drawer-content__actions {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-drawer-content__actions {
@@ -1795,7 +1795,6 @@ select::-ms-expand {
 }
 
 .p-drawer-content__action {
-  min-height: 8.75rem;
   border-radius: 0.625rem;
   background: #fff;
   color: #044396;
@@ -1806,6 +1805,12 @@ select::-ms-expand {
   gap: 0.625rem;
   text-decoration: none;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-height: 5.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-drawer-content__action {
+    min-height: 8.75rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
