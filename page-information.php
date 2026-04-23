@@ -87,7 +87,7 @@
           </div>
         </section>
 
-        <section class="p-information__section">
+        <section class="p-information__section p-information__section--access">
           <div class="p-information__head">
             <p class="p-information__head-ja">アクセス</p>
             <p class="p-information__head-en">Access</p>
@@ -218,7 +218,7 @@
             <div class="p-information__groupIntro">
               <p class="p-information__groupTitle">
                 ロイヤルリムジングループ<br>
-                合計9社500台にて展開中。
+                合計17社1660台にて展開中。
               </p>
               <p class="p-information__groupText">
                 ロイヤルリムジングループ。<br>
@@ -290,8 +290,37 @@
                   </span>
                 </div>
               </a>
-
+              <div class="p-information__groupItem">
+                <div class="p-information__groupItemInner">
+                  <div class="p-information__groupItemTexts">
+                    <p class="p-information__groupName">コンドルタクシーグループ</p>
+                    <p class="p-information__groupArea">東京都練馬区他にて</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="p-information__groupItem">
+                <div class="p-information__groupItemInner">
+                  <div class="p-information__groupItemTexts">
+                    <p class="p-information__groupName">マルコータクシー株式会社</p>
+                    <p class="p-information__groupArea">東京都足立区にて</p>
+                  </div>
+                  
+                </div>
+              </div>
               <a class="p-information__groupItem" href="https://kanto-taxi.co.jp/" target="_blank" rel="noopener">
+                <div class="p-information__groupItemInner">
+                  <div class="p-information__groupItemTexts">
+                    <p class="p-information__groupName">株式会社関東自動車交通</p>
+                    <p class="p-information__groupArea">東京都江戸川区他にて</p>
+                  </div>
+                  <span class="p-information__groupBtn" aria-hidden="true">
+                    <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page/information/group-btn.svg" alt="" width="28" height="28">
+                  </span>
+                </div>
+              </a>
+
+              <a class="p-information__groupItem" href="https://www.orientaltaxi.co.jp/" target="_blank" rel="noopener">
                 <div class="p-information__groupItemInner">
                   <div class="p-information__groupItemTexts">
                     <p class="p-information__groupName">オリエンタルタクシー株式会社</p>
@@ -325,6 +354,15 @@
                   </span>
                 </div>
               </a>
+              <div class="p-information__groupItem">
+                <div class="p-information__groupItemInner">
+                  <div class="p-information__groupItemTexts">
+                    <p class="p-information__groupName">扇弘グループ</p>
+                    <p class="p-information__groupArea">兵庫県神戸市にて</p>
+                  </div>
+                  
+                </div>
+              </div>
               <a class="p-information__groupItem" href="https://asahi-taxi.jp/" target="_blank" rel="noopener">
                 <div class="p-information__groupItemInner">
                   <div class="p-information__groupItemTexts">

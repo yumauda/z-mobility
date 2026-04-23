@@ -19,10 +19,10 @@
 }
 
 .p-information__section {
-  display: grid;
 
   @include mq(md) {
-    grid-template-columns: rem(393) 1fr;
+    display: flex;
+
     align-items: start;
   }
 }
@@ -367,4 +367,10 @@
   flex: none;
   display: grid;
   place-items: center;
+}
+.p-information__section--profile,
+.p-information__section--access {
+  @include mq(md){
+   gap: rem(109); 
+  }
 }

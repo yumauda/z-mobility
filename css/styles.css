@@ -4886,12 +4886,9 @@ input::placeholder {
   }
 }
 
-.p-information__section {
-  display: grid;
-}
 @media screen and (min-width: 768px) {
   .p-information__section {
-    grid-template-columns: 24.5625rem 1fr;
+    display: flex;
     align-items: start;
   }
 }
@@ -5249,6 +5246,13 @@ input::placeholder {
   flex: none;
   display: grid;
   place-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .p-information__section--profile,
+  .p-information__section--access {
+    gap: 6.8125rem;
+  }
 }
 
 .p-interview {
