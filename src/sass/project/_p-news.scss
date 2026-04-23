@@ -46,7 +46,7 @@
   font-weight: 400;
   width: rem(100);
   height: rem(40);
-  font-size: rem(14);
+  font-size: rem(16);
 
   @include mq(md) {
     width: rem(140);
@@ -91,8 +91,12 @@
     gap: rem(20);
   }
 }
- .p-news__article:first-child .p-news__item {
-  padding-top: initial;
+
+.p-news__article:first-child .p-news__item {
+  @include mq(md) {
+
+    padding-top: initial;
+  }
 }
 
 .p-news__meta {
@@ -112,7 +116,7 @@
   font-weight: 400;
   line-height: 1;
   color: #044396;
-  font-size: rem(14);
+  font-size: rem(16);
 
   @include mq(md) {
     font-size: rem(18);

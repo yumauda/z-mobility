@@ -18,7 +18,7 @@
           <div class="p-description__head">
             <h1 class="p-description__title p-description__title--small">未経験でも、<br>プロになれる研修がある。</h1>
             <p class="p-description__text p-description__text--small">
-            経験豊富な講師陣による約2ヶ月の研修プログラムで、<br>
+            経験豊富な講師陣による約2ヶ月の研修プログラムで、<br class="u-desktop">
             未経験からプロのハイヤードライバーを目指せます。
             </p>
           </div>

@@ -89,7 +89,7 @@
   line-height: calc(29 / 18);
   color: #222;
   text-decoration: underline;
-  font-size: rem(14);
+  font-size: rem(16);
   width: 100%;
   margin-top: rem(12);
   @include mq(md) {
@@ -137,7 +137,7 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #fff;
-  font-size: rem(14);
+  font-size: rem(16);
   @include mq(md) {
     font-size: rem(18);
   }
@@ -178,7 +178,7 @@
   justify-content: center;
   border: 1px solid #222;
   border-radius: 9999px;
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 700;
   color: #222;
   transition: 0.3s ease-in-out;

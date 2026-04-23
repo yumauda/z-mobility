@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   gap: rem(12);
   color: #1a1a1a;
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.1em;
@@ -47,7 +47,6 @@
 
 .p-single-column__panCurrent {
   min-width: 0;
-  flex: 1;
 }
 
 .p-single-column__article {
@@ -96,7 +95,7 @@
   border: 1px solid #c2c9d0;
   border-radius: rem(90);
   color: #044396;
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 400;
   line-height: 1;
 
@@ -225,7 +224,7 @@
 
 .p-single-column__profileLabel {
   color: #044396;
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 500;
   line-height: 1.8;
 
@@ -286,7 +285,7 @@
 .p-single-column__indexNumber {
   color: #044396;
   font-family: $special-gothic;
-  font-size: rem(14);
+  font-size: rem(16);
   line-height: 2;
   flex: none;
 
@@ -300,7 +299,7 @@
 .p-single-column__indexText {
   flex: 1;
   min-width: 0;
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 500;
   line-height: 1.5;
 
@@ -661,7 +660,7 @@
 .p-single-column__backText {
   width: rem(120);
   color: #044396;
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.2;
   text-align: center;

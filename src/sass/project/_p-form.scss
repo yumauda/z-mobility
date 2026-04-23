@@ -35,7 +35,7 @@
 
 .p-form__dt {
   color: #222;
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 700;
   letter-spacing: 0.05em;
   @include mq(md) {
@@ -44,7 +44,7 @@
 }
 .p-form__dt span {
   color: $black;
-  font-size: rem(14);
+  font-size: rem(16);
 }
 .p-form__need {
   color: #fff;
@@ -126,7 +126,7 @@
   }
 }
 .p-form__description {
-  font-size: rem(14);
+  font-size: rem(16);
   word-wrap: break-word;
   color: $black;
   padding-top: initial;
@@ -144,7 +144,7 @@
 .p-form input[type="email"] {
   width: 100%;
   border: 1px solid #909090;
-  font-size: rem(14);
+  font-size: rem(16);
   line-height: 1.2;
   padding: rem(10) rem(12);
   border-radius: rem(6);
@@ -272,7 +272,7 @@ input::placeholder {
   color: #222;
   letter-spacing: 0.1em;
   font-weight: 400;
-  font-size: rem(14);
+  font-size: rem(16);
   @include mq(md) {
     font-size: rem(18);
   }

@@ -60,7 +60,7 @@
   margin-top: rem(24);
 }
 .p-single-topics__meta-category {
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #ed1c24;
@@ -72,7 +72,7 @@
   }
 }
 .p-single-topics__meta-text {
-  font-size: rem(14);
+  font-size: rem(16);
   font-weight: 700;
   letter-spacing: 0.05em;
   @include mq(md) {
@@ -117,7 +117,7 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #fff;
-  font-size: rem(14);
+  font-size: rem(16);
   @include mq(md) {
     font-size: rem(18);
   }
@@ -130,7 +130,7 @@
 
 /* 段落 */
 .p-single-topics__main-content p {
-  font-size: rem(14);
+  font-size: rem(16);
   letter-spacing: 0.05em;
   line-height: calc(24 / 14);
   color: #222;

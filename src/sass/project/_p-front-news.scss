@@ -47,7 +47,7 @@
   font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1;
-  font-size: rem(14);
+  font-size: rem(16);
   gap: rem(8);
 
   @include mq(md) {
@@ -182,7 +182,7 @@
 
 .p-front-news__text {
   color: #1a1a1a;
-  font-size: rem(14);
+  font-size: rem(16);
   line-height: 1.6;
   flex: 1;
 
@@ -231,7 +231,7 @@
 
 .p-front-news__empty {
   margin-top: rem(12);
-  font-size: rem(14);
+  font-size: rem(16);
   letter-spacing: 0.05em;
   color: #1a1a1a;
 }
